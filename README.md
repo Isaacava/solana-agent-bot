@@ -11,7 +11,7 @@ Submission for **Superteam Nigeria — DeFi Developer Challenge: Agentic Wallets
 **Twitter Thread + Bot Demo:**
 > 🔗 [https://twitter.com/mark67857](https://twitter.com/mark67857) — follow for live demos and updates
 
-![Agent Management Panel](assets/Screenshot_20260307_155859_Chrome.jpg)
+![Agent Management Panel](https://raw.githubusercontent.com/Isaacava/solana-agent-bot/main/assets/Screenshot_20260307_155859_Chrome.jpg)
 
 ---
 
@@ -444,42 +444,42 @@ Access at `https://yourdomain.com/management.php`
 ### Dashboard
 Stats strip, recent transactions, active goals, and live system log tail.
 
-![Dashboard](assets/Screenshot_20260307_155859_Chrome.jpg)
+![Dashboard](https://raw.githubusercontent.com/Isaacava/solana-agent-bot/main/assets/Screenshot_20260307_155859_Chrome.jpg)
 
 ---
 
 ### Agents
 Every user — wallet address, TX count, active goals, strategies, last activity.
 
-![Agents](assets/Screenshot_20260307_155931_Chrome.jpg)
+![Agents](https://raw.githubusercontent.com/Isaacava/solana-agent-bot/main/assets/Screenshot_20260307_155931_Chrome.jpg)
 
 ---
 
 ### DeFi
 Liquidity wallet live balances (SOL + USDC fetched from chain), recent swap transaction table, conditional swap goals.
 
-![DeFi](assets/Screenshot_20260307_155957_Chrome.jpg)
+![DeFi](https://raw.githubusercontent.com/Isaacava/solana-agent-bot/main/assets/Screenshot_20260307_155957_Chrome.jpg)
 
 ---
 
 ### Goals
 All conditional tasks with filter tabs — Swap Goals / Send Goals / Watching / Executed.
 
-![Goals](assets/Screenshot_20260307_160050_Chrome.jpg)
+![Goals](https://raw.githubusercontent.com/Isaacava/solana-agent-bot/main/assets/Screenshot_20260307_160050_Chrome.jpg)
 
 ---
 
 ### Strategies
 All trading strategies — phase badge, buy/sell/stop prices, SOL amount, estimated P&L, buy TX explorer link.
 
-![Strategies](assets/Screenshot_20260307_160120_Chrome.jpg)
+![Strategies](https://raw.githubusercontent.com/Isaacava/solana-agent-bot/main/assets/Screenshot_20260307_160120_Chrome.jpg)
 
 ---
 
 ### Scheduler / Transactions / Logs / Settings
 Scheduled sends, price alerts, full transaction history, live error logs, and webhook configuration.
 
-![Scheduler](assets/Screenshot_20260308_043457_Chrome.jpg)
+![Scheduler](https://raw.githubusercontent.com/Isaacava/solana-agent-bot/main/assets/Screenshot_20260308_043457_Chrome.jpg)
 
 ---
 

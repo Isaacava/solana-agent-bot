@@ -428,9 +428,9 @@ All tables are **auto-created** by `setup.php` — no manual SQL required.
 
 ---
 
-## 🖥️ Admin Panel
+## 🖥️ Agent Management Panel
 
-Access at `https://yourdomain.com/admin.php`
+Access at `https://yourdomain.com/management.php`
 
 | Page | What you see |
 |------|----------|
@@ -500,6 +500,40 @@ After every action executes, the bot saves a `✓`-prefixed note to chat history
 
 ---
 
+## 🔒 .htaccess Security
+
+Add this to your `.htaccess` file in the project root to block direct access to the database, setup files, and logs:
+
+```apache
+# Block database file
+<Files "*.db">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Block setup files after first run
+<FilesMatch "^setup.*\.php$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Block log files
+<FilesMatch "\.log$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Block data directory entirely
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^data/ - [F,L]
+</IfModule>
+```
+
+> ⚠️ **Important:** Delete or block `setup.php` and `setup-defi.php` after your first setup run. They have no authentication and expose configuration options if left accessible.
+
+---
+
 ## 📜 License
 
 Open source — MIT License. Built for the Superteam Nigeria DeFi Developer Challenge.
@@ -508,7 +542,7 @@ Open source — MIT License. Built for the Superteam Nigeria DeFi Developer Chal
 
 <div align="center">
 
-**Built for the naija streets. Runs on the blockchain.**  
+**Built for the 9ja. Runs on the blockchain.**  
 No app. No extension. Just chat. 🇳🇬
 
 </div>

@@ -1,0 +1,46 @@
+# Solana Agent Bot — Apache config
+
+# Protect data directory from web access
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Block direct access to data/
+  RewriteRule ^data/ - [F,L]
+
+  # Block direct access to config/
+  RewriteRule ^config/ - [F,L]
+
+  # Block direct access to src/
+  RewriteRule ^src/ - [F,L]
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "\.(db|log|lock|md)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Allow README and SKILLS for public viewing (optional — comment to block)
+<FilesMatch "^(README|SKILLS)\.md$">
+  Order Allow,Deny
+  Allow from all
+</FilesMatch>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "DENY"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# PHP settings
+<IfModule mod_php7.c>
+  php_flag display_errors Off
+  php_value upload_max_filesize 2M
+  php_value post_max_size 2M
+</IfModule>
+
+<IfModule mod_php8.c>
+  php_flag display_errors Off
+</IfModule>

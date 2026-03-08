@@ -1,0 +1,451 @@
+[2026-03-05 01:47:05] [WARN] Telegram API error on getWebhookInfo: Not Found 
+[2026-03-05 01:49:11] [ERROR] Voice transcription failed {"user_id":1,"error":"Groq Whisper error: file must be one of the following types: [flac mp3 mp4 mpeg mpga m4a ogg opus wav webm]"}
+[2026-03-05 01:50:48] [INFO] Voice transcribed {"chars":21,"lang_hint":"english"}
+[2026-03-05 01:50:48] [INFO] Voice note received {"user_id":1,"duration":2,"transcript":"Create wallet for me.","lang":"english"}
+[2026-03-05 01:50:49] [ERROR] Handler error: Call to undefined method SolanaAgent\AI\AIManager::processMessage() {"update":{"type":"voice","update_id":665383275,"chat_id":5242992898,"message_id":267,"text":"","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark","voice_file_id":"AwACAgQAAxkBAAIBC2mo02VB4FEVfU2DBfqtDW2eRkqoAALaHQACyMJJUf90sILuLseVOgQ","voice_duration":2}}
+[2026-03-05 01:54:32] [INFO] Wallet created {"user_id":1,"public_key":"CPH38mj4mPas55oZY7F1srCtLgUaoQY4PKUx7122oRSZ","active":1}
+[2026-03-05 01:54:44] [INFO] Voice transcribed {"chars":27,"lang_hint":"english"}
+[2026-03-05 01:54:44] [INFO] Voice note received {"user_id":1,"duration":3,"transcript":"Oh for now, give me a drop.","lang":"english"}
+[2026-03-05 01:54:45] [ERROR] Handler error: Call to undefined method SolanaAgent\AI\AIManager::processMessage() {"update":{"type":"voice","update_id":665383277,"chat_id":5242992898,"message_id":271,"text":"","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark","voice_file_id":"AwACAgQAAxkBAAIBD2mo1FECtQq5EKM7J4J5bn8jatp5AALbHQACyMJJUcC__p-k2RL0OgQ","voice_duration":3}}
+[2026-03-05 01:58:45] [INFO] Wallet created {"user_id":1,"public_key":"4nCYLPFQQ9Fs94Ab4xnoSfbn82u1z1PLEiDUpAoA7wNN","active":0}
+[2026-03-05 02:01:38] [INFO] Wallet created {"user_id":1,"public_key":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","active":0}
+[2026-03-05 02:07:36] [WARN] Could not parse Telegram update 
+[2026-03-05 02:07:42] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99857, Requested 1226. Please try again in 15m35.712s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 02:07:42] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 17.721348382s. 
+[2026-03-05 02:08:49] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99778, Requested 1124. Please try again in 12m59.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 02:08:49] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 10.712054083s. 
+[2026-03-05 02:30:41] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99425, Requested 862. Please try again in 4m7.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 02:30:42] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 17.841695912s. 
+[2026-03-05 02:36:26] [INFO] SOL sent {"from":"CPH38mj4mPas55oZY7F1srCtLgUaoQY4PKUx7122oRSZ","to":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","sol":0.1,"sig":"4AEKNq2z3UtMVdNkpa5rzHq4yFHrTyZ5YUA1wkFGjnRcJ6jubqEHzGAb8C2E6hC2bHmdAqLBySfTvDBK8ZFBcQLZ","attempt":1}
+[2026-03-05 02:37:00] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99735, Requested 844. Please try again in 8m20.256s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 02:37:00] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 59.774312131s. 
+[2026-03-05 02:57:15] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99214, Requested 835. Please try again in 42.336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 02:57:15] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 44.68963743s. 
+[2026-03-05 10:06:31] [INFO] SOL sent {"from":"CPH38mj4mPas55oZY7F1srCtLgUaoQY4PKUx7122oRSZ","to":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","sol":1,"sig":"4L7EopHv8roZTXF32XhskH81SC4HkgqFT2otN6EyN6cKU7cXunXJPHUEATEu94yc9xcbqEWPetu9UF4JMKUxyMap","attempt":1}
+[2026-03-05 10:24:05] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99925, Requested 1318. Please try again in 17m53.952s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 10:24:05] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 54.623724412s. 
+[2026-03-05 10:31:26] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99414, Requested 969. Please try again in 5m30.912s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 10:31:26] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 33.206535778s. 
+[2026-03-05 10:38:29] [INFO] Wallet created {"user_id":1,"public_key":"9vinhJooWY2u2C79Xyjn2hZrXeiKFF3rQvstjD1tEGvT","active":0}
+[2026-03-05 10:39:06] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99901, Requested 932. Please try again in 11m59.712s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 10:39:06] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 53.847948708s. 
+[2026-03-05 11:19:01] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99228, Requested 1152. Please try again in 5m28.32s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 11:19:01] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 58.211309022s. 
+[2026-03-05 12:23:32] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99279, Requested 757. Please try again in 31.104s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 12:23:33] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 27.024029921s. 
+[2026-03-05 12:24:49] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99901, Requested 781. Please try again in 9m49.247999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 12:24:49] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 10.121406601s. 
+[2026-03-05 12:30:27] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99510, Requested 791. Please try again in 4m20.064s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 12:30:27] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 32.765142119s. 
+[2026-03-05 12:31:24] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99444, Requested 805. Please try again in 3m35.136s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 12:31:24] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 35.430221394s. 
+[2026-03-05 13:35:14] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99666, Requested 833. Please try again in 7m11.135999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 13:35:14] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 45.639854289s. 
+[2026-03-05 14:48:25] [INFO] Wallet created {"user_id":1,"public_key":"6dWweNb5D2fmfKx5KMYNpJd1Z3akgFZiJZ2ED49CD2H6","active":0}
+[2026-03-05 14:49:55] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99363, Requested 1414. Please try again in 11m11.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 14:49:55] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 4.829634926s. 
+[2026-03-05 14:55:58] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98943, Requested 1127. Please try again in 1m0.48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 14:55:58] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 1.70082413s. 
+[2026-03-05 14:56:38] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99951, Requested 710. Please try again in 9m31.104s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 14:56:38] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 21.511497883s. 
+[2026-03-05 14:56:55] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 671. Please try again in 8m40.991999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 14:56:55] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 4.630792666s. 
+[2026-03-05 15:12:39] [INFO] Voice transcribed {"chars":22,"lang_hint":"english"}
+[2026-03-05 15:12:39] [INFO] Voice note received {"user_id":1,"duration":3,"transcript":"Hi, Otsi Solana Price.","lang":"english"}
+[2026-03-05 15:13:12] [INFO] Voice transcribed {"chars":20,"lang_hint":"english"}
+[2026-03-05 15:13:12] [INFO] Voice note received {"user_id":1,"duration":3,"transcript":"Show me the top NFC.","lang":"english"}
+[2026-03-05 15:13:13] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99497, Requested 657. Please try again in 2m13.055999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 15:13:13] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 46.418769939s. 
+[2026-03-05 15:14:08] [ERROR] Handler error: Class "SolanaAgent\Features\SPLToken" not found {"update":{"type":"message","update_id":665383359,"chat_id":5242992898,"message_id":433,"text":"\/token","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark"}}
+[2026-03-05 15:14:19] [ERROR] Handler error: Class "SolanaAgent\Features\Swap" not found {"update":{"type":"message","update_id":665383360,"chat_id":5242992898,"message_id":435,"text":"\/swap","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark"}}
+[2026-03-05 15:39:01] [INFO] Voice transcribed {"chars":21,"lang_hint":"english"}
+[2026-03-05 15:39:01] [INFO] Voice note received {"user_id":1,"duration":4,"transcript":"What is Solana Price?","lang":"english"}
+[2026-03-05 15:39:02] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99711, Requested 1206. Please try again in 13m12.287999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 15:39:02] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 57.122961452s. 
+[2026-03-05 15:39:55] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99649, Requested 1240. Please try again in 12m48.096s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 15:39:55] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 4.310361286s. 
+[2026-03-05 15:46:03] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99224, Requested 1238. Please try again in 6m39.168s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 15:46:03] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 56.638811858s. 
+[2026-03-05 15:46:16] [INFO] Voice transcribed {"chars":28,"lang_hint":"english"}
+[2026-03-05 15:46:16] [INFO] Voice note received {"user_id":1,"duration":3,"transcript":"Aye, quit me in your wallet.","lang":"english"}
+[2026-03-05 15:46:17] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99207, Requested 1006. Please try again in 3m4.031999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 15:46:18] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 41.92210525s. 
+[2026-03-05 15:57:33] [INFO] Voice transcribed {"chars":33,"lang_hint":"english"}
+[2026-03-05 15:57:33] [INFO] Voice note received {"user_id":1,"duration":3,"transcript":"How much is one to learn and how?","lang":"english"}
+[2026-03-05 15:59:52] [INFO] Cron: starting run at 2026-03-05 15:59:52 
+[2026-03-05 15:59:54] [INFO] Cron: completed successfully 
+[2026-03-05 15:59:57] [INFO] Cron: starting run at 2026-03-05 15:59:57 
+[2026-03-05 15:59:57] [INFO] Cron: completed successfully 
+[2026-03-05 16:01:29] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99207, Requested 1166. Please try again in 5m22.272s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 16:01:30] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 30.017153817s. 
+[2026-03-05 16:03:36] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99061, Requested 1208. Please try again in 3m52.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 16:03:36] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 23.747319271s. 
+[2026-03-05 16:05:03] [INFO] Cron: starting run at 2026-03-05 16:05:03 
+[2026-03-05 16:05:03] [INFO] Cron: completed successfully 
+[2026-03-05 16:10:04] [INFO] Cron: starting run at 2026-03-05 16:10:04 
+[2026-03-05 16:10:06] [INFO] Cron: completed successfully 
+[2026-03-05 16:15:04] [INFO] Cron: starting run at 2026-03-05 16:15:04 
+[2026-03-05 16:15:04] [INFO] Cron: completed successfully 
+[2026-03-05 16:15:54] [ERROR] Handler error: Telegram API request failed {"update":{"type":"message","update_id":665383392,"chat_id":5242992898,"message_id":498,"text":"\/wallet","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark"}}
+[2026-03-05 16:16:54] [ERROR] Handler error: Telegram API request failed {"update":{"type":"message","update_id":665383392,"chat_id":5242992898,"message_id":498,"text":"\/wallet","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark"}}
+[2026-03-05 16:17:57] [ERROR] Handler error: Telegram API request failed {"update":{"type":"message","update_id":665383392,"chat_id":5242992898,"message_id":498,"text":"\/wallet","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark"}}
+[2026-03-05 16:19:03] [ERROR] Handler error: Telegram API request failed {"update":{"type":"message","update_id":665383392,"chat_id":5242992898,"message_id":498,"text":"\/wallet","telegram_id":"5242992898","username":"Isaacmark","first_name":"Mark"}}
+[2026-03-05 16:20:03] [INFO] Cron: starting run at 2026-03-05 16:20:03 
+[2026-03-05 16:20:03] [INFO] Cron: completed successfully 
+[2026-03-05 16:25:03] [INFO] Cron: starting run at 2026-03-05 16:25:03 
+[2026-03-05 16:25:03] [INFO] Cron: completed successfully 
+[2026-03-05 16:30:05] [INFO] Cron: starting run at 2026-03-05 16:30:05 
+[2026-03-05 16:30:05] [INFO] Cron: completed successfully 
+[2026-03-05 16:31:13] [INFO] Voice transcribed {"chars":43,"lang_hint":"english"}
+[2026-03-05 16:31:13] [INFO] Voice note received {"user_id":1,"duration":5,"transcript":"Sent alerts when Solana touched 89 dollars.","lang":"english"}
+[2026-03-05 16:32:30] [INFO] Cron: starting run at 2026-03-05 16:32:30 
+[2026-03-05 16:32:30] [WARN] Price fetch failed in scheduler: Unable to fetch SOL price. Try again shortly. 
+[2026-03-05 16:32:30] [INFO] Cron: completed successfully 
+[2026-03-05 16:35:04] [INFO] Cron: starting run at 2026-03-05 16:35:04 
+[2026-03-05 16:35:05] [INFO] Cron: completed successfully 
+[2026-03-05 16:40:03] [INFO] Cron: starting run at 2026-03-05 16:40:03 
+[2026-03-05 16:40:03] [INFO] Cron: completed successfully 
+[2026-03-05 16:45:06] [INFO] Cron: starting run at 2026-03-05 16:45:06 
+[2026-03-05 16:45:06] [INFO] Cron: completed successfully 
+[2026-03-05 16:45:48] [INFO] Voice transcribed {"chars":26,"lang_hint":"english"}
+[2026-03-05 16:45:48] [INFO] Voice note received {"user_id":1,"duration":4,"transcript":"How much is the God's NFT?","lang":"english"}
+[2026-03-05 16:45:49] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99277, Requested 1058. Please try again in 4m49.44s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 16:45:49] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 10.685404161s. 
+[2026-03-05 16:50:02] [INFO] Cron: starting run at 2026-03-05 16:50:02 
+[2026-03-05 16:50:02] [INFO] Cron: completed successfully 
+[2026-03-05 16:55:05] [INFO] Cron: starting run at 2026-03-05 16:55:05 
+[2026-03-05 16:55:05] [INFO] Cron: completed successfully 
+[2026-03-05 17:00:04] [INFO] Cron: starting run at 2026-03-05 17:00:04 
+[2026-03-05 17:00:04] [INFO] Cron: completed successfully 
+[2026-03-05 17:05:03] [INFO] Cron: starting run at 2026-03-05 17:05:03 
+[2026-03-05 17:05:03] [INFO] Cron: completed successfully 
+[2026-03-05 17:10:03] [INFO] Cron: starting run at 2026-03-05 17:10:03 
+[2026-03-05 17:10:03] [INFO] Cron: completed successfully 
+[2026-03-05 17:15:04] [INFO] Cron: starting run at 2026-03-05 17:15:04 
+[2026-03-05 17:15:05] [INFO] Cron: completed successfully 
+[2026-03-05 17:20:03] [INFO] Cron: starting run at 2026-03-05 17:20:03 
+[2026-03-05 17:20:03] [INFO] Cron: completed successfully 
+[2026-03-05 17:25:04] [INFO] Cron: starting run at 2026-03-05 17:25:04 
+[2026-03-05 17:25:04] [INFO] Cron: completed successfully 
+[2026-03-05 17:30:04] [INFO] Cron: starting run at 2026-03-05 17:30:04 
+[2026-03-05 17:30:04] [INFO] Cron: completed successfully 
+[2026-03-05 17:35:04] [INFO] Cron: starting run at 2026-03-05 17:35:04 
+[2026-03-05 17:35:04] [INFO] Cron: completed successfully 
+[2026-03-05 17:40:03] [INFO] Cron: starting run at 2026-03-05 17:40:03 
+[2026-03-05 17:40:03] [INFO] Cron: completed successfully 
+[2026-03-05 17:45:03] [INFO] Cron: starting run at 2026-03-05 17:45:03 
+[2026-03-05 17:45:03] [INFO] Cron: completed successfully 
+[2026-03-05 17:47:15] [INFO] Wallet switched {"user_id":1,"wallet_id":5,"public_key":"6dWweNb5D2fmfKx5KMYNpJd1Z3akgFZiJZ2ED49CD2H6"}
+[2026-03-05 17:49:00] [INFO] Voice transcribed {"chars":28,"lang_hint":"english"}
+[2026-03-05 17:49:00] [INFO] Voice note received {"user_id":2,"duration":2,"transcript":"Creating new wallets for me.","lang":"english"}
+[2026-03-05 17:49:02] [INFO] Wallet created {"user_id":2,"public_key":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","active":1}
+[2026-03-05 17:50:02] [INFO] Cron: starting run at 2026-03-05 17:50:02 
+[2026-03-05 17:50:02] [INFO] Cron: completed successfully 
+[2026-03-05 17:50:03] [INFO] Wallet switched {"user_id":1,"wallet_id":1,"public_key":"CPH38mj4mPas55oZY7F1srCtLgUaoQY4PKUx7122oRSZ"}
+[2026-03-05 17:54:11] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99246, Requested 1047. Please try again in 4m13.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 17:54:11] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 48.07970407s. 
+[2026-03-05 17:55:03] [INFO] Cron: starting run at 2026-03-05 17:55:03 
+[2026-03-05 17:55:03] [INFO] Cron: completed successfully 
+[2026-03-05 18:00:05] [INFO] Cron: starting run at 2026-03-05 18:00:05 
+[2026-03-05 18:00:06] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","sol":0.1,"sig":"4pJLw3Pk3zENb5oNx97Fm8egQnkiCe2AyXYP5cGiBcN65zaC6FkEWrPRkUmNeX9GKcaams7sVg8pHKrRH4Ezi2zV","attempt":1}
+[2026-03-05 18:00:06] [INFO] Cron: completed successfully 
+[2026-03-05 18:05:02] [INFO] Cron: starting run at 2026-03-05 18:05:02 
+[2026-03-05 18:05:02] [INFO] Cron: completed successfully 
+[2026-03-05 18:10:02] [INFO] Cron: starting run at 2026-03-05 18:10:02 
+[2026-03-05 18:10:02] [INFO] Cron: completed successfully 
+[2026-03-05 18:15:04] [INFO] Cron: starting run at 2026-03-05 18:15:04 
+[2026-03-05 18:15:04] [INFO] Cron: completed successfully 
+[2026-03-05 18:20:04] [INFO] Cron: starting run at 2026-03-05 18:20:04 
+[2026-03-05 18:20:06] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","sol":0.1,"sig":"3xrgZrt8upvWxmdb5xDGJrMcJY4dmqVMtEUHU4yDpKnfMqP9y1iovvgBQjhSj3f8GPgvvAXP5s3mBdq4tHFNQep3","attempt":1}
+[2026-03-05 18:20:06] [INFO] Cron: completed successfully 
+[2026-03-05 18:20:53] [INFO] Voice transcribed {"chars":31,"lang_hint":"english"}
+[2026-03-05 18:20:53] [INFO] Voice note received {"user_id":2,"duration":3,"transcript":"What is today's news on Solana?","lang":"english"}
+[2026-03-05 18:25:03] [INFO] Cron: starting run at 2026-03-05 18:25:03 
+[2026-03-05 18:25:03] [INFO] Cron: completed successfully 
+[2026-03-05 18:30:05] [INFO] Cron: starting run at 2026-03-05 18:30:05 
+[2026-03-05 18:30:05] [INFO] Cron: completed successfully 
+[2026-03-05 18:34:19] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98921, Requested 1317. Please try again in 3m25.632s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 18:34:19] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 40.538730471s. 
+[2026-03-05 18:35:03] [INFO] Cron: starting run at 2026-03-05 18:35:03 
+[2026-03-05 18:35:03] [INFO] Cron: completed successfully 
+[2026-03-05 18:40:02] [INFO] Cron: starting run at 2026-03-05 18:40:02 
+[2026-03-05 18:40:02] [INFO] Cron: completed successfully 
+[2026-03-05 18:45:03] [INFO] Cron: starting run at 2026-03-05 18:45:03 
+[2026-03-05 18:45:03] [INFO] Cron: completed successfully 
+[2026-03-05 18:50:04] [INFO] Cron: starting run at 2026-03-05 18:50:04 
+[2026-03-05 18:50:04] [INFO] Cron: completed successfully 
+[2026-03-05 18:55:04] [INFO] Cron: starting run at 2026-03-05 18:55:04 
+[2026-03-05 18:55:04] [INFO] Cron: completed successfully 
+[2026-03-05 19:00:05] [INFO] Cron: starting run at 2026-03-05 19:00:05 
+[2026-03-05 19:00:05] [INFO] Cron: completed successfully 
+[2026-03-05 19:04:00] [INFO] Voice transcribed {"chars":21,"lang_hint":"english"}
+[2026-03-05 19:04:00] [INFO] Voice note received {"user_id":2,"duration":3,"transcript":"What is Solana Price?","lang":"english"}
+[2026-03-05 19:05:04] [INFO] Cron: starting run at 2026-03-05 19:05:04 
+[2026-03-05 19:05:04] [INFO] Cron: completed successfully 
+[2026-03-05 19:06:21] [INFO] Voice transcribed {"chars":47,"lang_hint":"english"}
+[2026-03-05 19:06:21] [INFO] Voice note received {"user_id":2,"duration":6,"transcript":"In the next five minutes, send me Solana Price.","lang":"english"}
+[2026-03-05 19:07:02] [INFO] Voice transcribed {"chars":43,"lang_hint":"english"}
+[2026-03-05 19:07:02] [INFO] Voice note received {"user_id":2,"duration":6,"transcript":"Once Solana Price gets to $90, let me know.","lang":"english"}
+[2026-03-05 19:07:03] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99015, Requested 1191. Please try again in 2m57.984s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-05 19:07:03] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 56.232628388s. 
+[2026-03-05 19:10:04] [INFO] Cron: starting run at 2026-03-05 19:10:04 
+[2026-03-05 19:10:04] [INFO] Cron: completed successfully 
+[2026-03-05 19:15:03] [INFO] Cron: starting run at 2026-03-05 19:15:03 
+[2026-03-05 19:15:03] [INFO] Cron: completed successfully 
+[2026-03-05 19:20:03] [INFO] Cron: starting run at 2026-03-05 19:20:03 
+[2026-03-05 19:20:03] [INFO] Cron: completed successfully 
+[2026-03-05 19:25:04] [INFO] Cron: starting run at 2026-03-05 19:25:04 
+[2026-03-05 19:25:04] [INFO] Cron: completed successfully 
+[2026-03-05 19:30:05] [INFO] Cron: starting run at 2026-03-05 19:30:05 
+[2026-03-05 19:30:05] [INFO] Cron: completed successfully 
+[2026-03-05 19:35:03] [INFO] Cron: starting run at 2026-03-05 19:35:03 
+[2026-03-05 19:35:03] [INFO] Cron: completed successfully 
+[2026-03-05 19:40:03] [INFO] Cron: starting run at 2026-03-05 19:40:03 
+[2026-03-05 19:40:03] [INFO] Cron: completed successfully 
+[2026-03-05 19:45:04] [INFO] Cron: starting run at 2026-03-05 19:45:04 
+[2026-03-05 19:45:04] [INFO] Cron: completed successfully 
+[2026-03-05 19:50:03] [INFO] Cron: starting run at 2026-03-05 19:50:03 
+[2026-03-05 19:50:03] [INFO] Cron: completed successfully 
+[2026-03-05 19:55:03] [INFO] Cron: starting run at 2026-03-05 19:55:03 
+[2026-03-05 19:55:03] [INFO] Cron: completed successfully 
+[2026-03-05 20:00:06] [INFO] Cron: starting run at 2026-03-05 20:00:06 
+[2026-03-05 20:00:06] [INFO] Cron: completed successfully 
+[2026-03-05 20:05:03] [INFO] Cron: starting run at 2026-03-05 20:05:03 
+[2026-03-05 20:05:03] [INFO] Cron: completed successfully 
+[2026-03-05 20:10:05] [INFO] Cron: starting run at 2026-03-05 20:10:05 
+[2026-03-05 20:10:05] [INFO] Cron: completed successfully 
+[2026-03-05 20:15:02] [INFO] Cron: starting run at 2026-03-05 20:15:02 
+[2026-03-05 20:15:02] [INFO] Cron: completed successfully 
+[2026-03-05 20:20:06] [INFO] Cron: starting run at 2026-03-05 20:20:06 
+[2026-03-05 20:20:06] [INFO] Cron: completed successfully 
+[2026-03-05 20:25:03] [INFO] Cron: starting run at 2026-03-05 20:25:03 
+[2026-03-05 20:25:03] [INFO] Cron: completed successfully 
+[2026-03-05 20:30:06] [INFO] Cron: starting run at 2026-03-05 20:30:06 
+[2026-03-05 20:30:06] [INFO] Cron: completed successfully 
+[2026-03-05 20:35:04] [INFO] Cron: starting run at 2026-03-05 20:35:04 
+[2026-03-05 20:35:04] [INFO] Cron: completed successfully 
+[2026-03-05 20:40:04] [INFO] Cron: starting run at 2026-03-05 20:40:04 
+[2026-03-05 20:40:04] [INFO] Cron: completed successfully 
+[2026-03-05 20:45:04] [INFO] Cron: starting run at 2026-03-05 20:45:04 
+[2026-03-05 20:45:04] [INFO] Cron: completed successfully 
+[2026-03-05 20:50:03] [INFO] Cron: starting run at 2026-03-05 20:50:03 
+[2026-03-05 20:50:03] [INFO] Cron: completed successfully 
+[2026-03-05 20:55:03] [INFO] Cron: starting run at 2026-03-05 20:55:03 
+[2026-03-05 20:55:03] [INFO] Cron: completed successfully 
+[2026-03-05 21:00:12] [INFO] Cron: starting run at 2026-03-05 21:00:12 
+[2026-03-05 21:00:12] [INFO] Cron: completed successfully 
+[2026-03-05 21:05:03] [INFO] Cron: starting run at 2026-03-05 21:05:03 
+[2026-03-05 21:05:04] [INFO] Cron: completed successfully 
+[2026-03-05 21:10:04] [INFO] Cron: starting run at 2026-03-05 21:10:04 
+[2026-03-05 21:10:04] [INFO] Cron: completed successfully 
+[2026-03-05 21:15:06] [INFO] Cron: starting run at 2026-03-05 21:15:06 
+[2026-03-05 21:15:06] [INFO] Cron: completed successfully 
+[2026-03-05 21:20:05] [INFO] Cron: starting run at 2026-03-05 21:20:05 
+[2026-03-05 21:20:05] [INFO] Cron: completed successfully 
+[2026-03-05 21:25:05] [INFO] Cron: starting run at 2026-03-05 21:25:05 
+[2026-03-05 21:25:05] [INFO] Cron: completed successfully 
+[2026-03-05 21:30:07] [INFO] Cron: starting run at 2026-03-05 21:30:07 
+[2026-03-05 21:30:07] [INFO] Cron: completed successfully 
+[2026-03-05 21:35:05] [INFO] Cron: starting run at 2026-03-05 21:35:05 
+[2026-03-05 21:35:05] [INFO] Cron: completed successfully 
+[2026-03-05 21:40:03] [INFO] Cron: starting run at 2026-03-05 21:40:03 
+[2026-03-05 21:40:03] [INFO] Cron: completed successfully 
+[2026-03-05 21:45:03] [INFO] Cron: starting run at 2026-03-05 21:45:03 
+[2026-03-05 21:45:03] [INFO] Cron: completed successfully 
+[2026-03-05 21:50:04] [INFO] Cron: starting run at 2026-03-05 21:50:04 
+[2026-03-05 21:50:04] [INFO] Cron: completed successfully 
+[2026-03-05 21:55:03] [INFO] Cron: starting run at 2026-03-05 21:55:03 
+[2026-03-05 21:55:03] [INFO] Cron: completed successfully 
+[2026-03-05 22:00:07] [INFO] Cron: starting run at 2026-03-05 22:00:07 
+[2026-03-05 22:00:07] [INFO] Cron: completed successfully 
+[2026-03-05 22:05:05] [INFO] Cron: starting run at 2026-03-05 22:05:05 
+[2026-03-05 22:05:05] [INFO] Cron: completed successfully 
+[2026-03-05 22:10:05] [INFO] Cron: starting run at 2026-03-05 22:10:05 
+[2026-03-05 22:10:05] [INFO] Cron: completed successfully 
+[2026-03-05 22:15:13] [INFO] Cron: starting run at 2026-03-05 22:15:13 
+[2026-03-05 22:15:13] [INFO] Cron: completed successfully 
+[2026-03-05 22:20:06] [INFO] Cron: starting run at 2026-03-05 22:20:06 
+[2026-03-05 22:20:06] [INFO] Cron: completed successfully 
+[2026-03-05 22:25:08] [INFO] Cron: starting run at 2026-03-05 22:25:08 
+[2026-03-05 22:25:08] [INFO] Cron: completed successfully 
+[2026-03-05 22:30:09] [INFO] Cron: starting run at 2026-03-05 22:30:09 
+[2026-03-05 22:30:09] [INFO] Cron: completed successfully 
+[2026-03-05 22:35:05] [INFO] Cron: starting run at 2026-03-05 22:35:05 
+[2026-03-05 22:35:05] [INFO] Cron: completed successfully 
+[2026-03-05 22:40:03] [INFO] Cron: starting run at 2026-03-05 22:40:03 
+[2026-03-05 22:40:03] [INFO] Cron: completed successfully 
+[2026-03-05 22:45:05] [INFO] Cron: starting run at 2026-03-05 22:45:05 
+[2026-03-05 22:45:05] [INFO] Cron: completed successfully 
+[2026-03-05 22:50:06] [INFO] Cron: starting run at 2026-03-05 22:50:06 
+[2026-03-05 22:50:06] [INFO] Cron: completed successfully 
+[2026-03-05 22:55:04] [INFO] Cron: starting run at 2026-03-05 22:55:04 
+[2026-03-05 22:55:04] [INFO] Cron: completed successfully 
+[2026-03-05 23:00:05] [INFO] Cron: starting run at 2026-03-05 23:00:05 
+[2026-03-05 23:00:05] [INFO] Cron: completed successfully 
+[2026-03-05 23:05:03] [INFO] Cron: starting run at 2026-03-05 23:05:03 
+[2026-03-05 23:05:03] [INFO] Cron: completed successfully 
+[2026-03-05 23:10:04] [INFO] Cron: starting run at 2026-03-05 23:10:04 
+[2026-03-05 23:10:04] [INFO] Cron: completed successfully 
+[2026-03-05 23:15:06] [INFO] Cron: starting run at 2026-03-05 23:15:06 
+[2026-03-05 23:15:06] [INFO] Cron: completed successfully 
+[2026-03-05 23:20:05] [INFO] Cron: starting run at 2026-03-05 23:20:05 
+[2026-03-05 23:20:05] [INFO] Cron: completed successfully 
+[2026-03-05 23:25:04] [INFO] Cron: starting run at 2026-03-05 23:25:04 
+[2026-03-05 23:25:04] [INFO] Cron: completed successfully 
+[2026-03-05 23:30:07] [INFO] Cron: starting run at 2026-03-05 23:30:07 
+[2026-03-05 23:30:07] [INFO] Cron: completed successfully 
+[2026-03-05 23:35:04] [INFO] Cron: starting run at 2026-03-05 23:35:04 
+[2026-03-05 23:35:04] [INFO] Cron: completed successfully 
+[2026-03-05 23:40:04] [INFO] Cron: starting run at 2026-03-05 23:40:03 
+[2026-03-05 23:40:04] [INFO] Cron: completed successfully 
+[2026-03-05 23:45:05] [INFO] Cron: starting run at 2026-03-05 23:45:05 
+[2026-03-05 23:45:05] [INFO] Cron: completed successfully 
+[2026-03-05 23:50:03] [INFO] Cron: starting run at 2026-03-05 23:50:03 
+[2026-03-05 23:50:03] [INFO] Cron: completed successfully 
+[2026-03-05 23:55:03] [INFO] Cron: starting run at 2026-03-05 23:55:03 
+[2026-03-05 23:55:03] [INFO] Cron: completed successfully 

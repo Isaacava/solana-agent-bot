@@ -1,0 +1,540 @@
+[2026-03-07 00:00:09] [INFO] Cron: starting run at 2026-03-07 00:00:09 
+[2026-03-07 00:00:09] [INFO] Cron: completed successfully 
+[2026-03-07 00:05:04] [INFO] Cron: starting run at 2026-03-07 00:05:04 
+[2026-03-07 00:05:04] [INFO] Cron: completed successfully 
+[2026-03-07 00:10:03] [INFO] Cron: starting run at 2026-03-07 00:10:03 
+[2026-03-07 00:10:04] [INFO] Cron: completed successfully 
+[2026-03-07 00:15:05] [INFO] Cron: starting run at 2026-03-07 00:15:05 
+[2026-03-07 00:15:05] [INFO] Cron: completed successfully 
+[2026-03-07 00:20:04] [INFO] Cron: starting run at 2026-03-07 00:20:04 
+[2026-03-07 00:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 00:25:04] [INFO] Cron: starting run at 2026-03-07 00:25:04 
+[2026-03-07 00:25:04] [INFO] Cron: completed successfully 
+[2026-03-07 00:30:07] [INFO] Cron: starting run at 2026-03-07 00:30:07 
+[2026-03-07 00:30:07] [INFO] Cron: completed successfully 
+[2026-03-07 00:35:04] [INFO] Cron: starting run at 2026-03-07 00:35:04 
+[2026-03-07 00:35:04] [INFO] Cron: completed successfully 
+[2026-03-07 00:40:06] [INFO] Cron: starting run at 2026-03-07 00:40:06 
+[2026-03-07 00:40:06] [INFO] Cron: completed successfully 
+[2026-03-07 00:45:04] [INFO] Cron: starting run at 2026-03-07 00:45:04 
+[2026-03-07 00:45:04] [INFO] Cron: completed successfully 
+[2026-03-07 00:50:06] [INFO] Cron: starting run at 2026-03-07 00:50:06 
+[2026-03-07 00:50:06] [INFO] Cron: completed successfully 
+[2026-03-07 00:55:04] [INFO] Cron: starting run at 2026-03-07 00:55:04 
+[2026-03-07 00:55:05] [INFO] Cron: completed successfully 
+[2026-03-07 01:00:05] [INFO] Cron: starting run at 2026-03-07 01:00:05 
+[2026-03-07 01:00:05] [INFO] Cron: completed successfully 
+[2026-03-07 01:05:07] [INFO] Cron: starting run at 2026-03-07 01:05:07 
+[2026-03-07 01:05:08] [INFO] Cron: completed successfully 
+[2026-03-07 01:10:04] [INFO] Cron: starting run at 2026-03-07 01:10:04 
+[2026-03-07 01:10:04] [INFO] Cron: completed successfully 
+[2026-03-07 01:15:03] [INFO] Cron: starting run at 2026-03-07 01:15:03 
+[2026-03-07 01:15:04] [INFO] Cron: completed successfully 
+[2026-03-07 01:20:03] [INFO] Cron: starting run at 2026-03-07 01:20:03 
+[2026-03-07 01:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 01:25:06] [INFO] Cron: starting run at 2026-03-07 01:25:06 
+[2026-03-07 01:25:06] [INFO] Cron: completed successfully 
+[2026-03-07 01:28:49] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:28:50] [INFO] Swap devnet: SOL received {"sig":"rLJUJih4nZEbeq64QHNgg1qwT5vQnrEDsAZSkTcGFY9a7t4z5pFLtmwwRHWuR4HMzTNYy8AbPb2sGDspXYj3cyZ"}
+[2026-03-07 01:28:51] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:28:52] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: Transaction simulation failed: Attempt to load a program that does not exist"}
+[2026-03-07 01:29:22] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:29:23] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:29:24] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:29:25] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: Transaction simulation failed: Attempt to load a program that does not exist"}
+[2026-03-07 01:30:09] [INFO] Cron: starting run at 2026-03-07 01:30:09 
+[2026-03-07 01:30:10] [INFO] Cron: completed successfully 
+[2026-03-07 01:35:04] [INFO] Cron: starting run at 2026-03-07 01:35:04 
+[2026-03-07 01:35:04] [INFO] Cron: completed successfully 
+[2026-03-07 01:40:04] [INFO] Cron: starting run at 2026-03-07 01:40:04 
+[2026-03-07 01:40:04] [INFO] Cron: completed successfully 
+[2026-03-07 01:41:12] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:41:14] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:41:15] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:41:16] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: Transaction simulation failed: Attempt to load a program that does not exist"}
+[2026-03-07 01:41:33] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:41:35] [INFO] Swap devnet: SOL received {"sig":"3QC27ubVeEet239gyanmezPQ1SQZYJi6Umw7XrsPotG2R7jr7odQaLiY2PjBmwkmECcY2gq5Em6hPacwfCn8eEYM"}
+[2026-03-07 01:41:36] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:41:37] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: Transaction simulation failed: Attempt to load a program that does not exist"}
+[2026-03-07 01:45:06] [INFO] Cron: starting run at 2026-03-07 01:45:06 
+[2026-03-07 01:45:06] [INFO] Cron: completed successfully 
+[2026-03-07 01:50:04] [INFO] Cron: starting run at 2026-03-07 01:50:04 
+[2026-03-07 01:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 01:50:12] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:50:13] [INFO] Swap devnet: SOL received {"sig":"5Ac3vZc88EozTvaSgHCQiuMP5Tf6GFun8Zj2g3E8BZSQQRtjhJNQ2rcFQomfDvPyxKRiUecpL7d8PdFpUZvq2rwS"}
+[2026-03-07 01:50:15] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:50:15] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: Transaction simulation failed: Error processing Instruction 0: Provided seeds do not result in a valid address"}
+[2026-03-07 01:50:37] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:50:38] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:50:40] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:50:40] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: Transaction simulation failed: Error processing Instruction 0: Provided seeds do not result in a valid address"}
+[2026-03-07 01:55:04] [INFO] Cron: starting run at 2026-03-07 01:55:04 
+[2026-03-07 01:55:05] [INFO] Cron: completed successfully 
+[2026-03-07 01:59:19] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:59:20] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-07 01:59:22] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-07 01:59:23] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":10,"sig":"37iTLW7U8CzmUUHJ"}
+[2026-03-07 01:59:23] [INFO] Swap devnet: USDC received {"sig":"37iTLW7U8CzmUUHJmxc124R2xRm4FPgDyhF6YadXc4f8xpWYqMzc2cS5KsNyJx7dxZifHEFKBgiHaRgcKfqcqgLH"}
+[2026-03-07 02:00:08] [INFO] Cron: starting run at 2026-03-07 02:00:08 
+[2026-03-07 02:00:08] [INFO] Cron: completed successfully 
+[2026-03-07 02:00:24] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101010}
+[2026-03-07 02:00:26] [INFO] Swap devnet: SOL received {"sig":"4aji5AmrntTxpiksPY5jx9c2QHQ4k95scuCRm3BJDMAmnGKtHcnBpbtcYawGQ154H2dbPHhXYUHye6NUQkYixNQR"}
+[2026-03-07 02:00:27] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101010}
+[2026-03-07 02:00:29] [INFO] SPLToken: Transfer OK {"from":"HBf3EptH","to":"HtjEYDcx","srcATA":"FVtztgvq","dstATA":"4ZmD7i6U","amt":8.48,"sig":"FE9pppmnwoNHCCYp"}
+[2026-03-07 02:00:44] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200208.48}
+[2026-03-07 02:05:05] [INFO] Cron: starting run at 2026-03-07 02:05:05 
+[2026-03-07 02:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 02:06:35] [ERROR] Webhook fatal error: syntax error, unexpected identifier "Swap", expecting ")" {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/src\/Bot\/Handler.php","line":625}
+[2026-03-07 02:06:40] [ERROR] Webhook fatal error: syntax error, unexpected identifier "Swap", expecting ")" {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/src\/Bot\/Handler.php","line":625}
+[2026-03-07 02:10:04] [INFO] Cron: starting run at 2026-03-07 02:10:04 
+[2026-03-07 02:10:05] [INFO] Cron: completed successfully 
+[2026-03-07 02:11:02] [ERROR] Webhook fatal error: syntax error, unexpected identifier "Swap", expecting ")" {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/src\/Bot\/Handler.php","line":625}
+[2026-03-07 02:14:01] [ERROR] Webhook fatal error: syntax error, unexpected identifier "create", expecting ")" {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/src\/Bot\/Handler.php","line":653}
+[2026-03-07 02:14:05] [ERROR] Webhook fatal error: syntax error, unexpected identifier "create", expecting ")" {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/src\/Bot\/Handler.php","line":653}
+[2026-03-07 02:15:05] [INFO] Cron: starting run at 2026-03-07 02:15:05 
+[2026-03-07 02:15:06] [INFO] Cron: completed successfully 
+[2026-03-07 02:17:47] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200208.48}
+[2026-03-07 02:18:11] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200208.48}
+[2026-03-07 02:18:12] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101001.52}
+[2026-03-07 02:18:13] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200208.48}
+[2026-03-07 02:18:14] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":100,"sig":"4pKpn7XsLZB6QhiD"}
+[2026-03-07 02:18:14] [INFO] Swap devnet: USDC received {"sig":"4pKpn7XsLZB6QhiDDM9bKJGffRZ6XDUY3ezpyBZunXKAztskvS8xj3QDjppZnJH8gvvWEeagfBihiZNUo2hBFJaT"}
+[2026-03-07 02:20:03] [INFO] Cron: starting run at 2026-03-07 02:20:03 
+[2026-03-07 02:20:03] [INFO] Cron: completed successfully 
+[2026-03-07 02:22:35] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200108.48}
+[2026-03-07 02:22:37] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101101.52}
+[2026-03-07 02:22:39] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200108.48}
+[2026-03-07 02:22:41] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":100,"sig":"2svVzrZGMKh3ztAK"}
+[2026-03-07 02:22:41] [INFO] Swap devnet: USDC received {"sig":"2svVzrZGMKh3ztAKFE7Y451LdJkUvJxw1qJzCPhzywMvX3HAkXrJC9fpE92jdEU95q6L4b1hhpzi1Ze8fubYtARj"}
+[2026-03-07 02:25:02] [INFO] Cron: starting run at 2026-03-07 02:25:02 
+[2026-03-07 02:25:03] [INFO] Cron: completed successfully 
+[2026-03-07 02:30:04] [INFO] Cron: starting run at 2026-03-07 02:30:04 
+[2026-03-07 02:30:05] [INFO] Cron: completed successfully 
+[2026-03-07 02:35:05] [INFO] Cron: starting run at 2026-03-07 02:35:05 
+[2026-03-07 02:35:05] [INFO] Cron: completed successfully 
+[2026-03-07 02:40:05] [INFO] Cron: starting run at 2026-03-07 02:40:05 
+[2026-03-07 02:40:05] [INFO] Cron: completed successfully 
+[2026-03-07 02:45:05] [INFO] Cron: starting run at 2026-03-07 02:45:05 
+[2026-03-07 02:45:06] [INFO] Cron: completed successfully 
+[2026-03-07 02:50:03] [INFO] Cron: starting run at 2026-03-07 02:50:03 
+[2026-03-07 02:50:03] [INFO] Cron: completed successfully 
+[2026-03-07 02:50:29] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200008.48}
+[2026-03-07 02:50:31] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101201.52}
+[2026-03-07 02:50:32] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200008.48}
+[2026-03-07 02:50:34] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":50,"sig":"3HWWPaReme3YALtT"}
+[2026-03-07 02:50:34] [INFO] Swap devnet: USDC received {"sig":"3HWWPaReme3YALtT8THAB7moU82wfkhQwNtubd4Y78jfPziV42rdJyQREFhinvcmYNP1F5MfMnXUb9UrDf2fm3f"}
+[2026-03-07 02:50:53] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199958.48}
+[2026-03-07 02:50:55] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101251.52}
+[2026-03-07 02:50:56] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199958.48}
+[2026-03-07 02:50:58] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":50,"sig":"kXsWs93Hp91sAWv9"}
+[2026-03-07 02:50:58] [INFO] Swap devnet: USDC received {"sig":"kXsWs93Hp91sAWv9dFjpwKddGn1y1Nrhd7V16sWVpR2QeRKHTAP1mkpjRhVaAtkGMeBcoRgxAnxJumwxPavSXTE"}
+[2026-03-07 02:51:36] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199908.48}
+[2026-03-07 02:51:39] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101301.52}
+[2026-03-07 02:51:40] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199908.48}
+[2026-03-07 02:51:42] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":50,"sig":"wBAkQLuNqrLGPWXj"}
+[2026-03-07 02:51:42] [INFO] Swap devnet: USDC received {"sig":"wBAkQLuNqrLGPWXjnhu7T8zjF76aYJNyc7mam58uJaEu1t9Co2GefiKkzJiqkL8cEAnxappuqyaRDPxK9xGSgUo"}
+[2026-03-07 02:52:05] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199858.48}
+[2026-03-07 02:52:08] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101351.52}
+[2026-03-07 02:52:09] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199858.48}
+[2026-03-07 02:52:11] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":50,"sig":"wVo4j1i3tN4UHNBe"}
+[2026-03-07 02:52:11] [INFO] Swap devnet: USDC received {"sig":"wVo4j1i3tN4UHNBe7XeCoTGWn3mw8dkqxdFtATmjYcbfLSPdkWiL33SP5dV46j2pAmREyXndFR3cXSbwyVzr3cY"}
+[2026-03-07 02:55:03] [INFO] Cron: starting run at 2026-03-07 02:55:03 
+[2026-03-07 02:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 03:00:06] [INFO] Cron: starting run at 2026-03-07 03:00:06 
+[2026-03-07 03:00:06] [INFO] Cron: completed successfully 
+[2026-03-07 03:05:07] [INFO] Cron: starting run at 2026-03-07 03:05:07 
+[2026-03-07 03:05:07] [WARN] Price fetch failed in scheduler: Unable to fetch SOL price. Try again shortly. 
+[2026-03-07 03:05:07] [INFO] Cron: completed successfully 
+[2026-03-07 03:10:05] [INFO] Cron: starting run at 2026-03-07 03:10:05 
+[2026-03-07 03:10:05] [INFO] Cron: completed successfully 
+[2026-03-07 03:15:04] [INFO] Cron: starting run at 2026-03-07 03:15:04 
+[2026-03-07 03:15:05] [INFO] Cron: completed successfully 
+[2026-03-07 03:20:04] [INFO] Cron: starting run at 2026-03-07 03:20:04 
+[2026-03-07 03:20:05] [INFO] Cron: completed successfully 
+[2026-03-07 03:25:02] [INFO] Cron: starting run at 2026-03-07 03:25:02 
+[2026-03-07 03:25:03] [INFO] Cron: completed successfully 
+[2026-03-07 03:30:06] [INFO] Cron: starting run at 2026-03-07 03:30:06 
+[2026-03-07 03:30:06] [INFO] Cron: completed successfully 
+[2026-03-07 03:35:06] [INFO] Cron: starting run at 2026-03-07 03:35:06 
+[2026-03-07 03:35:06] [INFO] Cron: completed successfully 
+[2026-03-07 03:40:04] [INFO] Cron: starting run at 2026-03-07 03:40:04 
+[2026-03-07 03:40:05] [INFO] Cron: completed successfully 
+[2026-03-07 03:45:07] [INFO] Cron: starting run at 2026-03-07 03:45:07 
+[2026-03-07 03:45:07] [INFO] Cron: completed successfully 
+[2026-03-07 03:50:04] [INFO] Cron: starting run at 2026-03-07 03:50:04 
+[2026-03-07 03:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 03:55:03] [INFO] Cron: starting run at 2026-03-07 03:55:03 
+[2026-03-07 03:55:03] [INFO] Cron: completed successfully 
+[2026-03-07 04:00:08] [INFO] Cron: starting run at 2026-03-07 04:00:08 
+[2026-03-07 04:00:08] [INFO] Cron: completed successfully 
+[2026-03-07 04:05:04] [INFO] Cron: starting run at 2026-03-07 04:05:04 
+[2026-03-07 04:05:04] [INFO] Cron: completed successfully 
+[2026-03-07 04:10:03] [INFO] Cron: starting run at 2026-03-07 04:10:03 
+[2026-03-07 04:10:04] [INFO] Cron: completed successfully 
+[2026-03-07 04:15:04] [INFO] Cron: starting run at 2026-03-07 04:15:04 
+[2026-03-07 04:15:04] [INFO] Cron: completed successfully 
+[2026-03-07 04:20:04] [INFO] Cron: starting run at 2026-03-07 04:20:04 
+[2026-03-07 04:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 04:25:05] [INFO] Cron: starting run at 2026-03-07 04:25:05 
+[2026-03-07 04:25:05] [INFO] Cron: completed successfully 
+[2026-03-07 04:30:07] [INFO] Cron: starting run at 2026-03-07 04:30:07 
+[2026-03-07 04:30:07] [INFO] Cron: completed successfully 
+[2026-03-07 04:35:04] [INFO] Cron: starting run at 2026-03-07 04:35:04 
+[2026-03-07 04:35:04] [INFO] Cron: completed successfully 
+[2026-03-07 04:40:05] [INFO] Cron: starting run at 2026-03-07 04:40:05 
+[2026-03-07 04:40:05] [INFO] Cron: completed successfully 
+[2026-03-07 04:45:05] [INFO] Cron: starting run at 2026-03-07 04:45:05 
+[2026-03-07 04:45:05] [INFO] Cron: completed successfully 
+[2026-03-07 04:50:04] [INFO] Cron: starting run at 2026-03-07 04:50:04 
+[2026-03-07 04:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 04:55:04] [INFO] Cron: starting run at 2026-03-07 04:55:04 
+[2026-03-07 04:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 05:00:06] [INFO] Cron: starting run at 2026-03-07 05:00:06 
+[2026-03-07 05:00:06] [INFO] Cron: completed successfully 
+[2026-03-07 05:05:04] [INFO] Cron: starting run at 2026-03-07 05:05:04 
+[2026-03-07 05:05:04] [INFO] Cron: completed successfully 
+[2026-03-07 05:10:04] [INFO] Cron: starting run at 2026-03-07 05:10:04 
+[2026-03-07 05:10:04] [INFO] Cron: completed successfully 
+[2026-03-07 05:15:05] [INFO] Cron: starting run at 2026-03-07 05:15:05 
+[2026-03-07 05:15:05] [INFO] Cron: completed successfully 
+[2026-03-07 05:20:04] [INFO] Cron: starting run at 2026-03-07 05:20:04 
+[2026-03-07 05:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 05:25:05] [INFO] Cron: starting run at 2026-03-07 05:25:05 
+[2026-03-07 05:25:05] [INFO] Cron: completed successfully 
+[2026-03-07 05:30:06] [INFO] Cron: starting run at 2026-03-07 05:30:06 
+[2026-03-07 05:30:07] [INFO] Cron: completed successfully 
+[2026-03-07 05:35:03] [INFO] Cron: starting run at 2026-03-07 05:35:03 
+[2026-03-07 05:35:04] [INFO] Cron: completed successfully 
+[2026-03-07 05:40:07] [INFO] Cron: starting run at 2026-03-07 05:40:07 
+[2026-03-07 05:40:07] [INFO] Cron: completed successfully 
+[2026-03-07 05:45:04] [INFO] Cron: starting run at 2026-03-07 05:45:04 
+[2026-03-07 05:45:04] [INFO] Cron: completed successfully 
+[2026-03-07 05:50:03] [INFO] Cron: starting run at 2026-03-07 05:50:03 
+[2026-03-07 05:50:03] [INFO] Cron: completed successfully 
+[2026-03-07 05:55:04] [INFO] Cron: starting run at 2026-03-07 05:55:04 
+[2026-03-07 05:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 06:00:16] [INFO] Cron: starting run at 2026-03-07 06:00:16 
+[2026-03-07 06:00:16] [INFO] Cron: completed successfully 
+[2026-03-07 06:05:05] [INFO] Cron: starting run at 2026-03-07 06:05:05 
+[2026-03-07 06:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 06:10:05] [INFO] Cron: starting run at 2026-03-07 06:10:05 
+[2026-03-07 06:10:05] [INFO] Cron: completed successfully 
+[2026-03-07 06:15:03] [INFO] Cron: starting run at 2026-03-07 06:15:03 
+[2026-03-07 06:15:04] [INFO] Cron: completed successfully 
+[2026-03-07 06:20:06] [INFO] Cron: starting run at 2026-03-07 06:20:06 
+[2026-03-07 06:20:06] [INFO] Cron: completed successfully 
+[2026-03-07 06:25:05] [INFO] Cron: starting run at 2026-03-07 06:25:05 
+[2026-03-07 06:25:05] [INFO] Cron: completed successfully 
+[2026-03-07 06:30:08] [INFO] Cron: starting run at 2026-03-07 06:30:08 
+[2026-03-07 06:30:08] [INFO] Cron: completed successfully 
+[2026-03-07 06:35:04] [INFO] Cron: starting run at 2026-03-07 06:35:04 
+[2026-03-07 06:35:04] [INFO] Cron: completed successfully 
+[2026-03-07 06:40:05] [INFO] Cron: starting run at 2026-03-07 06:40:05 
+[2026-03-07 06:40:05] [INFO] Cron: completed successfully 
+[2026-03-07 06:45:06] [INFO] Cron: starting run at 2026-03-07 06:45:06 
+[2026-03-07 06:45:06] [INFO] Cron: completed successfully 
+[2026-03-07 06:50:03] [INFO] Cron: starting run at 2026-03-07 06:50:03 
+[2026-03-07 06:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 06:55:04] [INFO] Cron: starting run at 2026-03-07 06:55:04 
+[2026-03-07 06:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 07:00:09] [INFO] Cron: starting run at 2026-03-07 07:00:09 
+[2026-03-07 07:00:09] [INFO] Cron: completed successfully 
+[2026-03-07 07:05:05] [INFO] Cron: starting run at 2026-03-07 07:05:05 
+[2026-03-07 07:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 07:10:06] [INFO] Cron: starting run at 2026-03-07 07:10:06 
+[2026-03-07 07:10:06] [INFO] Cron: completed successfully 
+[2026-03-07 07:15:04] [INFO] Cron: starting run at 2026-03-07 07:15:04 
+[2026-03-07 07:15:05] [INFO] Cron: completed successfully 
+[2026-03-07 07:20:04] [INFO] Cron: starting run at 2026-03-07 07:20:04 
+[2026-03-07 07:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 07:25:03] [INFO] Cron: starting run at 2026-03-07 07:25:03 
+[2026-03-07 07:25:04] [INFO] Cron: completed successfully 
+[2026-03-07 07:30:12] [INFO] Cron: starting run at 2026-03-07 07:30:12 
+[2026-03-07 07:30:12] [INFO] Cron: completed successfully 
+[2026-03-07 07:35:03] [INFO] Cron: starting run at 2026-03-07 07:35:03 
+[2026-03-07 07:35:03] [INFO] Cron: completed successfully 
+[2026-03-07 07:40:03] [INFO] Cron: starting run at 2026-03-07 07:40:03 
+[2026-03-07 07:40:03] [INFO] Cron: completed successfully 
+[2026-03-07 07:45:04] [INFO] Cron: starting run at 2026-03-07 07:45:04 
+[2026-03-07 07:45:04] [INFO] Cron: completed successfully 
+[2026-03-07 07:50:04] [INFO] Cron: starting run at 2026-03-07 07:50:04 
+[2026-03-07 07:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 07:55:05] [INFO] Cron: starting run at 2026-03-07 07:55:05 
+[2026-03-07 07:55:05] [INFO] Cron: completed successfully 
+[2026-03-07 08:00:07] [INFO] Cron: starting run at 2026-03-07 08:00:07 
+[2026-03-07 08:00:08] [INFO] Cron: completed successfully 
+[2026-03-07 08:05:05] [INFO] Cron: starting run at 2026-03-07 08:05:05 
+[2026-03-07 08:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 08:10:06] [INFO] Cron: starting run at 2026-03-07 08:10:06 
+[2026-03-07 08:10:06] [INFO] Cron: completed successfully 
+[2026-03-07 08:15:05] [INFO] Cron: starting run at 2026-03-07 08:15:05 
+[2026-03-07 08:15:05] [INFO] Cron: completed successfully 
+[2026-03-07 08:20:04] [INFO] Cron: starting run at 2026-03-07 08:20:04 
+[2026-03-07 08:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 08:25:05] [INFO] Cron: starting run at 2026-03-07 08:25:05 
+[2026-03-07 08:25:05] [INFO] Cron: completed successfully 
+[2026-03-07 08:30:05] [INFO] Cron: starting run at 2026-03-07 08:30:05 
+[2026-03-07 08:30:06] [INFO] Cron: completed successfully 
+[2026-03-07 08:35:06] [INFO] Cron: starting run at 2026-03-07 08:35:06 
+[2026-03-07 08:35:06] [INFO] Cron: completed successfully 
+[2026-03-07 08:40:08] [INFO] Cron: starting run at 2026-03-07 08:40:08 
+[2026-03-07 08:40:08] [INFO] Cron: completed successfully 
+[2026-03-07 08:45:09] [INFO] Cron: starting run at 2026-03-07 08:45:09 
+[2026-03-07 08:45:10] [INFO] Cron: completed successfully 
+[2026-03-07 08:50:07] [INFO] Cron: starting run at 2026-03-07 08:50:07 
+[2026-03-07 08:50:08] [INFO] Cron: completed successfully 
+[2026-03-07 08:55:08] [INFO] Cron: starting run at 2026-03-07 08:55:08 
+[2026-03-07 08:55:08] [INFO] Cron: completed successfully 
+[2026-03-07 09:00:07] [INFO] Cron: starting run at 2026-03-07 09:00:07 
+[2026-03-07 09:00:07] [INFO] Cron: completed successfully 
+[2026-03-07 09:03:37] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199808.48}
+[2026-03-07 09:03:38] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101401.52}
+[2026-03-07 09:03:40] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199808.48}
+[2026-03-07 09:03:41] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":120,"sig":"2CLdQUKys5gW4NBx"}
+[2026-03-07 09:03:41] [INFO] Swap devnet: USDC received {"sig":"2CLdQUKys5gW4NBxXgkrRFtKJ6rkh3dJVFF3qeiUCx2br1xk3yXhJUvfhyiy8NwoP3zNTcuTWdHghvHZHwq9S7wG"}
+[2026-03-07 09:03:54] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199688.48}
+[2026-03-07 09:03:55] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101521.52}
+[2026-03-07 09:05:11] [INFO] Cron: starting run at 2026-03-07 09:05:11 
+[2026-03-07 09:05:11] [INFO] Cron: completed successfully 
+[2026-03-07 09:05:56] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199688.48}
+[2026-03-07 09:05:57] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101521.52}
+[2026-03-07 09:05:59] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199688.48}
+[2026-03-07 09:06:00] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":120,"sig":"3K5HCNpARXpfQW9m"}
+[2026-03-07 09:06:00] [INFO] Swap devnet: USDC received {"sig":"3K5HCNpARXpfQW9mToJZV1YbsaqJY5tesap7BR4kJDXEMsTYZK9hQ4wXg4GxDBxynCqZrDFuPc9kdnXrKv3Y2e6K"}
+[2026-03-07 09:10:08] [INFO] Cron: starting run at 2026-03-07 09:10:08 
+[2026-03-07 09:10:08] [INFO] Cron: completed successfully 
+[2026-03-07 09:13:33] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199568.48}
+[2026-03-07 09:13:34] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101641.52}
+[2026-03-07 09:13:36] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199568.48}
+[2026-03-07 09:13:37] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":120,"sig":"5n3nQiB5i3ZJYFfL"}
+[2026-03-07 09:13:37] [INFO] Swap devnet: USDC received {"sig":"5n3nQiB5i3ZJYFfLuxjGPKZBWcHF3eckbbdh1pHjuRy9Pak8FHgg3GjAyrJe9ZwyCAxQzv4fRWyqYrXpZLmg8yQf"}
+[2026-03-07 09:13:49] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199568.48}
+[2026-03-07 09:13:50] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101761.52}
+[2026-03-07 09:13:51] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199448.48}
+[2026-03-07 09:13:52] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":120,"sig":"4CmiNQKdve7LSJKL"}
+[2026-03-07 09:13:52] [INFO] Swap devnet: USDC received {"sig":"4CmiNQKdve7LSJKLANqkCh3z6Ad9sK9YzDSCx7uGE1xDPkLAcqJU1ASyqedueRRynKJ56BrZZ4D17fktxiGi5hzn"}
+[2026-03-07 09:14:36] [INFO] Strategy #1 created {"user":2,"buy":80,"sell":100,"stop":70,"amount":1}
+[2026-03-07 09:14:51] [INFO] Strategy #2 created {"user":2,"buy":80,"sell":120,"stop":60,"amount":1}
+[2026-03-07 09:15:04] [INFO] Cron: starting run at 2026-03-07 09:15:04 
+[2026-03-07 09:15:04] [INFO] Cron: completed successfully 
+[2026-03-07 09:15:32] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"HBf3EptHsvouBSp6zFRFXxiQEbpQjY7DiaZ6A1WcxACo","sol":1,"sig":"2KgLB3VCb9uee1Ku6JxnckLLFfCbwwPC2ZKrNrSWuFtt6pJEFt9t9MaZAoYsmiw2JG3r2JQShtKVaJDUDeg4Meg9","attempt":1}
+[2026-03-07 09:20:05] [INFO] Cron: starting run at 2026-03-07 09:20:05 
+[2026-03-07 09:20:05] [INFO] Cron: completed successfully 
+[2026-03-07 09:23:22] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199328.48}
+[2026-03-07 09:23:24] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101881.52}
+[2026-03-07 09:23:25] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002199328.48}
+[2026-03-07 09:23:26] [INFO] SPLToken: Transfer OK {"from":"HtjEYDcx","to":"HBf3EptH","srcATA":"4ZmD7i6U","dstATA":"FVtztgvq","amt":120,"sig":"5Ankcy7umJHR1S8i"}
+[2026-03-07 09:23:26] [INFO] Swap devnet: USDC received {"sig":"5Ankcy7umJHR1S8ien8eWcHwLWNG1edFq8R2pLe6T6BVDkYnKbKYqvj68aGFm7quVrjxXc1Am8vM9rgY5chVCnoM"}
+[2026-03-07 09:25:05] [INFO] Cron: starting run at 2026-03-07 09:25:05 
+[2026-03-07 09:25:05] [INFO] Cron: completed successfully 
+[2026-03-07 09:30:07] [INFO] Cron: starting run at 2026-03-07 09:30:07 
+[2026-03-07 09:30:07] [INFO] Cron: completed successfully 
+[2026-03-07 09:35:04] [INFO] Cron: starting run at 2026-03-07 09:35:04 
+[2026-03-07 09:35:05] [INFO] Cron: completed successfully 
+[2026-03-07 09:40:10] [INFO] Cron: starting run at 2026-03-07 09:40:10 
+[2026-03-07 09:40:10] [INFO] Cron: completed successfully 
+[2026-03-07 09:45:05] [INFO] Cron: starting run at 2026-03-07 09:45:05 
+[2026-03-07 09:45:06] [INFO] Cron: completed successfully 
+[2026-03-07 09:50:04] [INFO] Cron: starting run at 2026-03-07 09:50:04 
+[2026-03-07 09:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 09:55:04] [INFO] Cron: starting run at 2026-03-07 09:55:04 
+[2026-03-07 09:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 10:00:05] [INFO] Cron: starting run at 2026-03-07 10:00:05 
+[2026-03-07 10:00:05] [INFO] Cron: completed successfully 
+[2026-03-07 10:05:07] [INFO] Cron: starting run at 2026-03-07 10:05:07 
+[2026-03-07 10:05:12] [INFO] Cron: completed successfully 
+[2026-03-07 10:15:06] [INFO] Cron: starting run at 2026-03-07 10:15:06 
+[2026-03-07 10:15:07] [WARN] Price fetch failed in scheduler: Unable to fetch SOL price. Try again shortly. 
+[2026-03-07 10:15:08] [INFO] Cron: completed successfully 
+[2026-03-07 10:20:06] [INFO] Cron: starting run at 2026-03-07 10:20:06 
+[2026-03-07 10:20:07] [INFO] Cron: completed successfully 
+[2026-03-07 10:25:04] [INFO] Cron: starting run at 2026-03-07 10:25:04 
+[2026-03-07 10:25:04] [INFO] Cron: completed successfully 
+[2026-03-07 10:25:56] [INFO] Voice transcribed {"chars":39,"lang_hint":"english"}
+[2026-03-07 10:26:19] [INFO] Voice transcribed {"chars":19,"lang_hint":"english"}
+[2026-03-07 10:26:36] [INFO] Voice transcribed {"chars":23,"lang_hint":"english"}
+[2026-03-07 10:30:05] [INFO] Cron: starting run at 2026-03-07 10:30:05 
+[2026-03-07 10:30:05] [INFO] Cron: completed successfully 
+[2026-03-07 10:35:04] [INFO] Cron: starting run at 2026-03-07 10:35:04 
+[2026-03-07 10:35:05] [INFO] Cron: completed successfully 
+[2026-03-07 10:40:04] [INFO] Cron: starting run at 2026-03-07 10:40:04 
+[2026-03-07 10:40:04] [INFO] Cron: completed successfully 
+[2026-03-07 10:45:05] [INFO] Cron: starting run at 2026-03-07 10:45:05 
+[2026-03-07 10:45:05] [INFO] Cron: completed successfully 
+[2026-03-07 10:50:05] [INFO] Cron: starting run at 2026-03-07 10:50:05 
+[2026-03-07 10:50:05] [INFO] Cron: completed successfully 
+[2026-03-07 10:55:04] [INFO] Cron: starting run at 2026-03-07 10:55:04 
+[2026-03-07 10:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 11:00:06] [INFO] Cron: starting run at 2026-03-07 11:00:06 
+[2026-03-07 11:00:06] [INFO] Cron: completed successfully 
+[2026-03-07 11:05:05] [INFO] Cron: starting run at 2026-03-07 11:05:05 
+[2026-03-07 11:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 11:10:04] [INFO] Cron: starting run at 2026-03-07 11:10:04 
+[2026-03-07 11:10:04] [INFO] Cron: completed successfully 
+[2026-03-07 11:15:05] [INFO] Cron: starting run at 2026-03-07 11:15:05 
+[2026-03-07 11:15:05] [INFO] Cron: completed successfully 
+[2026-03-07 11:20:04] [INFO] Cron: starting run at 2026-03-07 11:20:04 
+[2026-03-07 11:20:05] [INFO] Cron: completed successfully 
+[2026-03-07 11:25:04] [INFO] Cron: starting run at 2026-03-07 11:25:04 
+[2026-03-07 11:25:04] [INFO] Cron: completed successfully 
+[2026-03-07 11:30:09] [INFO] Cron: starting run at 2026-03-07 11:30:09 
+[2026-03-07 11:30:09] [INFO] Cron: completed successfully 
+[2026-03-07 11:35:06] [INFO] Cron: starting run at 2026-03-07 11:35:06 
+[2026-03-07 11:35:06] [INFO] Cron: completed successfully 
+[2026-03-07 11:45:06] [INFO] Cron: starting run at 2026-03-07 11:45:06 
+[2026-03-07 11:45:06] [INFO] Cron: completed successfully 
+[2026-03-07 11:48:31] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000102001.52}
+[2026-03-07 11:48:32] [INFO] Swap devnet: SOL received {"sig":"3A8DfTtFxEogqAtGjjRzNuYJQiB7TfpTByuSDayympKn46DGvzuGMJMajz5BDRNSpYPmZzraovZTtg6rpzYmN1Do"}
+[2026-03-07 11:48:34] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000102001.52}
+[2026-03-07 11:48:36] [INFO] SPLToken: Transfer OK {"from":"HBf3EptH","to":"HtjEYDcx","srcATA":"FVtztgvq","dstATA":"4ZmD7i6U","amt":84.63,"sig":"5Enq1z7CSLeK2yfw"}
+[2026-03-07 11:50:07] [INFO] Cron: starting run at 2026-03-07 11:50:07 
+[2026-03-07 11:50:07] [INFO] Cron: completed successfully 
+[2026-03-07 11:51:12] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 97896, Requested 2123. Please try again in 16.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-07 11:51:12] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 47.623978476s. 
+[2026-03-07 11:55:05] [INFO] Cron: starting run at 2026-03-07 11:55:05 
+[2026-03-07 11:55:05] [INFO] Cron: completed successfully 
+[2026-03-07 12:00:07] [INFO] Cron: starting run at 2026-03-07 12:00:07 
+[2026-03-07 12:00:07] [INFO] Cron: completed successfully 
+[2026-03-07 12:05:04] [INFO] Cron: starting run at 2026-03-07 12:05:04 
+[2026-03-07 12:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 12:10:10] [INFO] Cron: starting run at 2026-03-07 12:10:10 
+[2026-03-07 12:10:10] [INFO] Cron: completed successfully 
+[2026-03-07 12:15:18] [INFO] Cron: starting run at 2026-03-07 12:15:18 
+[2026-03-07 12:15:19] [INFO] Cron: completed successfully 
+[2026-03-07 12:20:16] [INFO] Cron: starting run at 2026-03-07 12:20:16 
+[2026-03-07 12:20:16] [INFO] Cron: completed successfully 
+[2026-03-07 12:25:12] [INFO] Cron: starting run at 2026-03-07 12:25:12 
+[2026-03-07 12:25:12] [INFO] Cron: completed successfully 
+[2026-03-07 12:29:11] [INFO] Voice transcribed {"chars":5,"lang_hint":"english"}
+[2026-03-07 12:29:12] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99755, Requested 2071. Please try again in 26m17.663999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-07 12:29:12] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 47.552302365s. 
+[2026-03-07 12:29:27] [INFO] Voice transcribed {"chars":19,"lang_hint":"english"}
+[2026-03-07 12:29:28] [WARN] Primary AI (groq) failed: Groq API error (HTTP 429): {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kjsa2gkeeqcrt28htbmanysd` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99736, Requested 2077. Please try again in 26m6.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ 
+[2026-03-07 12:29:28] [ERROR] Fallback AI (gemini) failed: Gemini API error (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite
+Please retry in 31.21905514s. 
+[2026-03-07 12:30:07] [INFO] Cron: starting run at 2026-03-07 12:30:07 
+[2026-03-07 12:30:08] [INFO] Cron: completed successfully 
+[2026-03-07 12:35:13] [INFO] Cron: starting run at 2026-03-07 12:35:13 
+[2026-03-07 12:35:13] [INFO] Cron: completed successfully 
+[2026-03-07 12:40:05] [INFO] Cron: starting run at 2026-03-07 12:40:05 
+[2026-03-07 12:40:05] [INFO] Cron: completed successfully 
+[2026-03-07 12:45:13] [INFO] Cron: starting run at 2026-03-07 12:45:13 
+[2026-03-07 12:45:13] [INFO] Cron: completed successfully 
+[2026-03-07 12:50:04] [INFO] Cron: starting run at 2026-03-07 12:50:04 
+[2026-03-07 12:50:05] [INFO] Cron: completed successfully 
+[2026-03-07 12:55:04] [INFO] Cron: starting run at 2026-03-07 12:55:04 
+[2026-03-07 12:55:05] [INFO] Cron: completed successfully 
+[2026-03-07 13:00:07] [INFO] Cron: starting run at 2026-03-07 13:00:07 
+[2026-03-07 13:00:08] [INFO] Cron: completed successfully 
+[2026-03-07 13:05:05] [INFO] Cron: starting run at 2026-03-07 13:05:05 
+[2026-03-07 13:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 13:10:05] [INFO] Cron: starting run at 2026-03-07 13:10:05 
+[2026-03-07 13:10:05] [INFO] Cron: completed successfully 
+[2026-03-07 13:15:04] [INFO] Cron: starting run at 2026-03-07 13:15:04 
+[2026-03-07 13:15:05] [INFO] Cron: completed successfully 
+[2026-03-07 13:20:03] [INFO] Cron: starting run at 2026-03-07 13:20:03 
+[2026-03-07 13:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 13:25:05] [INFO] Cron: starting run at 2026-03-07 13:25:05 
+[2026-03-07 13:25:05] [INFO] Cron: completed successfully 
+[2026-03-07 13:30:06] [INFO] Cron: starting run at 2026-03-07 13:30:06 
+[2026-03-07 13:30:06] [INFO] Cron: completed successfully 
+[2026-03-07 13:35:04] [INFO] Cron: starting run at 2026-03-07 13:35:04 
+[2026-03-07 13:35:05] [INFO] Cron: completed successfully 
+[2026-03-07 13:40:04] [INFO] Cron: starting run at 2026-03-07 13:40:04 
+[2026-03-07 13:40:05] [INFO] Cron: completed successfully 
+[2026-03-07 13:45:06] [INFO] Cron: starting run at 2026-03-07 13:45:06 
+[2026-03-07 13:45:06] [INFO] Cron: completed successfully 
+[2026-03-07 13:50:04] [INFO] Cron: starting run at 2026-03-07 13:50:04 
+[2026-03-07 13:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 13:55:05] [INFO] Cron: starting run at 2026-03-07 13:55:05 
+[2026-03-07 13:55:06] [INFO] Cron: completed successfully 
+[2026-03-07 14:00:02] [INFO] Cron: starting run at 2026-03-07 14:00:02 
+[2026-03-07 14:00:02] [INFO] Cron: completed successfully 
+[2026-03-07 14:05:04] [INFO] Cron: starting run at 2026-03-07 14:05:04 
+[2026-03-07 14:05:04] [INFO] Cron: completed successfully 
+[2026-03-07 14:10:06] [INFO] Cron: starting run at 2026-03-07 14:10:06 
+[2026-03-07 14:10:06] [INFO] Cron: completed successfully 
+[2026-03-07 14:15:03] [INFO] Cron: starting run at 2026-03-07 14:15:03 
+[2026-03-07 14:15:03] [INFO] Cron: completed successfully 
+[2026-03-07 14:20:03] [INFO] Cron: starting run at 2026-03-07 14:20:03 
+[2026-03-07 14:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 14:25:04] [INFO] Cron: starting run at 2026-03-07 14:25:04 
+[2026-03-07 14:25:04] [WARN] Price fetch failed in scheduler: Unable to fetch SOL price. Try again shortly. 
+[2026-03-07 14:25:04] [INFO] Cron: completed successfully 
+[2026-03-07 14:30:06] [INFO] Cron: starting run at 2026-03-07 14:30:06 
+[2026-03-07 14:30:06] [INFO] Cron: completed successfully 
+[2026-03-07 14:35:04] [INFO] Cron: starting run at 2026-03-07 14:35:04 
+[2026-03-07 14:35:04] [INFO] Cron: completed successfully 
+[2026-03-07 14:40:05] [INFO] Cron: starting run at 2026-03-07 14:40:05 
+[2026-03-07 14:40:05] [INFO] Cron: completed successfully 
+[2026-03-07 14:45:10] [INFO] Cron: starting run at 2026-03-07 14:45:10 
+[2026-03-07 14:45:10] [INFO] Cron: completed successfully 
+[2026-03-07 14:50:06] [INFO] Cron: starting run at 2026-03-07 14:50:06 
+[2026-03-07 14:50:06] [INFO] Cron: completed successfully 
+[2026-03-07 14:55:03] [INFO] Cron: starting run at 2026-03-07 14:55:03 
+[2026-03-07 14:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 15:00:06] [INFO] Cron: starting run at 2026-03-07 15:00:06 
+[2026-03-07 15:00:06] [INFO] Cron: completed successfully 
+[2026-03-07 15:05:04] [INFO] Cron: starting run at 2026-03-07 15:05:04 
+[2026-03-07 15:05:05] [INFO] Cron: completed successfully 
+[2026-03-07 15:10:04] [INFO] Cron: starting run at 2026-03-07 15:10:04 
+[2026-03-07 15:10:05] [INFO] Cron: completed successfully 
+[2026-03-07 15:15:05] [INFO] Cron: starting run at 2026-03-07 15:15:05 
+[2026-03-07 15:15:06] [INFO] Cron: completed successfully 
+[2026-03-07 15:20:05] [INFO] Cron: starting run at 2026-03-07 15:20:05 
+[2026-03-07 15:20:05] [INFO] Cron: completed successfully 
+[2026-03-07 15:25:03] [INFO] Cron: starting run at 2026-03-07 15:25:03 
+[2026-03-07 15:25:03] [INFO] Cron: completed successfully 
+[2026-03-07 15:30:05] [INFO] Cron: starting run at 2026-03-07 15:30:05 
+[2026-03-07 15:30:05] [INFO] Cron: completed successfully 
+[2026-03-07 15:35:04] [INFO] Cron: starting run at 2026-03-07 15:35:04 
+[2026-03-07 15:35:04] [INFO] Cron: completed successfully 
+[2026-03-07 15:40:03] [INFO] Cron: starting run at 2026-03-07 15:40:03 
+[2026-03-07 15:40:03] [INFO] Cron: completed successfully 
+[2026-03-07 15:45:04] [INFO] Cron: starting run at 2026-03-07 15:45:04 
+[2026-03-07 15:45:05] [INFO] Cron: completed successfully 
+[2026-03-07 15:50:03] [INFO] Cron: starting run at 2026-03-07 15:50:03 
+[2026-03-07 15:50:04] [INFO] Cron: completed successfully 
+[2026-03-07 15:55:04] [INFO] Cron: starting run at 2026-03-07 15:55:04 
+[2026-03-07 15:55:04] [INFO] Cron: completed successfully 
+[2026-03-07 16:00:07] [INFO] Cron: starting run at 2026-03-07 16:00:07 
+[2026-03-07 16:00:08] [INFO] Cron: completed successfully 
+[2026-03-07 16:05:04] [INFO] Cron: starting run at 2026-03-07 16:05:04 
+[2026-03-07 16:05:04] [WARN] Price fetch failed in scheduler: Unable to fetch SOL price. Try again shortly. 
+[2026-03-07 16:05:04] [INFO] Cron: completed successfully 
+[2026-03-07 16:10:03] [INFO] Cron: starting run at 2026-03-07 16:10:03 
+[2026-03-07 16:10:04] [INFO] Cron: completed successfully 
+[2026-03-07 16:15:04] [INFO] Cron: starting run at 2026-03-07 16:15:04 
+[2026-03-07 16:15:04] [INFO] Cron: completed successfully 
+[2026-03-07 16:20:04] [INFO] Cron: starting run at 2026-03-07 16:20:04 
+[2026-03-07 16:20:04] [INFO] Cron: completed successfully 
+[2026-03-07 16:25:04] [INFO] Cron: starting run at 2026-03-07 16:25:04 
+[2026-03-07 16:25:04] [INFO] Cron: completed successfully 
+[2026-03-07 16:30:05] [INFO] Cron: starting run at 2026-03-07 16:30:05 
+[2026-03-07 16:30:05] [INFO] Cron: completed successfully 
+[2026-03-07 16:35:04] [INFO] Cron: starting run at 2026-03-07 16:35:04 
+[2026-03-07 16:35:05] [INFO] Cron: completed successfully 
+[2026-03-07 16:40:06] [INFO] Cron: starting run at 2026-03-07 16:40:06 
+[2026-03-07 16:40:06] [INFO] Cron: completed successfully 
+[2026-03-07 16:45:05] [INFO] Cron: starting run at 2026-03-07 16:45:05 
+[2026-03-07 16:45:06] [INFO] Cron: completed successfully 
+[2026-03-07 16:50:05] [INFO] Cron: starting run at 2026-03-07 16:50:05 
+[2026-03-07 16:50:05] [INFO] Cron: completed successfully 
+[2026-03-07 16:55:03] [INFO] Cron: starting run at 2026-03-07 16:55:03 
+[2026-03-07 16:55:03] [INFO] Cron: completed successfully 
+[2026-03-07 17:00:03] [INFO] Cron: starting run at 2026-03-07 17:00:03 
+[2026-03-07 17:00:03] [INFO] Cron: completed successfully 

@@ -1,0 +1,628 @@
+[2026-03-06 00:00:06] [INFO] Cron: starting run at 2026-03-06 00:00:06 
+[2026-03-06 00:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 00:05:05] [INFO] Cron: starting run at 2026-03-06 00:05:05 
+[2026-03-06 00:05:05] [INFO] Cron: completed successfully 
+[2026-03-06 00:10:03] [INFO] Cron: starting run at 2026-03-06 00:10:03 
+[2026-03-06 00:10:03] [INFO] Cron: completed successfully 
+[2026-03-06 00:15:05] [INFO] Cron: starting run at 2026-03-06 00:15:05 
+[2026-03-06 00:15:05] [INFO] Cron: completed successfully 
+[2026-03-06 00:20:03] [INFO] Cron: starting run at 2026-03-06 00:20:03 
+[2026-03-06 00:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 00:25:05] [INFO] Cron: starting run at 2026-03-06 00:25:05 
+[2026-03-06 00:25:05] [INFO] Cron: completed successfully 
+[2026-03-06 00:30:03] [INFO] Cron: starting run at 2026-03-06 00:30:03 
+[2026-03-06 00:30:03] [INFO] Cron: completed successfully 
+[2026-03-06 00:35:03] [INFO] Cron: starting run at 2026-03-06 00:35:03 
+[2026-03-06 00:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 00:40:03] [INFO] Cron: starting run at 2026-03-06 00:40:03 
+[2026-03-06 00:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 00:45:04] [INFO] Cron: starting run at 2026-03-06 00:45:04 
+[2026-03-06 00:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 00:50:02] [INFO] Cron: starting run at 2026-03-06 00:50:02 
+[2026-03-06 00:50:02] [INFO] Cron: completed successfully 
+[2026-03-06 00:55:04] [INFO] Cron: starting run at 2026-03-06 00:55:04 
+[2026-03-06 00:55:04] [INFO] Cron: completed successfully 
+[2026-03-06 01:00:03] [INFO] Cron: starting run at 2026-03-06 01:00:03 
+[2026-03-06 01:00:03] [INFO] Cron: completed successfully 
+[2026-03-06 01:05:03] [INFO] Cron: starting run at 2026-03-06 01:05:03 
+[2026-03-06 01:05:03] [INFO] Cron: completed successfully 
+[2026-03-06 01:10:04] [INFO] Cron: starting run at 2026-03-06 01:10:04 
+[2026-03-06 01:10:04] [INFO] Cron: completed successfully 
+[2026-03-06 01:15:04] [INFO] Cron: starting run at 2026-03-06 01:15:04 
+[2026-03-06 01:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 01:20:03] [INFO] Cron: starting run at 2026-03-06 01:20:03 
+[2026-03-06 01:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 01:25:04] [INFO] Cron: starting run at 2026-03-06 01:25:04 
+[2026-03-06 01:25:04] [INFO] Cron: completed successfully 
+[2026-03-06 01:30:08] [INFO] Cron: starting run at 2026-03-06 01:30:08 
+[2026-03-06 01:30:08] [INFO] Cron: completed successfully 
+[2026-03-06 01:35:04] [INFO] Cron: starting run at 2026-03-06 01:35:04 
+[2026-03-06 01:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 01:40:05] [INFO] Cron: starting run at 2026-03-06 01:40:05 
+[2026-03-06 01:40:06] [INFO] Cron: completed successfully 
+[2026-03-06 01:45:03] [INFO] Cron: starting run at 2026-03-06 01:45:03 
+[2026-03-06 01:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 01:50:04] [INFO] Cron: starting run at 2026-03-06 01:50:04 
+[2026-03-06 01:50:04] [INFO] Cron: completed successfully 
+[2026-03-06 01:55:02] [INFO] Cron: starting run at 2026-03-06 01:55:02 
+[2026-03-06 01:55:02] [INFO] Cron: completed successfully 
+[2026-03-06 02:00:04] [INFO] Cron: starting run at 2026-03-06 02:00:04 
+[2026-03-06 02:00:04] [INFO] Cron: completed successfully 
+[2026-03-06 02:05:04] [INFO] Cron: starting run at 2026-03-06 02:05:04 
+[2026-03-06 02:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 02:10:05] [INFO] Cron: starting run at 2026-03-06 02:10:05 
+[2026-03-06 02:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 02:15:03] [INFO] Cron: starting run at 2026-03-06 02:15:03 
+[2026-03-06 02:15:03] [INFO] Cron: completed successfully 
+[2026-03-06 02:20:03] [INFO] Cron: starting run at 2026-03-06 02:20:03 
+[2026-03-06 02:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 02:25:03] [INFO] Cron: starting run at 2026-03-06 02:25:03 
+[2026-03-06 02:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 02:30:03] [INFO] Cron: starting run at 2026-03-06 02:30:03 
+[2026-03-06 02:30:03] [INFO] Cron: completed successfully 
+[2026-03-06 02:35:03] [INFO] Cron: starting run at 2026-03-06 02:35:03 
+[2026-03-06 02:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 02:40:03] [INFO] Cron: starting run at 2026-03-06 02:40:03 
+[2026-03-06 02:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 02:45:03] [INFO] Cron: starting run at 2026-03-06 02:45:03 
+[2026-03-06 02:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 02:50:05] [INFO] Cron: starting run at 2026-03-06 02:50:05 
+[2026-03-06 02:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 02:55:04] [INFO] Cron: starting run at 2026-03-06 02:55:04 
+[2026-03-06 02:55:04] [INFO] Cron: completed successfully 
+[2026-03-06 03:00:05] [INFO] Cron: starting run at 2026-03-06 03:00:05 
+[2026-03-06 03:00:05] [INFO] Cron: completed successfully 
+[2026-03-06 03:05:04] [INFO] Cron: starting run at 2026-03-06 03:05:04 
+[2026-03-06 03:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 03:10:04] [INFO] Cron: starting run at 2026-03-06 03:10:04 
+[2026-03-06 03:10:04] [INFO] Cron: completed successfully 
+[2026-03-06 03:15:03] [INFO] Cron: starting run at 2026-03-06 03:15:03 
+[2026-03-06 03:15:03] [INFO] Cron: completed successfully 
+[2026-03-06 03:20:03] [INFO] Cron: starting run at 2026-03-06 03:20:03 
+[2026-03-06 03:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 03:25:04] [INFO] Cron: starting run at 2026-03-06 03:25:04 
+[2026-03-06 03:25:04] [INFO] Cron: completed successfully 
+[2026-03-06 03:30:04] [INFO] Cron: starting run at 2026-03-06 03:30:04 
+[2026-03-06 03:30:04] [INFO] Cron: completed successfully 
+[2026-03-06 03:35:04] [INFO] Cron: starting run at 2026-03-06 03:35:04 
+[2026-03-06 03:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 03:40:03] [INFO] Cron: starting run at 2026-03-06 03:40:03 
+[2026-03-06 03:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 03:45:03] [INFO] Cron: starting run at 2026-03-06 03:45:03 
+[2026-03-06 03:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 03:50:03] [INFO] Cron: starting run at 2026-03-06 03:50:03 
+[2026-03-06 03:50:03] [INFO] Cron: completed successfully 
+[2026-03-06 03:55:03] [INFO] Cron: starting run at 2026-03-06 03:55:03 
+[2026-03-06 03:55:03] [INFO] Cron: completed successfully 
+[2026-03-06 04:00:06] [INFO] Cron: starting run at 2026-03-06 04:00:06 
+[2026-03-06 04:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 04:05:04] [INFO] Cron: starting run at 2026-03-06 04:05:04 
+[2026-03-06 04:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 04:10:04] [INFO] Cron: starting run at 2026-03-06 04:10:04 
+[2026-03-06 04:10:04] [INFO] Cron: completed successfully 
+[2026-03-06 04:15:04] [INFO] Cron: starting run at 2026-03-06 04:15:04 
+[2026-03-06 04:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 04:20:04] [INFO] Cron: starting run at 2026-03-06 04:20:04 
+[2026-03-06 04:20:04] [INFO] Cron: completed successfully 
+[2026-03-06 04:25:03] [INFO] Cron: starting run at 2026-03-06 04:25:03 
+[2026-03-06 04:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 04:30:03] [INFO] Cron: starting run at 2026-03-06 04:30:03 
+[2026-03-06 04:30:03] [INFO] Cron: completed successfully 
+[2026-03-06 04:35:05] [INFO] Cron: starting run at 2026-03-06 04:35:05 
+[2026-03-06 04:35:06] [INFO] Cron: completed successfully 
+[2026-03-06 04:40:06] [INFO] Cron: starting run at 2026-03-06 04:40:06 
+[2026-03-06 04:40:06] [INFO] Cron: completed successfully 
+[2026-03-06 04:45:03] [INFO] Cron: starting run at 2026-03-06 04:45:03 
+[2026-03-06 04:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 04:50:05] [INFO] Cron: starting run at 2026-03-06 04:50:05 
+[2026-03-06 04:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 04:55:06] [INFO] Cron: starting run at 2026-03-06 04:55:06 
+[2026-03-06 04:55:06] [INFO] Cron: completed successfully 
+[2026-03-06 05:00:07] [INFO] Cron: starting run at 2026-03-06 05:00:07 
+[2026-03-06 05:00:07] [INFO] Cron: completed successfully 
+[2026-03-06 05:05:05] [INFO] Cron: starting run at 2026-03-06 05:05:05 
+[2026-03-06 05:05:05] [INFO] Cron: completed successfully 
+[2026-03-06 05:10:05] [INFO] Cron: starting run at 2026-03-06 05:10:05 
+[2026-03-06 05:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 05:15:06] [INFO] Cron: starting run at 2026-03-06 05:15:06 
+[2026-03-06 05:15:06] [INFO] Cron: completed successfully 
+[2026-03-06 05:20:05] [INFO] Cron: starting run at 2026-03-06 05:20:05 
+[2026-03-06 05:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 05:25:04] [INFO] Cron: starting run at 2026-03-06 05:25:04 
+[2026-03-06 05:25:04] [INFO] Cron: completed successfully 
+[2026-03-06 05:30:08] [INFO] Cron: starting run at 2026-03-06 05:30:08 
+[2026-03-06 05:30:08] [INFO] Cron: completed successfully 
+[2026-03-06 05:35:05] [INFO] Cron: starting run at 2026-03-06 05:35:05 
+[2026-03-06 05:35:05] [INFO] Cron: completed successfully 
+[2026-03-06 05:40:03] [INFO] Cron: starting run at 2026-03-06 05:40:03 
+[2026-03-06 05:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 05:45:03] [INFO] Cron: starting run at 2026-03-06 05:45:03 
+[2026-03-06 05:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 05:50:04] [INFO] Cron: starting run at 2026-03-06 05:50:04 
+[2026-03-06 05:50:04] [INFO] Cron: completed successfully 
+[2026-03-06 05:55:05] [INFO] Cron: starting run at 2026-03-06 05:55:05 
+[2026-03-06 05:55:05] [INFO] Cron: completed successfully 
+[2026-03-06 06:00:07] [INFO] Cron: starting run at 2026-03-06 06:00:07 
+[2026-03-06 06:00:07] [INFO] Cron: completed successfully 
+[2026-03-06 06:05:06] [INFO] Cron: starting run at 2026-03-06 06:05:06 
+[2026-03-06 06:05:06] [INFO] Cron: completed successfully 
+[2026-03-06 06:10:03] [INFO] Cron: starting run at 2026-03-06 06:10:03 
+[2026-03-06 06:10:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:15:03] [INFO] Cron: starting run at 2026-03-06 06:15:03 
+[2026-03-06 06:15:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:20:03] [INFO] Cron: starting run at 2026-03-06 06:20:03 
+[2026-03-06 06:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:25:03] [INFO] Cron: starting run at 2026-03-06 06:25:03 
+[2026-03-06 06:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:30:05] [INFO] Cron: starting run at 2026-03-06 06:30:05 
+[2026-03-06 06:30:05] [INFO] Cron: completed successfully 
+[2026-03-06 06:35:03] [INFO] Cron: starting run at 2026-03-06 06:35:03 
+[2026-03-06 06:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:40:03] [INFO] Cron: starting run at 2026-03-06 06:40:03 
+[2026-03-06 06:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:45:03] [INFO] Cron: starting run at 2026-03-06 06:45:03 
+[2026-03-06 06:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:50:03] [INFO] Cron: starting run at 2026-03-06 06:50:03 
+[2026-03-06 06:50:03] [INFO] Cron: completed successfully 
+[2026-03-06 06:55:02] [INFO] Cron: starting run at 2026-03-06 06:55:02 
+[2026-03-06 06:55:02] [INFO] Cron: completed successfully 
+[2026-03-06 07:00:06] [INFO] Cron: starting run at 2026-03-06 07:00:06 
+[2026-03-06 07:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 07:05:03] [INFO] Cron: starting run at 2026-03-06 07:05:03 
+[2026-03-06 07:05:03] [INFO] Cron: completed successfully 
+[2026-03-06 07:10:05] [INFO] Cron: starting run at 2026-03-06 07:10:05 
+[2026-03-06 07:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 07:15:04] [INFO] Cron: starting run at 2026-03-06 07:15:04 
+[2026-03-06 07:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 07:20:05] [INFO] Cron: starting run at 2026-03-06 07:20:05 
+[2026-03-06 07:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 07:25:03] [INFO] Cron: starting run at 2026-03-06 07:25:03 
+[2026-03-06 07:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 07:30:05] [INFO] Cron: starting run at 2026-03-06 07:30:05 
+[2026-03-06 07:30:05] [INFO] Cron: completed successfully 
+[2026-03-06 07:35:03] [INFO] Cron: starting run at 2026-03-06 07:35:03 
+[2026-03-06 07:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 07:40:04] [INFO] Cron: starting run at 2026-03-06 07:40:04 
+[2026-03-06 07:40:04] [INFO] Cron: completed successfully 
+[2026-03-06 07:45:05] [INFO] Cron: starting run at 2026-03-06 07:45:05 
+[2026-03-06 07:45:05] [INFO] Cron: completed successfully 
+[2026-03-06 07:50:03] [INFO] Cron: starting run at 2026-03-06 07:50:03 
+[2026-03-06 07:50:03] [INFO] Cron: completed successfully 
+[2026-03-06 07:55:04] [INFO] Cron: starting run at 2026-03-06 07:55:04 
+[2026-03-06 07:55:04] [INFO] Cron: completed successfully 
+[2026-03-06 08:00:04] [INFO] Cron: starting run at 2026-03-06 08:00:04 
+[2026-03-06 08:00:04] [INFO] Cron: completed successfully 
+[2026-03-06 08:05:04] [INFO] Cron: starting run at 2026-03-06 08:05:04 
+[2026-03-06 08:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 08:10:04] [INFO] Cron: starting run at 2026-03-06 08:10:04 
+[2026-03-06 08:10:04] [INFO] Cron: completed successfully 
+[2026-03-06 08:15:04] [INFO] Cron: starting run at 2026-03-06 08:15:04 
+[2026-03-06 08:15:05] [INFO] Cron: completed successfully 
+[2026-03-06 08:20:03] [INFO] Cron: starting run at 2026-03-06 08:20:03 
+[2026-03-06 08:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 08:25:03] [INFO] Cron: starting run at 2026-03-06 08:25:03 
+[2026-03-06 08:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 08:30:06] [INFO] Cron: starting run at 2026-03-06 08:30:06 
+[2026-03-06 08:30:06] [INFO] Cron: completed successfully 
+[2026-03-06 08:35:04] [INFO] Cron: starting run at 2026-03-06 08:35:04 
+[2026-03-06 08:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 08:40:05] [INFO] Cron: starting run at 2026-03-06 08:40:05 
+[2026-03-06 08:40:05] [INFO] Cron: completed successfully 
+[2026-03-06 08:45:05] [INFO] Cron: starting run at 2026-03-06 08:45:05 
+[2026-03-06 08:45:05] [INFO] Cron: completed successfully 
+[2026-03-06 08:50:06] [INFO] Cron: starting run at 2026-03-06 08:50:06 
+[2026-03-06 08:50:06] [INFO] Cron: completed successfully 
+[2026-03-06 08:55:06] [INFO] Cron: starting run at 2026-03-06 08:55:06 
+[2026-03-06 08:55:07] [INFO] Cron: completed successfully 
+[2026-03-06 09:00:06] [INFO] Cron: starting run at 2026-03-06 09:00:06 
+[2026-03-06 09:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 09:05:05] [INFO] Cron: starting run at 2026-03-06 09:05:05 
+[2026-03-06 09:05:05] [INFO] Cron: completed successfully 
+[2026-03-06 09:10:05] [INFO] Cron: starting run at 2026-03-06 09:10:05 
+[2026-03-06 09:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 09:15:05] [INFO] Cron: starting run at 2026-03-06 09:15:05 
+[2026-03-06 09:15:05] [INFO] Cron: completed successfully 
+[2026-03-06 09:20:05] [INFO] Cron: starting run at 2026-03-06 09:20:05 
+[2026-03-06 09:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 09:25:04] [INFO] Cron: starting run at 2026-03-06 09:25:04 
+[2026-03-06 09:25:04] [INFO] Cron: completed successfully 
+[2026-03-06 09:30:11] [INFO] Cron: starting run at 2026-03-06 09:30:11 
+[2026-03-06 09:30:11] [INFO] Cron: completed successfully 
+[2026-03-06 09:35:04] [INFO] Cron: starting run at 2026-03-06 09:35:04 
+[2026-03-06 09:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 09:40:04] [INFO] Cron: starting run at 2026-03-06 09:40:04 
+[2026-03-06 09:40:04] [INFO] Cron: completed successfully 
+[2026-03-06 09:45:04] [INFO] Cron: starting run at 2026-03-06 09:45:04 
+[2026-03-06 09:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 09:50:03] [INFO] Cron: starting run at 2026-03-06 09:50:03 
+[2026-03-06 09:50:03] [INFO] Cron: completed successfully 
+[2026-03-06 09:50:52] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","sol":0.5,"sig":"4qSoTf3U7sYpj6ur3hT4KwjMj4uPLYagJPn8FdkvLhNcxMXMSkYPhKVmQ1F49ZjFv9vzUdtCA2Q9ZtuHZNhAp94K","attempt":1}
+[2026-03-06 09:55:06] [INFO] Cron: starting run at 2026-03-06 09:55:06 
+[2026-03-06 09:55:06] [INFO] Cron: completed successfully 
+[2026-03-06 10:00:05] [INFO] Cron: starting run at 2026-03-06 10:00:05 
+[2026-03-06 10:00:06] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","sol":1,"sig":"4o83SLRwYb9MwUr2CbJCgB2dGbbgr9pzwmf5FWMzYFVnSVLNB3DXu8PXuikRwizqdkyrxpUXU4rHj7hGeyuk1JXe","attempt":1}
+[2026-03-06 10:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 10:05:04] [INFO] Cron: starting run at 2026-03-06 10:05:04 
+[2026-03-06 10:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 10:10:08] [INFO] Cron: starting run at 2026-03-06 10:10:08 
+[2026-03-06 10:10:09] [INFO] Cron: completed successfully 
+[2026-03-06 10:15:03] [INFO] Cron: starting run at 2026-03-06 10:15:03 
+[2026-03-06 10:15:03] [INFO] Cron: completed successfully 
+[2026-03-06 10:20:03] [INFO] Cron: starting run at 2026-03-06 10:20:03 
+[2026-03-06 10:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 10:25:03] [INFO] Cron: starting run at 2026-03-06 10:25:03 
+[2026-03-06 10:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 10:30:10] [INFO] Cron: starting run at 2026-03-06 10:30:10 
+[2026-03-06 10:30:10] [INFO] Cron: completed successfully 
+[2026-03-06 10:35:03] [INFO] Cron: starting run at 2026-03-06 10:35:03 
+[2026-03-06 10:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 10:40:04] [INFO] Cron: starting run at 2026-03-06 10:40:04 
+[2026-03-06 10:40:04] [INFO] Cron: completed successfully 
+[2026-03-06 10:45:04] [INFO] Cron: starting run at 2026-03-06 10:45:04 
+[2026-03-06 10:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 10:50:03] [INFO] Cron: starting run at 2026-03-06 10:50:03 
+[2026-03-06 10:50:04] [INFO] Cron: completed successfully 
+[2026-03-06 10:55:03] [INFO] Cron: starting run at 2026-03-06 10:55:03 
+[2026-03-06 10:55:04] [INFO] Conditional task #2 triggered {"condition":"price_above","target":87,"current_price":87.4,"action":"send_sol"}
+[2026-03-06 10:55:06] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"DtMMAwsc5x3K8PJixH8zGZcGeGask7bbXrrQVi37ASpt","sol":1,"sig":"3iiVFYcZmer4ZF5oZ6fVvU3VK7yNdk23QmXFdSYiGTgh5h5Eo1AxWbU99ELhtLwe1ox4mD1FaSzixgrRmPKzW8n1","attempt":1}
+[2026-03-06 10:55:06] [INFO] Conditional send #2 succeeded {"sig":"3iiVFYcZmer4ZF5oZ6fVvU3VK7yNdk23QmXFdSYiGTgh5h5Eo1AxWbU99ELhtLwe1ox4mD1FaSzixgrRmPKzW8n1"}
+[2026-03-06 10:55:06] [INFO] Cron: completed successfully 
+[2026-03-06 11:00:04] [INFO] Cron: starting run at 2026-03-06 11:00:04 
+[2026-03-06 11:00:04] [INFO] Cron: completed successfully 
+[2026-03-06 11:01:31] [INFO] Voice transcribed {"chars":38,"lang_hint":"english"}
+[2026-03-06 11:01:31] [INFO] Voice note received {"user_id":2,"duration":3,"text":"Okay, what are my recent transactions?"}
+[2026-03-06 11:05:03] [INFO] Cron: starting run at 2026-03-06 11:05:03 
+[2026-03-06 11:05:03] [WARN] Price fetch failed in scheduler: Unable to fetch SOL price. Try again shortly. 
+[2026-03-06 11:05:03] [INFO] Cron: completed successfully 
+[2026-03-06 11:15:04] [INFO] Cron: starting run at 2026-03-06 11:15:04 
+[2026-03-06 11:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 11:20:03] [INFO] Cron: starting run at 2026-03-06 11:20:03 
+[2026-03-06 11:20:04] [INFO] Cron: completed successfully 
+[2026-03-06 11:25:04] [INFO] Cron: starting run at 2026-03-06 11:25:04 
+[2026-03-06 11:25:04] [INFO] Cron: completed successfully 
+[2026-03-06 11:30:03] [INFO] Cron: starting run at 2026-03-06 11:30:03 
+[2026-03-06 11:30:04] [INFO] Cron: completed successfully 
+[2026-03-06 11:35:04] [INFO] Cron: starting run at 2026-03-06 11:35:04 
+[2026-03-06 11:35:05] [INFO] Cron: completed successfully 
+[2026-03-06 11:40:03] [INFO] Cron: starting run at 2026-03-06 11:40:03 
+[2026-03-06 11:40:04] [INFO] Cron: completed successfully 
+[2026-03-06 11:45:03] [INFO] Cron: starting run at 2026-03-06 11:45:03 
+[2026-03-06 11:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 11:50:04] [INFO] Cron: starting run at 2026-03-06 11:50:04 
+[2026-03-06 11:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 11:55:04] [INFO] Cron: starting run at 2026-03-06 11:55:04 
+[2026-03-06 11:55:05] [INFO] Cron: completed successfully 
+[2026-03-06 12:00:04] [INFO] Cron: starting run at 2026-03-06 12:00:04 
+[2026-03-06 12:00:05] [INFO] Cron: completed successfully 
+[2026-03-06 12:05:04] [INFO] Cron: starting run at 2026-03-06 12:05:04 
+[2026-03-06 12:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 12:10:04] [INFO] Cron: starting run at 2026-03-06 12:10:04 
+[2026-03-06 12:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 12:15:03] [INFO] Cron: starting run at 2026-03-06 12:15:03 
+[2026-03-06 12:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 12:20:04] [INFO] Cron: starting run at 2026-03-06 12:20:04 
+[2026-03-06 12:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 12:25:04] [INFO] Cron: starting run at 2026-03-06 12:25:04 
+[2026-03-06 12:25:05] [INFO] Cron: completed successfully 
+[2026-03-06 12:30:04] [INFO] Cron: starting run at 2026-03-06 12:30:04 
+[2026-03-06 12:30:04] [INFO] Cron: completed successfully 
+[2026-03-06 12:35:03] [INFO] Cron: starting run at 2026-03-06 12:35:03 
+[2026-03-06 12:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 12:40:03] [INFO] Cron: starting run at 2026-03-06 12:40:03 
+[2026-03-06 12:40:04] [INFO] Cron: completed successfully 
+[2026-03-06 12:45:03] [INFO] Cron: starting run at 2026-03-06 12:45:03 
+[2026-03-06 12:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 12:50:03] [INFO] Cron: starting run at 2026-03-06 12:50:03 
+[2026-03-06 12:50:03] [INFO] Cron: completed successfully 
+[2026-03-06 12:55:04] [INFO] Cron: starting run at 2026-03-06 12:55:04 
+[2026-03-06 12:55:05] [INFO] Cron: completed successfully 
+[2026-03-06 13:00:05] [INFO] Cron: starting run at 2026-03-06 13:00:05 
+[2026-03-06 13:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 13:05:03] [INFO] Cron: starting run at 2026-03-06 13:05:03 
+[2026-03-06 13:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 13:10:04] [INFO] Cron: starting run at 2026-03-06 13:10:04 
+[2026-03-06 13:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 13:15:03] [INFO] Cron: starting run at 2026-03-06 13:15:03 
+[2026-03-06 13:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 13:20:03] [INFO] Cron: starting run at 2026-03-06 13:20:03 
+[2026-03-06 13:20:04] [INFO] Cron: completed successfully 
+[2026-03-06 13:25:03] [INFO] Cron: starting run at 2026-03-06 13:25:03 
+[2026-03-06 13:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 13:30:09] [INFO] Cron: starting run at 2026-03-06 13:30:09 
+[2026-03-06 13:30:09] [INFO] Cron: completed successfully 
+[2026-03-06 13:35:03] [INFO] Cron: starting run at 2026-03-06 13:35:03 
+[2026-03-06 13:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 13:40:03] [INFO] Cron: starting run at 2026-03-06 13:40:03 
+[2026-03-06 13:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 13:45:03] [INFO] Cron: starting run at 2026-03-06 13:45:03 
+[2026-03-06 13:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 13:50:05] [INFO] Cron: starting run at 2026-03-06 13:50:05 
+[2026-03-06 13:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 13:55:03] [INFO] Cron: starting run at 2026-03-06 13:55:03 
+[2026-03-06 13:55:04] [INFO] Cron: completed successfully 
+[2026-03-06 14:00:05] [INFO] Cron: starting run at 2026-03-06 14:00:05 
+[2026-03-06 14:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 14:05:03] [INFO] Cron: starting run at 2026-03-06 14:05:03 
+[2026-03-06 14:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 14:10:04] [INFO] Cron: starting run at 2026-03-06 14:10:04 
+[2026-03-06 14:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 14:15:03] [INFO] Cron: starting run at 2026-03-06 14:15:03 
+[2026-03-06 14:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 14:20:03] [INFO] Cron: starting run at 2026-03-06 14:20:03 
+[2026-03-06 14:20:04] [INFO] Cron: completed successfully 
+[2026-03-06 14:25:02] [INFO] Cron: starting run at 2026-03-06 14:25:02 
+[2026-03-06 14:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 14:30:03] [INFO] Cron: starting run at 2026-03-06 14:30:03 
+[2026-03-06 14:30:04] [INFO] Cron: completed successfully 
+[2026-03-06 14:35:03] [INFO] Cron: starting run at 2026-03-06 14:35:03 
+[2026-03-06 14:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 14:40:03] [INFO] Cron: starting run at 2026-03-06 14:40:03 
+[2026-03-06 14:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 14:45:03] [INFO] Cron: starting run at 2026-03-06 14:45:03 
+[2026-03-06 14:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 14:50:05] [INFO] Cron: starting run at 2026-03-06 14:50:05 
+[2026-03-06 14:50:06] [INFO] Cron: completed successfully 
+[2026-03-06 14:55:02] [INFO] Cron: starting run at 2026-03-06 14:55:02 
+[2026-03-06 14:55:03] [INFO] Cron: completed successfully 
+[2026-03-06 15:00:04] [INFO] Cron: starting run at 2026-03-06 15:00:04 
+[2026-03-06 15:00:04] [INFO] Cron: completed successfully 
+[2026-03-06 15:05:05] [INFO] Cron: starting run at 2026-03-06 15:05:05 
+[2026-03-06 15:05:05] [INFO] Cron: completed successfully 
+[2026-03-06 15:10:03] [INFO] Cron: starting run at 2026-03-06 15:10:03 
+[2026-03-06 15:10:03] [INFO] Cron: completed successfully 
+[2026-03-06 15:15:03] [INFO] Cron: starting run at 2026-03-06 15:15:03 
+[2026-03-06 15:15:03] [INFO] Cron: completed successfully 
+[2026-03-06 15:20:04] [INFO] Cron: starting run at 2026-03-06 15:20:04 
+[2026-03-06 15:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 15:25:03] [INFO] Cron: starting run at 2026-03-06 15:25:03 
+[2026-03-06 15:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 15:30:04] [INFO] Cron: starting run at 2026-03-06 15:30:04 
+[2026-03-06 15:30:04] [INFO] Cron: completed successfully 
+[2026-03-06 15:35:03] [INFO] Cron: starting run at 2026-03-06 15:35:03 
+[2026-03-06 15:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 15:40:03] [INFO] Cron: starting run at 2026-03-06 15:40:03 
+[2026-03-06 15:40:03] [INFO] Cron: completed successfully 
+[2026-03-06 15:45:03] [INFO] Cron: starting run at 2026-03-06 15:45:03 
+[2026-03-06 15:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 15:50:03] [INFO] Cron: starting run at 2026-03-06 15:50:03 
+[2026-03-06 15:50:04] [INFO] Cron: completed successfully 
+[2026-03-06 15:55:03] [INFO] Cron: starting run at 2026-03-06 15:55:03 
+[2026-03-06 15:55:04] [INFO] Cron: completed successfully 
+[2026-03-06 15:59:41] [INFO] Voice transcribed {"chars":32,"lang_hint":"english"}
+[2026-03-06 16:00:05] [INFO] Cron: starting run at 2026-03-06 16:00:05 
+[2026-03-06 16:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 16:05:04] [INFO] Cron: starting run at 2026-03-06 16:05:04 
+[2026-03-06 16:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 16:10:03] [INFO] Cron: starting run at 2026-03-06 16:10:03 
+[2026-03-06 16:10:05] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"HBf3EptHsvouBSp6zFRFXxiQEbpQjY7DiaZ6A1WcxACo","sol":1,"sig":"2Y3huqdfs6zAAFAhhyWRnaqQhSzYy1HPc3SGXkgB4sfS4GRA3dGZTzN5DbfzGgh2Mk3ZZdWUcqqjCjusbxXxhcXc","attempt":1}
+[2026-03-06 16:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 16:15:03] [INFO] Cron: starting run at 2026-03-06 16:15:03 
+[2026-03-06 16:15:03] [INFO] Cron: completed successfully 
+[2026-03-06 16:20:04] [INFO] Cron: starting run at 2026-03-06 16:20:04 
+[2026-03-06 16:20:04] [INFO] Cron: completed successfully 
+[2026-03-06 16:25:03] [INFO] Cron: starting run at 2026-03-06 16:25:03 
+[2026-03-06 16:25:04] [INFO] Cron: completed successfully 
+[2026-03-06 16:30:04] [INFO] Cron: starting run at 2026-03-06 16:30:04 
+[2026-03-06 16:30:05] [INFO] Cron: completed successfully 
+[2026-03-06 16:35:03] [INFO] Cron: starting run at 2026-03-06 16:35:03 
+[2026-03-06 16:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 17:00:04] [INFO] Cron: starting run at 2026-03-06 17:00:04 
+[2026-03-06 17:00:04] [INFO] Cron: completed successfully 
+[2026-03-06 17:05:11] [INFO] Cron: starting run at 2026-03-06 17:05:11 
+[2026-03-06 17:05:12] [INFO] Cron: completed successfully 
+[2026-03-06 17:06:14] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"AgsDuS1LUUKsP8PEC8wAseBhe9adTJTaYRhXnpqPcGZe","sol":0.1,"sig":"3m1ZNUmoFT7DG4FsGaEWXrXDvmMJmZcy5cpV85zQW3scsa8QwcYMXVtdGbS7wJuiNypKLHFroPJcaaa7MTCgFuHW","attempt":1}
+[2026-03-06 17:06:36] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"4JuZbuYNvoC2sZLGGdeP9fSyq5NqRBRaK8eLCb2uiRBf","sol":0.1,"sig":"2y9reVLTzuxJtQzv6zXyaBsPi9NHa4XXam21DtYrMcZgmTr5T5oAfFUKmBZabaebrPEXCqxGvmWnw65JtDGfUjjh","attempt":1}
+[2026-03-06 17:06:56] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"GrbKk1u1wBKD1bfYB6N8S42qMosPKVa7Ub8qB5nnAEG7","sol":0.1,"sig":"4UhnoTUzZuCjBBHaCVFyshGoxxMxnzTSzoNc61pxYR2Sg46auDcBR1bf2KWpxALb7r2zANbbwyt9fNjh3Cd2eKZh","attempt":1}
+[2026-03-06 17:09:32] [INFO] Wallet created {"user_id":2,"public_key":"8VaERCjhkgaVaCy8mZi2jBjE6sBqwkdWLUBLxHcRHR4e","active":0}
+[2026-03-06 17:10:04] [INFO] Cron: starting run at 2026-03-06 17:10:04 
+[2026-03-06 17:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 17:10:41] [INFO] Wallet switched {"user_id":2,"wallet_id":7,"public_key":"8VaERCjhkgaVaCy8mZi2jBjE6sBqwkdWLUBLxHcRHR4e"}
+[2026-03-06 17:15:05] [INFO] Cron: starting run at 2026-03-06 17:15:05 
+[2026-03-06 17:15:06] [INFO] Cron: completed successfully 
+[2026-03-06 17:20:03] [INFO] Cron: starting run at 2026-03-06 17:20:03 
+[2026-03-06 17:20:04] [INFO] Cron: completed successfully 
+[2026-03-06 17:25:03] [INFO] Cron: starting run at 2026-03-06 17:25:03 
+[2026-03-06 17:25:03] [INFO] Cron: completed successfully 
+[2026-03-06 17:30:04] [INFO] Cron: starting run at 2026-03-06 17:30:04 
+[2026-03-06 17:30:04] [INFO] Cron: completed successfully 
+[2026-03-06 17:35:02] [INFO] Cron: starting run at 2026-03-06 17:35:02 
+[2026-03-06 17:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 17:38:11] [ERROR] SPLToken: Transfer failed {"error":"RPC error: Transaction simulation failed: Transaction did not pass signature verification"}
+[2026-03-06 17:40:05] [INFO] Cron: starting run at 2026-03-06 17:40:05 
+[2026-03-06 17:40:05] [INFO] Cron: completed successfully 
+[2026-03-06 17:44:41] [ERROR] SPLToken: Transfer failed {"error":"RPC error: invalid base58 encoding: InvalidCharacter { character: '+', index: 9 }"}
+[2026-03-06 17:45:03] [INFO] Cron: starting run at 2026-03-06 17:45:03 
+[2026-03-06 17:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 17:46:41] [ERROR] SPLToken: Transfer failed {"error":"RPC error: invalid base58 encoding: InvalidCharacter { character: 'O', index: 19 }"}
+[2026-03-06 17:50:03] [INFO] Cron: starting run at 2026-03-06 17:50:03 
+[2026-03-06 17:50:04] [INFO] Cron: completed successfully 
+[2026-03-06 17:55:03] [INFO] Cron: starting run at 2026-03-06 17:55:03 
+[2026-03-06 17:55:04] [INFO] Cron: completed successfully 
+[2026-03-06 17:57:54] [INFO] Wallet switched {"user_id":2,"wallet_id":6,"public_key":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe"}
+[2026-03-06 17:58:07] [INFO] SOL sent {"from":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe","to":"8VaERCjhkgaVaCy8mZi2jBjE6sBqwkdWLUBLxHcRHR4e","sol":0.1,"sig":"43P2wMb87XaAhoNrHxxB5Hd31NSzTDN3y9v4k2mYqjUiT8vXhRMS4cnjM7KJAsmDAdzWheXSbYMzS6CUgMbWZFoU","attempt":1}
+[2026-03-06 18:00:05] [INFO] Cron: starting run at 2026-03-06 18:00:05 
+[2026-03-06 18:00:05] [INFO] Cron: completed successfully 
+[2026-03-06 18:05:04] [INFO] Cron: starting run at 2026-03-06 18:05:04 
+[2026-03-06 18:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 18:06:04] [INFO] Wallet switched {"user_id":2,"wallet_id":7,"public_key":"8VaERCjhkgaVaCy8mZi2jBjE6sBqwkdWLUBLxHcRHR4e"}
+[2026-03-06 18:06:34] [ERROR] SPLToken: Transfer failed {"error":"RPC error: invalid base58 encoding: InvalidCharacter { character: 'O', index: 2 }"}
+[2026-03-06 18:10:05] [INFO] Cron: starting run at 2026-03-06 18:10:05 
+[2026-03-06 18:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 18:15:03] [INFO] Cron: starting run at 2026-03-06 18:15:03 
+[2026-03-06 18:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 18:20:03] [INFO] Cron: starting run at 2026-03-06 18:20:03 
+[2026-03-06 18:20:03] [INFO] Cron: completed successfully 
+[2026-03-06 18:25:03] [INFO] Cron: starting run at 2026-03-06 18:25:03 
+[2026-03-06 18:25:04] [INFO] Cron: completed successfully 
+[2026-03-06 18:30:05] [INFO] Cron: starting run at 2026-03-06 18:30:05 
+[2026-03-06 18:30:05] [INFO] Cron: completed successfully 
+[2026-03-06 18:35:04] [INFO] Cron: starting run at 2026-03-06 18:35:04 
+[2026-03-06 18:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 18:40:04] [INFO] Cron: starting run at 2026-03-06 18:40:04 
+[2026-03-06 18:40:05] [INFO] Cron: completed successfully 
+[2026-03-06 18:45:04] [INFO] Cron: starting run at 2026-03-06 18:45:04 
+[2026-03-06 18:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 18:50:04] [INFO] Cron: starting run at 2026-03-06 18:50:04 
+[2026-03-06 18:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 18:51:33] [ERROR] SPLToken: Transfer failed {"error":"RPC error: Transaction simulation failed: Transaction did not pass signature verification"}
+[2026-03-06 18:55:04] [INFO] Cron: starting run at 2026-03-06 18:55:04 
+[2026-03-06 18:55:05] [INFO] Cron: completed successfully 
+[2026-03-06 18:56:48] [INFO] Sending SPL transfer {"from":"8VaERCjhkgaVaCy8mZi2jBjE6sBqwkdWLUBLxHcRHR4e","to":"HBf3EptHsvouBSp6zFRFXxiQEbpQjY7DiaZ6A1WcxACo","srcATA":"9apecXXfp8qvRQ1zxEsxzPAj6mMGEhAR9BpzCyGHoMNw","destATA":"37uEcQBSgeP91D6Yqsz7PGvpBYVYAjjMtfUqNvg3zcFU","amount":10,"mint":"4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU"}
+[2026-03-06 18:56:49] [ERROR] SPLToken: Transfer failed {"error":"RPC error: Transaction simulation failed: Transaction did not pass signature verification"}
+[2026-03-06 19:00:05] [INFO] Cron: starting run at 2026-03-06 19:00:05 
+[2026-03-06 19:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 19:05:02] [INFO] Cron: starting run at 2026-03-06 19:05:02 
+[2026-03-06 19:05:03] [INFO] Cron: completed successfully 
+[2026-03-06 19:10:06] [INFO] Cron: starting run at 2026-03-06 19:10:06 
+[2026-03-06 19:10:07] [INFO] Cron: completed successfully 
+[2026-03-06 19:15:06] [INFO] Cron: starting run at 2026-03-06 19:15:06 
+[2026-03-06 19:15:06] [INFO] Cron: completed successfully 
+[2026-03-06 19:20:05] [INFO] Cron: starting run at 2026-03-06 19:20:05 
+[2026-03-06 19:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 19:25:04] [INFO] Cron: starting run at 2026-03-06 19:25:04 
+[2026-03-06 19:25:05] [INFO] Cron: completed successfully 
+[2026-03-06 19:30:07] [INFO] Cron: starting run at 2026-03-06 19:30:07 
+[2026-03-06 19:30:07] [INFO] Cron: completed successfully 
+[2026-03-06 19:35:03] [INFO] Cron: starting run at 2026-03-06 19:35:03 
+[2026-03-06 19:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 19:40:05] [INFO] Cron: starting run at 2026-03-06 19:40:05 
+[2026-03-06 19:40:05] [INFO] Cron: completed successfully 
+[2026-03-06 19:45:03] [INFO] Cron: starting run at 2026-03-06 19:45:03 
+[2026-03-06 19:45:03] [INFO] Cron: completed successfully 
+[2026-03-06 19:50:04] [INFO] Cron: starting run at 2026-03-06 19:50:04 
+[2026-03-06 19:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 19:55:05] [INFO] Cron: starting run at 2026-03-06 19:55:05 
+[2026-03-06 19:55:06] [INFO] Cron: completed successfully 
+[2026-03-06 20:00:08] [INFO] Cron: starting run at 2026-03-06 20:00:08 
+[2026-03-06 20:00:09] [INFO] Cron: completed successfully 
+[2026-03-06 20:05:05] [INFO] Cron: starting run at 2026-03-06 20:05:05 
+[2026-03-06 20:05:05] [INFO] Cron: completed successfully 
+[2026-03-06 20:10:05] [INFO] Cron: starting run at 2026-03-06 20:10:05 
+[2026-03-06 20:10:05] [INFO] Cron: completed successfully 
+[2026-03-06 20:15:04] [INFO] Cron: starting run at 2026-03-06 20:15:04 
+[2026-03-06 20:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 20:20:05] [INFO] Cron: starting run at 2026-03-06 20:20:05 
+[2026-03-06 20:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 20:25:04] [INFO] Cron: starting run at 2026-03-06 20:25:04 
+[2026-03-06 20:25:05] [INFO] Cron: completed successfully 
+[2026-03-06 20:30:07] [INFO] Cron: starting run at 2026-03-06 20:30:07 
+[2026-03-06 20:30:09] [INFO] Cron: completed successfully 
+[2026-03-06 20:35:07] [INFO] Cron: starting run at 2026-03-06 20:35:07 
+[2026-03-06 20:35:07] [INFO] Cron: completed successfully 
+[2026-03-06 20:40:05] [INFO] Cron: starting run at 2026-03-06 20:40:05 
+[2026-03-06 20:40:05] [INFO] Cron: completed successfully 
+[2026-03-06 20:45:05] [INFO] Cron: starting run at 2026-03-06 20:45:05 
+[2026-03-06 20:45:05] [INFO] Cron: completed successfully 
+[2026-03-06 20:50:03] [INFO] Cron: starting run at 2026-03-06 20:50:03 
+[2026-03-06 20:50:04] [INFO] Cron: completed successfully 
+[2026-03-06 20:55:04] [INFO] Cron: starting run at 2026-03-06 20:55:04 
+[2026-03-06 20:55:04] [INFO] Cron: completed successfully 
+[2026-03-06 21:00:06] [INFO] Cron: starting run at 2026-03-06 21:00:06 
+[2026-03-06 21:00:06] [INFO] Cron: completed successfully 
+[2026-03-06 21:05:05] [INFO] Cron: starting run at 2026-03-06 21:05:05 
+[2026-03-06 21:05:05] [INFO] Cron: completed successfully 
+[2026-03-06 21:09:40] [ERROR] Webhook fatal error: Class "SolanaAgent\Solana\WalletManager" not found {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/webhook.php","line":172}
+[2026-03-06 21:09:49] [ERROR] Webhook fatal error: Class "SolanaAgent\Solana\WalletManager" not found {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/webhook.php","line":172}
+[2026-03-06 21:10:03] [INFO] Cron: starting run at 2026-03-06 21:10:03 
+[2026-03-06 21:10:03] [ERROR] Cron error: Class "SolanaAgent\Solana\WalletManager" not found 
+[2026-03-06 21:10:06] [ERROR] Webhook fatal error: Class "SolanaAgent\Solana\WalletManager" not found {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/webhook.php","line":172}
+[2026-03-06 21:13:15] [ERROR] Webhook fatal error: Class "SolanaAgent\Solana\WalletManager" not found {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/webhook.php","line":172}
+[2026-03-06 21:13:25] [ERROR] Webhook fatal error: Class "SolanaAgent\Solana\WalletManager" not found {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/webhook.php","line":172}
+[2026-03-06 21:13:47] [ERROR] Webhook fatal error: Class "SolanaAgent\Solana\WalletManager" not found {"file":"\/home\/earnhuun\/solanaagent.earnton.online\/webhook.php","line":172}
+[2026-03-06 21:15:04] [INFO] Cron: starting run at 2026-03-06 21:15:04 
+[2026-03-06 21:15:04] [ERROR] Cron error: Class "SolanaAgent\Solana\WalletManager" not found 
+[2026-03-06 21:20:04] [INFO] Cron: starting run at 2026-03-06 21:20:04 
+[2026-03-06 21:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 21:20:55] [INFO] Wallet switched {"user_id":2,"wallet_id":6,"public_key":"HtjEYDcxcN7mvZSVUkkvsLkrsiyhufAURth4vbzxgxKe"}
+[2026-03-06 21:21:04] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:21:27] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:21:29] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 21:21:30] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:21:30] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: failed to deserialize solana_transaction::versioned::VersionedTransaction: io error: failed to fill whole buffer"}
+[2026-03-06 21:25:05] [INFO] Cron: starting run at 2026-03-06 21:25:05 
+[2026-03-06 21:25:05] [INFO] Cron: completed successfully 
+[2026-03-06 21:29:30] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:29:31] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 21:29:32] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:29:33] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: failed to deserialize solana_transaction::versioned::VersionedTransaction: io error: failed to fill whole buffer"}
+[2026-03-06 21:30:09] [INFO] Cron: starting run at 2026-03-06 21:30:09 
+[2026-03-06 21:30:10] [INFO] Cron: completed successfully 
+[2026-03-06 21:33:15] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:33:17] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 21:33:19] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:33:20] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: failed to deserialize solana_transaction::versioned::VersionedTransaction: io error: failed to fill whole buffer"}
+[2026-03-06 21:34:41] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:34:43] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 21:34:44] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:34:45] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: failed to deserialize solana_transaction::versioned::VersionedTransaction: io error: failed to fill whole buffer"}
+[2026-03-06 21:35:03] [INFO] Cron: starting run at 2026-03-06 21:35:03 
+[2026-03-06 21:35:04] [INFO] Cron: completed successfully 
+[2026-03-06 21:37:13] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:37:15] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 21:37:16] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:37:18] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: failed to deserialize solana_transaction::versioned::VersionedTransaction: io error: failed to fill whole buffer"}
+[2026-03-06 21:37:33] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 21:37:35] [INFO] Swap devnet: SOL received {"sig":"4ZESw9kJevHSFuNGPJBUetfiQroR5RAFj6urHXRrmR8VJR4vtMDZV2JQNc2ByhMoQFsQQkjNEBTXBoMFx6baWsnr"}
+[2026-03-06 21:37:36] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 21:37:38] [ERROR] SPLToken: Transfer failed {"error":"RPC error [sendTransaction]: failed to deserialize solana_transaction::versioned::VersionedTransaction: io error: failed to fill whole buffer"}
+[2026-03-06 21:37:57] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 21:40:04] [INFO] Cron: starting run at 2026-03-06 21:40:04 
+[2026-03-06 21:40:04] [INFO] Cron: completed successfully 
+[2026-03-06 21:45:04] [INFO] Cron: starting run at 2026-03-06 21:45:04 
+[2026-03-06 21:45:05] [INFO] Cron: completed successfully 
+[2026-03-06 21:50:03] [INFO] Cron: starting run at 2026-03-06 21:50:03 
+[2026-03-06 21:50:03] [INFO] Cron: completed successfully 
+[2026-03-06 21:55:04] [INFO] Cron: starting run at 2026-03-06 21:55:04 
+[2026-03-06 21:55:05] [INFO] Cron: completed successfully 
+[2026-03-06 21:59:50] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 22:00:04] [INFO] Cron: starting run at 2026-03-06 22:00:04 
+[2026-03-06 22:00:05] [INFO] Cron: completed successfully 
+[2026-03-06 22:02:36] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 22:03:06] [INFO] SPLToken: balance check {"wallet":"HBf3EptH","mint":"Gh9ZwEmd","accounts":1,"total":1000101000}
+[2026-03-06 22:03:38] [INFO] SPLToken: balance check {"wallet":"HtjEYDcx","mint":"Gh9ZwEmd","accounts":1,"total":1002200210}
+[2026-03-06 22:05:05] [INFO] Cron: starting run at 2026-03-06 22:05:05 
+[2026-03-06 22:05:05] [INFO] Cron: completed successfully 
+[2026-03-06 22:10:08] [INFO] Cron: starting run at 2026-03-06 22:10:08 
+[2026-03-06 22:10:08] [INFO] Cron: completed successfully 
+[2026-03-06 22:15:05] [INFO] Cron: starting run at 2026-03-06 22:15:05 
+[2026-03-06 22:15:06] [INFO] Cron: completed successfully 
+[2026-03-06 22:20:06] [INFO] Cron: starting run at 2026-03-06 22:20:06 
+[2026-03-06 22:20:07] [INFO] Cron: completed successfully 
+[2026-03-06 22:25:05] [INFO] Cron: starting run at 2026-03-06 22:25:05 
+[2026-03-06 22:25:05] [INFO] Cron: completed successfully 
+[2026-03-06 22:30:10] [INFO] Cron: starting run at 2026-03-06 22:30:10 
+[2026-03-06 22:30:10] [INFO] Cron: completed successfully 
+[2026-03-06 22:35:05] [INFO] Cron: starting run at 2026-03-06 22:35:05 
+[2026-03-06 22:35:05] [INFO] Cron: completed successfully 
+[2026-03-06 22:40:03] [INFO] Cron: starting run at 2026-03-06 22:40:03 
+[2026-03-06 22:40:04] [INFO] Cron: completed successfully 
+[2026-03-06 22:45:03] [INFO] Cron: starting run at 2026-03-06 22:45:03 
+[2026-03-06 22:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 22:50:04] [INFO] Cron: starting run at 2026-03-06 22:50:04 
+[2026-03-06 22:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 22:55:06] [INFO] Cron: starting run at 2026-03-06 22:55:06 
+[2026-03-06 22:55:06] [INFO] Cron: completed successfully 
+[2026-03-06 23:00:05] [INFO] Cron: starting run at 2026-03-06 23:00:05 
+[2026-03-06 23:00:05] [INFO] Cron: completed successfully 
+[2026-03-06 23:05:03] [INFO] Cron: starting run at 2026-03-06 23:05:03 
+[2026-03-06 23:05:04] [INFO] Cron: completed successfully 
+[2026-03-06 23:10:06] [INFO] Cron: starting run at 2026-03-06 23:10:06 
+[2026-03-06 23:10:06] [INFO] Cron: completed successfully 
+[2026-03-06 23:15:04] [INFO] Cron: starting run at 2026-03-06 23:15:04 
+[2026-03-06 23:15:04] [INFO] Cron: completed successfully 
+[2026-03-06 23:20:05] [INFO] Cron: starting run at 2026-03-06 23:20:05 
+[2026-03-06 23:20:05] [INFO] Cron: completed successfully 
+[2026-03-06 23:25:04] [INFO] Cron: starting run at 2026-03-06 23:25:04 
+[2026-03-06 23:25:05] [INFO] Cron: completed successfully 
+[2026-03-06 23:30:04] [INFO] Cron: starting run at 2026-03-06 23:30:04 
+[2026-03-06 23:30:05] [INFO] Cron: completed successfully 
+[2026-03-06 23:35:03] [INFO] Cron: starting run at 2026-03-06 23:35:03 
+[2026-03-06 23:35:03] [INFO] Cron: completed successfully 
+[2026-03-06 23:40:05] [INFO] Cron: starting run at 2026-03-06 23:40:05 
+[2026-03-06 23:40:05] [INFO] Cron: completed successfully 
+[2026-03-06 23:45:04] [INFO] Cron: starting run at 2026-03-06 23:45:04 
+[2026-03-06 23:45:04] [INFO] Cron: completed successfully 
+[2026-03-06 23:50:04] [INFO] Cron: starting run at 2026-03-06 23:50:04 
+[2026-03-06 23:50:05] [INFO] Cron: completed successfully 
+[2026-03-06 23:55:04] [INFO] Cron: starting run at 2026-03-06 23:55:04 
+[2026-03-06 23:55:04] [INFO] Cron: completed successfully 

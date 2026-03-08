@@ -1,0 +1,818 @@
+[05-Mar-2026 01:50:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 01:54:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 01:58:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 01:58:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:00:39 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:00:40 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:01:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:01:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:02:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:02:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:03:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:03:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:04:07 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:04:07 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:04:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:04:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:07:42 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:07:42 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:08:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:08:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:30:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:30:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:30:42 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:30:42 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:36:25 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:36:26 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:37:00 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:37:00 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:56:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:56:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:57:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 02:57:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 03:02:49 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/index.php:86) in /home/earnhuun/solanaagent.earnton.online/index.php on line 23
+[05-Mar-2026 09:52:53 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 09:52:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 09:54:02 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 09:54:02 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:00:40 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:00:40 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:01:16 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:01:17 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:03:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:03:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:04:25 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:04:27 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:05:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:05:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:06:30 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:06:31 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:07:09 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:07:09 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:10:43 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:10:43 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:11:46 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:11:46 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:12:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:12:39 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:18:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:18:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:18:58 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:18:59 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:19:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:19:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:23:00 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:23:00 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:24:05 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:24:05 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:31:26 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:31:26 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:38:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:38:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:39:06 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 10:39:06 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:17:23 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:17:23 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:18:26 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:18:26 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:19:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:19:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:43:53 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 11:43:53 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:15:10 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:15:10 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:17:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:17:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:18:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:18:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:23:09 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:23:09 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:23:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:23:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:24:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:24:12 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:24:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:24:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:28:53 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 12:28:54 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 12:28:54 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 12:30:27 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:30:27 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:31:24 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 12:31:24 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 13:30:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 13:30:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 13:31:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 13:31:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 13:31:54 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 13:31:57 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 13:31:58 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 13:31:58 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 13:35:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 13:35:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:47:40 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:47:41 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:48:03 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:48:03 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:48:25 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:48:25 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:49:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:49:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:49:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:49:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:55:58 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:55:58 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:56:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:56:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:56:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:56:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:56:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 14:56:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:12:40 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:12:42 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:13:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:13:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:18:28 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:18:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:36:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:36:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:36:52 Africa/Lagos] PHP Warning:  Undefined array key "amount" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 660
+[05-Mar-2026 15:36:52 Africa/Lagos] PHP Warning:  Undefined array key "status" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 661
+[05-Mar-2026 15:36:52 Africa/Lagos] PHP Warning:  Undefined array key "amount" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 660
+[05-Mar-2026 15:36:52 Africa/Lagos] PHP Warning:  Undefined array key "status" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 661
+[05-Mar-2026 15:38:41 Africa/Lagos] PHP Warning:  Undefined array key "amount" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 660
+[05-Mar-2026 15:38:41 Africa/Lagos] PHP Warning:  Undefined array key "status" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 661
+[05-Mar-2026 15:38:41 Africa/Lagos] PHP Warning:  Undefined array key "amount" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 660
+[05-Mar-2026 15:38:41 Africa/Lagos] PHP Warning:  Undefined array key "status" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 661
+[05-Mar-2026 15:39:02 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:39:03 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:39:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:39:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:45:15 Africa/Lagos] PHP Warning:  Undefined array key "amount" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 660
+[05-Mar-2026 15:45:15 Africa/Lagos] PHP Warning:  Undefined array key "status" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 661
+[05-Mar-2026 15:45:15 Africa/Lagos] PHP Warning:  Undefined array key "amount" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 660
+[05-Mar-2026 15:45:15 Africa/Lagos] PHP Warning:  Undefined array key "status" in /home/earnhuun/solanaagent.earnton.online/src/Bot/Handler.php on line 661
+[05-Mar-2026 15:46:03 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:46:03 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:46:17 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:46:18 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:57:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:57:35 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 15:59:33 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 15:59:33 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 15:59:34 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 15:59:42 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 15:59:42 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 15:59:43 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 16:01:30 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 16:01:30 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 16:03:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 16:03:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 16:31:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 16:31:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 16:32:07 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:573
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(573): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 573
+[05-Mar-2026 16:45:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 16:45:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:49:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:49:02 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:49:52 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:49:53 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:50:12 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:50:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:51:07 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:51:08 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:54:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 17:54:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 18:14:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 18:14:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 18:20:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 18:20:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 18:34:19 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 18:34:19 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 18:35:58 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 18:36:14 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 18:36:42 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 18:36:43 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 18:36:43 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 18:48:27 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[05-Mar-2026 19:04:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 19:04:02 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 19:06:22 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 19:06:23 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 19:07:03 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[05-Mar-2026 19:07:04 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 09:18:57 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:86) in /home/earnhuun/solanaagent.earnton.online/management.php on line 23
+[06-Mar-2026 09:50:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 09:50:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 09:50:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 09:50:52 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 09:54:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 09:54:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 10:08:07 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 10:08:08 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 10:08:40 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 10:08:40 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 10:28:10 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 10:28:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 242
+[06-Mar-2026 10:45:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 10:45:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 10:51:22 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 10:51:23 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 10:51:57 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 10:51:57 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 10:57:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 10:57:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:01:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:01:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:01:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:01:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:04:25 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:573
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(573): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 573
+[06-Mar-2026 11:05:01 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:573
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(573): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 573
+[06-Mar-2026 11:05:07 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:573
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(573): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 573
+[06-Mar-2026 11:20:35 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:84) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[06-Mar-2026 11:20:59 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:700
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(700): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 700
+[06-Mar-2026 11:21:07 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:84) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[06-Mar-2026 11:21:07 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:84) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[06-Mar-2026 11:21:07 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:84) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[06-Mar-2026 11:25:42 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:700
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(700): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 700
+[06-Mar-2026 11:29:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:29:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:29:57 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:29:57 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:30:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:30:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:31:23 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 11:31:23 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:32:03 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:84) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[06-Mar-2026 14:32:14 UTC] PHP Parse error:  syntax error, unexpected token "use" in /home/earnhuun/solanaagent.earnton.online/setup-defi.php on line 26
+[06-Mar-2026 15:46:24 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:46:24 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:46:51 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:46:52 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:47:31 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:47:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:48:43 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:48:45 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:59:42 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 15:59:43 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 16:00:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 16:00:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:06:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:06:14 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:06:34 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:06:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:06:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:06:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:14:48 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:14:48 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:37:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:37:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:44:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:44:34 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:46:35 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:46:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:51:47 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:51:47 Africa/Lagos] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/earnhuun/solanaagent.earnton.online/src/Features/SPLToken.php on line 3
+[06-Mar-2026 17:52:10 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:52:10 Africa/Lagos] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/earnhuun/solanaagent.earnton.online/src/Features/SPLToken.php on line 3
+[06-Mar-2026 17:52:32 Africa/Lagos] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/earnhuun/solanaagent.earnton.online/src/Features/SPLToken.php on line 3
+[06-Mar-2026 17:52:36 Africa/Lagos] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/earnhuun/solanaagent.earnton.online/src/Features/SPLToken.php on line 3
+[06-Mar-2026 17:53:14 Africa/Lagos] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/earnhuun/solanaagent.earnton.online/src/Features/SPLToken.php on line 3
+[06-Mar-2026 17:54:40 Africa/Lagos] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/earnhuun/solanaagent.earnton.online/src/Features/SPLToken.php on line 3
+[06-Mar-2026 17:58:05 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 17:58:07 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 21:37:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 21:37:18 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 21:37:31 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 21:37:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 21:59:43 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 21:59:58 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 22:02:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 22:02:37 Africa/Lagos] PHP Fatal error:  Cannot declare class SolanaAgent\Solana\Keypair, because the name is already in use in /home/earnhuun/solanaagent.earnton.online/src/Solana/Transaction.php on line 11
+[06-Mar-2026 22:03:03 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[06-Mar-2026 22:03:07 Africa/Lagos] PHP Fatal error:  Cannot declare class SolanaAgent\Solana\Keypair, because the name is already in use in /home/earnhuun/solanaagent.earnton.online/src/Solana/Transaction.php on line 11
+[07-Mar-2026 01:28:48 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 01:28:53 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 01:41:30 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 01:41:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 01:50:10 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 01:50:16 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:00:22 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:00:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:18:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:18:16 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:22:35 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:22:44 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:23:47 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:23:47 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:46:28 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such column: key in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php:160
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(160): PDO->prepare()
+#1 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(167): SolanaAgent\Storage\Database->query()
+#2 /home/earnhuun/solanaagent.earnton.online/management.php(827): SolanaAgent\Storage\Database->fetch()
+#3 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 160
+[07-Mar-2026 02:46:35 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1013
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1013): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1013
+[07-Mar-2026 02:46:37 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:768
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(768): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 768
+[07-Mar-2026 02:46:42 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:768
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(768): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 768
+[07-Mar-2026 02:46:44 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:133) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 02:46:45 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:133) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 02:46:45 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:133) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 02:46:53 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such column: key in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php:160
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(160): PDO->prepare()
+#1 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(167): SolanaAgent\Storage\Database->query()
+#2 /home/earnhuun/solanaagent.earnton.online/management.php(827): SolanaAgent\Storage\Database->fetch()
+#3 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 160
+[07-Mar-2026 02:47:01 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:768
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(768): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 768
+[07-Mar-2026 02:47:19 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1013
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1013): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1013
+[07-Mar-2026 02:47:21 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such column: key in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php:160
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(160): PDO->prepare()
+#1 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(167): SolanaAgent\Storage\Database->query()
+#2 /home/earnhuun/solanaagent.earnton.online/management.php(827): SolanaAgent\Storage\Database->fetch()
+#3 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 160
+[07-Mar-2026 02:47:23 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:768
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(768): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 768
+[07-Mar-2026 02:47:27 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:780
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(780): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 780
+[07-Mar-2026 02:47:29 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:133) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 02:47:29 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:133) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 02:47:29 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:133) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 02:48:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:48:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:48:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:48:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:49:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:49:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:49:53 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:49:53 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:50:28 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:50:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:50:52 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:51:00 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:51:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:51:44 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:52:05 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 02:52:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 256
+[07-Mar-2026 09:02:44 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:133) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 09:03:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:03:42 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:03:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:03:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:05:56 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:06:02 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:06:23 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:06:24 Africa/Lagos] PHP Warning:  Undefined variable $X in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 69
+[07-Mar-2026 09:06:24 Africa/Lagos] PHP Warning:  Undefined variable $Y in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 69
+[07-Mar-2026 09:06:24 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:07:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:07:01 Africa/Lagos] PHP Warning:  Undefined variable $X in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 69
+[07-Mar-2026 09:07:01 Africa/Lagos] PHP Warning:  Undefined variable $Y in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 69
+[07-Mar-2026 09:07:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:13:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:13:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:13:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:13:54 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:14:18 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:14:18 Africa/Lagos] PHP Warning:  Undefined variable $X in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 69
+[07-Mar-2026 09:14:18 Africa/Lagos] PHP Warning:  Undefined variable $Y in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 69
+[07-Mar-2026 09:14:18 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:14:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:14:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:14:51 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:14:51 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:15:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:15:32 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:15:43 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:15:43 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:16:07 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:16:07 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:23:22 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:23:28 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:23:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:23:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:48:49 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:48:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:50:08 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:50:08 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:55:51 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:55:51 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:56:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:56:15 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:58:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 09:58:55 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:12:51 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1053
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1053): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1053
+[07-Mar-2026 10:12:57 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 10:13:04 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 10:13:05 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 10:17:09 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:776
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(776): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 776
+[07-Mar-2026 10:17:14 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:788
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(788): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 788
+[07-Mar-2026 10:17:22 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:776
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(776): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 776
+[07-Mar-2026 10:17:24 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:776
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(776): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 776
+[07-Mar-2026 10:17:28 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:776
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(776): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 776
+[07-Mar-2026 10:17:33 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:788
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(788): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 788
+[07-Mar-2026 10:17:36 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:788
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(788): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 788
+[07-Mar-2026 10:18:09 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such column: key in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php:179
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(179): PDO->prepare()
+#1 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(186): SolanaAgent\Storage\Database->query()
+#2 /home/earnhuun/solanaagent.earnton.online/management.php(835): SolanaAgent\Storage\Database->fetch()
+#3 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 179
+[07-Mar-2026 10:18:48 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:18:48 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:20:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:20:13 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:20:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:20:33 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:21:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:21:01 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:21:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:21:36 Africa/Lagos] PHP Warning:  Undefined variable $X in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 70
+[07-Mar-2026 10:21:36 Africa/Lagos] PHP Warning:  Undefined variable $Y in /home/earnhuun/solanaagent.earnton.online/src/Features/Strategy.php on line 70
+[07-Mar-2026 10:21:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:22:09 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:22:09 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:25:57 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:25:58 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:26:20 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:26:22 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:26:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:26:38 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:33:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:33:11 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:33:31 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:33:31 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:33:58 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:33:59 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:34:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:34:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:34:48 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 10:34:48 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 275
+[07-Mar-2026 11:26:45 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:12 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:14 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:15 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:15 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:15 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:17 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:49 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 no such column: key in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php:179
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(179): PDO->prepare()
+#1 /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php(186): SolanaAgent\Storage\Database->query()
+#2 /home/earnhuun/solanaagent.earnton.online/management.php(835): SolanaAgent\Storage\Database->fetch()
+#3 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 179
+[07-Mar-2026 11:27:53 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:53 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:27:54 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 11:28:15 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1053
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1053): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1053
+[07-Mar-2026 11:46:09 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1052
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1052): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1052
+[07-Mar-2026 11:46:55 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1052
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1052): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1052
+[07-Mar-2026 11:48:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 11:48:36 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 11:48:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 11:48:50 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 11:49:15 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1052
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1052): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1052
+[07-Mar-2026 11:50:04 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 11:50:10 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 11:50:17 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:789
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(789): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 789
+[07-Mar-2026 11:50:21 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 11:51:12 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 11:51:12 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:26:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:26:37 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:27:28 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:27:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:29:12 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:29:12 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:29:28 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:29:29 Africa/Lagos] PHP Warning:  compact(): Undefined variable $user_id in /home/earnhuun/solanaagent.earnton.online/src/Storage/Database.php on line 285
+[07-Mar-2026 12:30:10 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:137) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 12:31:07 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:136) in /home/earnhuun/solanaagent.earnton.online/management.php on line 19
+[07-Mar-2026 12:31:40 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1124
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1124): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1124
+[07-Mar-2026 12:31:42 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:776
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(776): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 776
+[07-Mar-2026 12:31:44 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:929
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(929): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 929
+[07-Mar-2026 12:31:53 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:929
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(929): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 929
+[07-Mar-2026 12:33:31 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:776
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(776): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 776
+[07-Mar-2026 13:59:43 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:137) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 13:59:47 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:137) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 14:00:04 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1051
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1051): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1051
+[07-Mar-2026 14:01:33 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1167
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1167): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1167
+[07-Mar-2026 14:01:59 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1238
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1238): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1238
+[07-Mar-2026 14:02:01 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:137) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 14:02:02 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:137) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 14:02:02 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:137) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 14:02:15 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:02:18 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1051
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1051): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1051
+[07-Mar-2026 14:02:20 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1167
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1167): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1167
+[07-Mar-2026 14:04:28 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1053
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1053): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1053
+[07-Mar-2026 14:04:32 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1124
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1124): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1124
+[07-Mar-2026 14:04:33 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:929
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(929): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 929
+[07-Mar-2026 14:06:04 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:929
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(929): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 929
+[07-Mar-2026 14:07:31 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1051
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1051): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1051
+[07-Mar-2026 14:08:02 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:08:46 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:08:56 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:08:58 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:789
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(789): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 789
+[07-Mar-2026 14:09:00 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:09:01 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:789
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(789): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 789
+[07-Mar-2026 14:09:03 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:09:05 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:09:07 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:777
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(777): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 777
+[07-Mar-2026 14:09:08 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1051
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1051): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1051
+[07-Mar-2026 14:12:07 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1064
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1064): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1064
+[07-Mar-2026 14:12:13 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1064
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1064): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1064
+[07-Mar-2026 14:12:26 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:794
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(794): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 794
+[07-Mar-2026 14:12:38 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1064
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1064): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1064
+[07-Mar-2026 14:14:41 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:1064
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1064): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1064
+[07-Mar-2026 14:15:00 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1253
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1253): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1253
+[07-Mar-2026 14:15:24 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:152) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 14:15:26 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:152) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 14:15:26 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:152) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 14:16:28 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:794
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(794): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 794
+[07-Mar-2026 14:16:45 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:794
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(794): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 794
+[07-Mar-2026 14:16:48 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:806
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(806): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 806
+[07-Mar-2026 14:17:00 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, int given in /home/earnhuun/solanaagent.earnton.online/management.php:794
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(794): htmlspecialchars()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 794
+[07-Mar-2026 14:25:34 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1254
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1254): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1254
+[07-Mar-2026 14:25:36 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1254
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1254): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1254
+[07-Mar-2026 14:28:59 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1254
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1254): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1254
+[07-Mar-2026 15:58:20 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/earnhuun/solanaagent.earnton.online/management.php:153) in /home/earnhuun/solanaagent.earnton.online/management.php on line 20
+[07-Mar-2026 16:00:54 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/earnhuun/solanaagent.earnton.online/management.php:1254
+Stack trace:
+#0 /home/earnhuun/solanaagent.earnton.online/management.php(1254): number_format()
+#1 {main}
+  thrown in /home/earnhuun/solanaagent.earnton.online/management.php on line 1254

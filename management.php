@@ -499,7 +499,7 @@ case 'dashboard': ?>
   <?php if ($solPrice): ?>
   <div class="sc cg"><div class="sc-icon" style="color:var(--accent)">◉</div>
     <div><div class="sc-lbl">SOL/USD</div>
-    <div class="sc-num">$<?= number_format($solPrice['usd'],2) ?></div>
+    <div class="sc-num" data-currency="usd">$<?= number_format($solPrice['usd'],2) ?></div>
     <div class="sc-sub <?= $solPrice['change_24h']>=0?'up':'dn' ?>">
       <?= $solPrice['change_24h']>=0?'▲':'▼' ?> <?= abs($solPrice['change_24h']) ?>% 24h
     </div></div></div>
@@ -907,8 +907,8 @@ $swapCount    = $db ? (int)($db->fetch("SELECT COUNT(*) c FROM transactions WHER
   <?php if ($liqAddr): ?>
   <div class="sc cg"><div class="sc-icon"><img src="https://assets.coingecko.com/coins/images/4128/small/solana.png" alt="SOL" class="tok-icon"></div>
     <div><div class="sc-lbl">Pool SOL</div>
-    <div class="sc-num"><?= $liqSolBal !== null ? number_format($liqSolBal,2) : '—' ?></div>
-    <div class="sc-sub">liquidity wallet</div></div></div>
+    <div class="sc-num"><?= $liqSolBal !== null ? number_format($liqSolBal,4) : '—' ?></div>
+    <div class="sc-sub">SOL · liquidity wallet</div></div></div>
 
   <div class="sc cb"><div class="sc-icon"><img src="https://assets.coingecko.com/coins/images/6319/small/usdc.png" alt="USDC" class="tok-icon"></div>
     <div><div class="sc-lbl">Pool USDC</div>
@@ -947,7 +947,7 @@ $swapCount    = $db ? (int)($db->fetch("SELECT COUNT(*) c FROM transactions WHER
                 <?= $liqSolBal !== null ? number_format($liqSolBal, 4) : '—' ?> <span style="font-size:13px">SOL</span>
               </div>
               <?php if ($solPrice && $liqSolBal !== null): ?>
-              <div style="font-size:11px;color:var(--tx3)">≈ $<?= number_format($liqSolBal * $solPrice['usd'], 2) ?></div>
+              <div style="font-size:11px;color:var(--tx3)">≈ USD $<?= number_format($liqSolBal * $solPrice['usd'], 2) ?></div>
               <?php endif ?>
             </div>
             <div style="color:var(--tx3);font-size:20px">+</div>
@@ -1403,13 +1403,14 @@ case 'settings': ?>
     if(el.classList.contains('ao'))setTimeout(function(){el.style.opacity='0';setTimeout(function(){el.remove()},300)},4000);
   });
   document.querySelectorAll('.sc-num').forEach(function(el){
+    var isCurrency=el.dataset.currency==='usd';
     var raw=el.textContent.replace(/[^0-9.]/g,''),target=parseFloat(raw);
     if(isNaN(target)||target===0)return;
     var isF=raw.indexOf('.')!==-1,steps=25,step=target/steps,cur=0,i=0;
     var iv=setInterval(function(){
       i++;cur=Math.min(cur+step,target);
-      el.textContent=isF?'$'+cur.toFixed(2):Math.round(cur).toLocaleString();
-      if(i>=steps){clearInterval(iv);el.textContent=isF?'$'+target.toFixed(2):target.toLocaleString()}
+      el.textContent=isCurrency?'$'+cur.toFixed(2):(isF?cur.toFixed(4):Math.round(cur).toLocaleString());
+      if(i>=steps){clearInterval(iv);el.textContent=isCurrency?'$'+target.toFixed(2):(isF?target.toFixed(4):target.toLocaleString())}
     },28);
   });
   document.querySelectorAll('.mono,.codeblock').forEach(function(el){

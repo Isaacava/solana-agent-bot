@@ -161,7 +161,7 @@ php setup-defi.php
 This creates and funds the bot's liquidity wallet that powers SOL ↔ USDC swaps on devnet.
 
 ### Step 5 — Set Telegram Webhook
-In Admin Panel → Settings → click **Set Webhook**
+In Agent Management Panel → Settings → click **Set Webhook**
 
 Or via curl:
 ```bash
@@ -194,7 +194,7 @@ Open Telegram, find your bot, send `/start` 🎉
 solana-agent/
 │
 ├── webhook.php            ← 📡  Telegram webhook handler
-├── admin.php              ← 🖥️  Admin dashboard (9 pages)
+├── management.php         ← 🖥️  Agent Management Panel (9 pages)
 ├── setup.php              ← ⚙️  First-time setup wizard
 ├── setup-defi.php         ← 💧  DeFi liquidity wallet setup
 ├── cron.php               ← ⏰  Scheduler runner (runs every minute)
@@ -264,7 +264,7 @@ solana-agent/
 ### Wallet
 | Command / Phrase | What happens |
 |---------|-------------|
-| `/wallet create` | Create a new encrypted Solana wallet |
+| `/wallet create` or say *"Create me a wallet"* or send a voice note | Create a new encrypted Solana wallet |
 | `/wallet list` | List all your wallets |
 | `/balance` | SOL + USDC balance with USD/NGN value |
 | `/export` | Export keypair (Phantom-compatible) |
@@ -390,7 +390,7 @@ User Private Key
 - Keys only decrypted in memory when signing a transaction
 - No plaintext key ever stored on disk or logged
 - Webhook requests validated via `X-Telegram-Bot-Api-Secret-Token`
-- Admin panel protected by session auth with bcrypt password
+- Agent Management Panel protected by session auth with bcrypt password
 
 ---
 
@@ -428,9 +428,9 @@ All tables are **auto-created** by `setup.php` — no manual SQL required.
 
 ---
 
-## 🖥️ Admin Panel
+## 🖥️ Agent Management Panel
 
-Access at `https://yourdomain.com/admin.php`
+Access at `https://yourdomain.com/management.php`
 
 | Page | What you see |
 |------|----------|
@@ -500,6 +500,19 @@ After every action executes, the bot saves a `✓`-prefixed note to chat history
 
 ---
 
+## 🔒 .htaccess
+
+The project ships with a `.htaccess` file that handles all server-level security automatically:
+
+- **Blocks direct web access** to `data/`, `config/`, and `src/` directories — no one can download your database or config by guessing a URL
+- **Blocks sensitive file types** — `.db`, `.log`, `.lock`, and `.md` files return 403 Forbidden
+- **Security headers** — sets `X-Content-Type-Options`, `X-Frame-Options`, `X-XSS-Protection`, and `Referrer-Policy` on every response
+- **Hides PHP errors** from browser output in production
+
+> ⚠️ **Important:** Delete or restrict access to `setup.php` and `setup-defi.php` after your first setup run — they have no authentication.
+
+---
+
 ## 📜 License
 
 Open source — MIT License. Built for the Superteam Nigeria DeFi Developer Challenge.
@@ -508,7 +521,7 @@ Open source — MIT License. Built for the Superteam Nigeria DeFi Developer Chal
 
 <div align="center">
 
-**Built for the naija. Runs on the blockchain.**  
+**Built for the naija streets. Runs on the blockchain.**  
 No app. No extension. Just chat. 🇳🇬
 
 </div>

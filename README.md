@@ -521,7 +521,7 @@ Open source — MIT License. Built for the Superteam Nigeria DeFi Developer Chal
 
 <div align="center">
 
-**Built for the naija streets. Runs on the blockchain.**  
+**Built for the Naija. Runs on the blockchain.**  
 No app. No extension. Just chat. 🇳🇬
 
 </div>

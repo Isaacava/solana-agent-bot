@@ -1,0 +1,119 @@
+<?php
+/**
+ * Solana Agent Bot - Configuration
+ * Edit this file after running setup.php
+ */
+
+define('ROOT_PATH',   __DIR__ . '/..');
+define('DATA_PATH',   ROOT_PATH . '/data');
+define('LOG_PATH',    DATA_PATH . '/logs');
+define('WALLET_PATH', DATA_PATH . '/wallets');
+define('SRC_PATH',    ROOT_PATH . '/src');
+
+return [
+
+    /* ──────────────────────────────────────────
+     * APP
+     * ────────────────────────────────────────── */
+    'app' => [
+        'name'     => 'Solana Agent Bot',
+        'version'  => '1.0.0',
+        'debug'    => false,
+        'timezone' => 'Africa/Lagos',
+        'base_url' => '',      // e.g. https://yourdomain.com
+    ],
+
+    /* ──────────────────────────────────────────
+     * TELEGRAM
+     * ────────────────────────────────────────── */
+    'telegram' => [
+        'bot_token'      => '',   // From @BotFather
+        'webhook_secret' => '',   // Optional secret header
+        'parse_mode'     => 'HTML',
+    ],
+
+    /* ──────────────────────────────────────────
+     * AI PROVIDERS  (all free tiers)
+     * ────────────────────────────────────────── */
+    'ai' => [
+        'primary'  => 'groq',     // groq | gemini | cohere
+        'fallback' => 'gemini',
+
+        'groq' => [
+            'api_key'  => '',     // https://console.groq.com
+            'model'    => 'llama-3.3-70b-versatile',
+            'endpoint' => 'https://api.groq.com/openai/v1/chat/completions',
+            'max_tokens' => 1024,
+        ],
+
+        'gemini' => [
+            'api_key'  => '',     // https://aistudio.google.com
+            'model'    => 'gemini-1.5-flash',
+            'endpoint' => 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
+            'max_tokens' => 1024,
+        ],
+
+        'cohere' => [
+            'api_key'  => '',     // https://dashboard.cohere.com
+            'model'    => 'command-r',
+            'endpoint' => 'https://api.cohere.ai/v1/chat',
+            'max_tokens' => 1024,
+        ],
+    ],
+
+    /* ──────────────────────────────────────────
+     * SOLANA
+     * ────────────────────────────────────────── */
+    'solana' => [
+        'rpc_mainnet'  => 'https://api.mainnet-beta.solana.com',
+        'rpc_devnet'   => 'https://api.devnet.solana.com',
+        'network'      => 'devnet',   // mainnet | devnet
+        'explorer'     => 'https://explorer.solana.com',
+        'commitment'   => 'confirmed',
+    ],
+
+    /* ──────────────────────────────────────────
+     * SECURITY
+     * ────────────────────────────────────────── */
+    'security' => [
+        'encryption_key'   => '',    // EXACTLY 32 characters
+        'admin_username'   => 'admin',
+        'admin_password'   => '',    // bcrypt hash (set via setup)
+        'session_lifetime' => 3600,
+        'jwt_secret'       => '',
+    ],
+
+    /* ──────────────────────────────────────────
+     * DATABASE
+     * ────────────────────────────────────────── */
+    'database' => [
+        'file' => DATA_PATH . '/agent.db',
+    ],
+
+    /* ──────────────────────────────────────────
+     * EXTERNAL APIs  (free tiers)
+     * ────────────────────────────────────────── */
+    'apis' => [
+        // Price data
+        'coingecko'  => 'https://api.coingecko.com/api/v3',
+        // NFT data – Magic Eden public API (no key needed)
+        'magic_eden' => 'https://api-mainnet.magiceden.dev/v2',
+        // Solana news via RSS / CryptoCompare
+        'news_rss'   => 'https://cointelegraph.com/rss/tag/solana',
+        // Helius (free tier – 100k reqs/day)
+        'helius_key' => '',   // https://dev.helius.xyz
+        'helius_rpc' => 'https://mainnet.helius-rpc.com',
+        // Solana Name Service (SNS)
+        'sns_api'    => 'https://sns-sdk-proxy.bonfida.workers.dev',
+    ],
+
+    /* ──────────────────────────────────────────
+     * FEATURES
+     * ────────────────────────────────────────── */
+    'features' => [
+        'price_alert_interval' => 60,    // cron check every N seconds
+        'scheduled_task_interval' => 30,
+        'max_wallets_per_user'   => 5,
+        'languages' => ['english', 'yoruba', 'igbo', 'hausa', 'pidgin'],
+    ],
+];

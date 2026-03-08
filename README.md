@@ -4,6 +4,16 @@
 
 Submission for **Superteam Nigeria — DeFi Developer Challenge: Agentic Wallets for AI Agents**
 
+--- 
+
+## 🎥 Demo
+
+**Twitter Thread + Bot Demo:**
+> 🔗 [https://twitter.com/mark67857](https://twitter.com/mark67857) — follow for live demos and updates
+
+![Agent Management Panel](https://i.ibb.co/nNynbygc/Screenshot-20260307-155931-Chrome.jpg)
+
+
 ---
 
 ## ✨ Features

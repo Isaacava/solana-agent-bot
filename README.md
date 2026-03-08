@@ -14,7 +14,7 @@ Submission for **Superteam Nigeria — DeFi Developer Challenge: Agentic Wallets
 **Agent website + Bot Demo:**
 > 🔗 [https://solanaagent.earnton.online](https://solanaagent.earnton.online) — Open link for website demos and Telegram bot demo
 
-![Agent Management Panel](https://i.ibb.co/nNynbygc)
+![Agent Management Panel](https://i.imgur.com/iPkxo7H.jpeg)
 
 
 ---

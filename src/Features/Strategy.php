@@ -439,3 +439,180 @@ class Strategy
             . "Strategy is still active — I'll retry next tick.");
     }
 }
+
+
+// ─── TrailingStop — standalone helper ────────────────────────────────────────
+
+/**
+ * Trailing stop logic — tracked in settings table.
+ * Updates the stop_loss in trading_strategies as price rises.
+ */
+class TrailingStop
+{
+    public static function update(Database $db, WalletManager $wm, Telegram $tg, float $price): void
+    {
+        // Find holding strategies that have a trailing_pct set
+        $rows = $db->fetchAll(
+            "SELECT s.*, se.value as trailing_cfg
+             FROM trading_strategies s
+             LEFT JOIN settings se ON se.key_name = CONCAT('trailing_', s.id)
+             WHERE s.phase = 'holding' AND s.status = 'active'"
+        );
+
+        foreach ($rows as $row) {
+            if (empty($row['trailing_cfg'])) continue;
+            $cfg = json_decode($row['trailing_cfg'], true) ?? [];
+            $trailingPct = (float)($cfg['pct'] ?? 0);
+            if ($trailingPct <= 0) continue;
+
+            $peakPrice   = max((float)($cfg['peak'] ?? 0), $price);
+            $newStop     = round($peakPrice * (1 - $trailingPct / 100), 2);
+            $currentStop = (float)$row['stop_loss'];
+
+            // Only move stop UP, never down
+            if ($newStop > $currentStop) {
+                $db->update('trading_strategies', ['stop_loss' => $newStop], ['id' => $row['id']]);
+                $telegramId = (int)$row['telegram_id'];
+                $tg->sendMessage($telegramId,
+                    "📈 <b>Trailing stop updated — Strategy #{$row['id']}</b>\n\n"
+                    . "🔝 Peak price: <b>\${$peakPrice}</b>\n"
+                    . "🛑 New stop loss: <b>\${$newStop}</b> (+{$trailingPct}% trail)\n"
+                    . "Your gains are being protected automatically 🛡️");
+            }
+
+            // Update peak
+            if ($price > (float)($cfg['peak'] ?? 0)) {
+                $cfg['peak'] = $price;
+                $db->query(
+                    "INSERT OR REPLACE INTO settings (key_name, value, updated_at) VALUES (?, ?, CURRENT_TIMESTAMP)",
+                    ["trailing_{$row['id']}", json_encode($cfg)]
+                );
+            }
+        }
+    }
+
+    public static function enable(Database $db, int $strategyId, float $trailingPct, float $currentPrice): void
+    {
+        $db->query(
+            "INSERT OR REPLACE INTO settings (key_name, value, updated_at) VALUES (?, ?, CURRENT_TIMESTAMP)",
+            ["trailing_{$strategyId}", json_encode(['pct' => $trailingPct, 'peak' => $currentPrice])]
+        );
+    }
+}
+
+
+// ─── PriceCascade — multi-target sell ─────────────────────────────────────────
+
+/**
+ * Cascade sell — sell portions of SOL at multiple price targets.
+ * Stored in settings as cascade_{userId}.
+ *
+ * Example:
+ *   Sell 30% at $120, 30% at $140, 40% at $160
+ */
+class PriceCascade
+{
+    public static function create(Database $db, int $userId, string $telegramId, array $targets): void
+    {
+        // targets = [['price' => 120, 'pct' => 30], ['price' => 140, 'pct' => 30], ...]
+        $db->query(
+            "INSERT OR REPLACE INTO settings (key_name, value, updated_at) VALUES (?, ?, CURRENT_TIMESTAMP)",
+            [
+                "cascade_{$userId}",
+                json_encode([
+                    'telegram_id' => $telegramId,
+                    'targets'     => $targets,
+                    'active'      => true,
+                ])
+            ]
+        );
+    }
+
+    public static function check(Database $db, WalletManager $wm, Telegram $tg, array $config, float $price): void
+    {
+        $rows = $db->fetchAll("SELECT key_name, value FROM settings WHERE key_name LIKE 'cascade_%'");
+        foreach ($rows as $row) {
+            $data = json_decode($row['value'], true) ?? [];
+            if (empty($data['active'])) continue;
+
+            $userId     = (int)str_replace('cascade_', '', $row['key_name']);
+            $telegramId = (int)($data['telegram_id'] ?? 0);
+            $targets    = $data['targets'] ?? [];
+            $modified   = false;
+
+            foreach ($targets as $i => &$target) {
+                if (!empty($target['executed'])) continue;
+                if ($price < (float)$target['price']) continue;
+
+                // Execute sell
+                $pct    = (float)$target['pct'];
+                $wallet = $db->getActiveWallet($userId);
+                if (!$wallet) continue;
+
+                try {
+                    $bal     = $wm->getBalance($wallet['public_key']);
+                    $solBal  = (float)($bal['sol'] ?? 0);
+                    $sellAmt = round($solBal * ($pct / 100), 6);
+
+                    if ($sellAmt < 0.001) {
+                        $target['executed'] = true;
+                        $modified           = true;
+                        continue;
+                    }
+
+                    $network     = $config['solana']['network'];
+                    $crypto      = new \SolanaAgent\Utils\Crypto($config['security']['encryption_key']);
+                    $swap        = new Swap($wm->getRpc(), $db, $crypto, $network);
+                    $keypair     = $wm->getKeypair($wallet);
+                    $quoteResult = $swap->getQuote('SOL', 'USDC', $sellAmt);
+
+                    if (!$quoteResult['ok']) continue;
+
+                    $result  = $swap->executeSwap($quoteResult['data'], $keypair, $wallet['public_key']);
+                    if (!$result['success']) continue;
+
+                    $cluster = $network === 'mainnet' ? '' : '?cluster=devnet';
+                    $sig     = $result['signature'];
+
+                    $tg->sendMessage($telegramId,
+                        "🎯 <b>Cascade target hit!</b>\n\n"
+                        . "💰 SOL price: <b>\${$price}</b>\n"
+                        . "📤 Sold: <b>{$pct}%</b> of your SOL ({$sellAmt} SOL)\n"
+                        . "🔗 <a href=\"https://explorer.solana.com/tx/{$sig}{$cluster}\">View TX</a>\n\n"
+                        . (count(array_filter($targets, fn($t) => empty($t['executed']))) > 1
+                            ? "⏭️ Watching for remaining targets…"
+                            : "✅ All cascade targets executed!"));
+
+                    $target['executed'] = true;
+                    $modified = true;
+
+                } catch (\Throwable $e) {
+                    \SolanaAgent\Utils\Logger::error("Cascade sell error: " . $e->getMessage());
+                }
+            }
+            unset($target);
+
+            if ($modified) {
+                // Check if all done
+                $allDone = !array_filter($targets, fn($t) => empty($t['executed']));
+                if ($allDone) $data['active'] = false;
+                $data['targets'] = $targets;
+                $db->query(
+                    "INSERT OR REPLACE INTO settings (key_name, value, updated_at) VALUES (?, ?, CURRENT_TIMESTAMP)",
+                    [$row['key_name'], json_encode($data)]
+                );
+            }
+        }
+    }
+
+    public static function format(array $targets, float $currentPrice): string
+    {
+        $msg = "🎯 <b>Price Cascade</b>\n\n";
+        foreach ($targets as $t) {
+            $done  = !empty($t['executed']);
+            $icon  = $done ? '✅' : ($currentPrice >= $t['price'] ? '🔄' : '⏳');
+            $msg  .= "{$icon} Sell <b>{$t['pct']}%</b> at <b>\${$t['price']}</b>\n";
+        }
+        return $msg;
+    }
+}

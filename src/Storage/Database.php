@@ -168,6 +168,11 @@ class Database
             $this->pdo->exec("ALTER TABLE settings ADD COLUMN key TEXT");
         } catch (\Throwable $ignored) {}
 
+        // ── Add strategy_type column to trading_strategies ────────────────────
+        try {
+            $this->pdo->exec("ALTER TABLE trading_strategies ADD COLUMN strategy_type TEXT DEFAULT 'CONSERVATIVE'");
+        } catch (\Throwable $ignored) {}
+
         // ── Data repair: ensure each user has exactly ONE active wallet ─────────
         // If a user somehow has multiple is_active=1 wallets (e.g. from old versions),
         // keep only the most recently created one as active.

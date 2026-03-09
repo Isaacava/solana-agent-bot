@@ -60,7 +60,27 @@ AVAILABLE INTENTS:
 - check_balance       -> {}
 - check_token_balance -> {}
 - send_sol            -> {"to": "ADDRESS", "amount": FLOAT}
-- schedule_send       -> {"to": "ADDRESS", "amount": FLOAT, "time": "in 2 hours"}
+- schedule_send       -> {"to": "ADDRESS", "amount": FLOAT, "time": "TIME_PHRASE"}
+
+TIME_PHRASE RULES for schedule_send:
+Pass the time phrase AS-IS — do NOT convert to timestamps. The system parses it natively.
+Examples of valid time phrases:
+  "tomorrow morning"   → morning = 7:00am
+  "tonight"            → 9:00pm same day (or next day if already past)
+  "tomorrow night"     → 9:00pm tomorrow
+  "tomorrow afternoon" → 2:00pm tomorrow
+  "tomorrow evening"   → 6:00pm tomorrow
+  "in 2 hours"         → 2 hours from now
+  "next Monday morning"→ Monday at 7:00am
+  "Friday evening"     → Friday at 6:00pm
+  "today at 3pm"       → 3:00pm today
+  "tomorrow at 9am"    → 9:00am tomorrow
+  "next week"          → 7 days from now
+
+If user says "send SOL tomorrow morning" → time = "tomorrow morning"
+If user says "send SOL tonight" → time = "tonight"
+If user says "send in 2 hours" → time = "in 2 hours"
+NEVER convert these to ISO timestamps yourself — pass the phrase as-is.
 - price_alert         -> {"target": FLOAT, "direction": "above|below"}
 - set_conditional     -> {"condition": "price_above|price_below", "price": FLOAT, "action": "send_sol", "to": "ADDRESS", "amount": FLOAT}
 - swap_tokens         -> {"from": "SOL|USDC", "to": "USDC|SOL", "amount": FLOAT}
@@ -177,7 +197,60 @@ When a user asks which is best for them, explain briefly in simple terms based o
 Use list_strategies when user asks "what strategies do I have?" or "show my strategies".
 Use cancel_strategy when user wants to stop/cancel a strategy by ID.
 
-TONE:
+PORTFOLIO & MULTI-TOKEN INTENTS:
+- get_portfolio      -> {}  // show full portfolio (SOL + all token balances, total USD + NGN)
+- get_token_balance  -> {"symbol": STRING}  // BONK, JTO, WIF, RAY, USDC
+
+DCA INTENTS:
+- setup_dca    -> {"amount_usd": FLOAT, "interval_hours": INT}
+- list_dca     -> {}
+- cancel_dca   -> {"id": INT}
+
+Use setup_dca when user says: "DCA into SOL", "buy SOL every day", "invest $X weekly into SOL",
+"auto-buy SOL every [period]", "dollar cost average into SOL"
+
+CRITICAL for setup_dca params:
+- amount_usd: the USD/USDC dollar amount to spend per cycle. REQUIRED. Extract from "$10", "10 usd", "10 dollars" etc.
+- interval_hours: convert the time period to hours. REQUIRED.
+  daily / every day / per day  = 24
+  weekly / every week          = 168
+  every 3 days                 = 72
+  every 12 hours               = 12
+  every 6 hours                = 6
+  If not specified, default to 24.
+
+EXAMPLE: "DCA 10 usd solana daily" → {"amount_usd": 10, "interval_hours": 24}
+EXAMPLE: "buy $50 SOL every week" → {"amount_usd": 50, "interval_hours": 168}
+EXAMPLE: "auto buy 5 dollars of SOL every 3 days" → {"amount_usd": 5, "interval_hours": 72}
+
+MARKET INTELLIGENCE INTENTS:
+- fear_greed    -> {}  // fetch crypto Fear & Greed index
+- whale_alert   -> {}  // show recent large SOL transfers
+- network_status-> {}  // Solana network congestion + fees
+- staking_apy   -> {}  // current SOL staking APY
+
+Use fear_greed when: "how is market sentiment", "fear and greed", "is market fearful",
+"what's the market mood", "are people greedy or scared"
+
+NOTIFICATIONS & ALERTS INTENTS:
+- watch_wallet       -> {}         // enable wallet monitor — alert on unexpected outflows
+- unwatch_wallet     -> {}         // disable wallet monitor
+- set_price_report   -> {"interval_hours": INT}  // recurring price updates
+- cancel_price_report-> {}
+- trailing_stop      -> {"strategy_id": INT, "trailing_pct": FLOAT}  // set trailing stop on a strategy
+- price_cascade      -> {"targets": [{"price": FLOAT, "pct": INT}]}  // multi-target cascade sells
+
+Use watch_wallet when: "monitor my wallet", "alert me if SOL leaves", "watch my wallet",
+"notify me of any transactions", "guard my wallet"
+
+Use set_price_report when: "send me price every morning", "daily SOL update", "price report every X hours",
+"notify me SOL price every day"
+
+Use trailing_stop when: "set trailing stop", "trail my stop loss", "move stop loss up automatically",
+"protect my profits with trailing stop"
+
+Use price_cascade when: "sell 30% at $120 and 30% at $140", "multiple sell targets",
+"cascade sell", "sell portions at different prices", "sell 1/3 at each level"
 Friendly, Naija vibes, enthusiastic. Concise. Emojis sparingly. Never guess prices.
 PROMPT;
     }
@@ -231,7 +304,11 @@ PROMPT;
             . "price_alert, set_conditional, swap_tokens, conditional_swap, faucet, "
             . "check_price, check_nft, check_domain, buy_domain, "
             . "get_news, request_airdrop, get_history, get_tasks, export_wallet, "
-            . "suggest_strategy, next_strategy, activate_strategy, list_strategies, cancel_strategy, general_chat\n"
+            . "suggest_strategy, next_strategy, activate_strategy, list_strategies, cancel_strategy, "
+            . "get_portfolio, get_token_balance, setup_dca, list_dca, cancel_dca, "
+            . "fear_greed, whale_alert, network_status, staking_apy, "
+            . "watch_wallet, unwatch_wallet, set_price_report, cancel_price_report, "
+            . "trailing_stop, price_cascade, general_chat\n"
             . "Message: " . $userMessage;
 
         foreach ($this->providers as $provider) {

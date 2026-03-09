@@ -64,6 +64,17 @@ if (isLoggedIn()) {
         $stats['total_swaps']       = (int)$db->fetch("SELECT COUNT(*) c FROM conditional_tasks WHERE triggered=1 AND action_type IN ('swap_sol_usdc','swap_usdc_sol')")['c'];
         $stats['active_strategies'] = (int)$db->fetch("SELECT COUNT(*) c FROM trading_strategies WHERE status='active'")['c'];
         $stats['done_strategies']   = (int)$db->fetch("SELECT COUNT(*) c FROM trading_strategies WHERE status IN ('completed','stopped')")['c'];
+        // DCA + Monitor stats
+        try {
+            $stats['active_dca']    = (int)$db->fetch("SELECT COUNT(*) c FROM dca_tasks WHERE status='active'")['c'];
+            $stats['total_dca_runs']= (int)$db->fetch("SELECT COALESCE(SUM(runs_count),0) c FROM dca_tasks")['c'];
+        } catch (\Throwable $e) { $stats['active_dca'] = 0; $stats['total_dca_runs'] = 0; }
+        try {
+            $allSettings = $db->fetchAll("SELECT key_name FROM settings WHERE key_name LIKE 'wallet_watcher_%'");
+            $stats['wallet_watchers'] = count($allSettings);
+            $allReports = $db->fetchAll("SELECT key_name FROM settings WHERE key_name LIKE 'price_report_%'");
+            $stats['price_reports']   = count($allReports);
+        } catch (\Throwable $e) { $stats['wallet_watchers'] = 0; $stats['price_reports'] = 0; }
 
     } catch (\Throwable $e) { $dbError = $e->getMessage(); }
     try { $solPrice = Price::getSolPrice(); } catch (\Throwable $ignored) {}
@@ -140,6 +151,8 @@ $navItems = [
     'goals'        => ['🎯', 'Goals'],
     'defi'         => ['🔄', 'DeFi'],
     'strategies'   => ['🤖', 'Strategies'],
+    'dca'          => ['🔁', 'DCA Tasks'],
+    'monitor'      => ['👁', 'Monitor'],
     'tasks'        => ['⏲', 'Scheduler'],
     'transactions' => ['⇄', 'Transactions'],
     'logs'         => ['≡', 'Logs'],
@@ -495,6 +508,16 @@ case 'dashboard': ?>
     <div><div class="sc-lbl">Strategies</div>
     <div class="sc-num"><?= number_format($stats['active_strategies']??0) ?></div>
     <div class="sc-sub"><?= ($stats['done_strategies']??0) ?> completed</div></div></div>
+
+  <div class="sc co"><div class="sc-icon" style="color:var(--orange)">🔁</div>
+    <div><div class="sc-lbl">DCA Tasks</div>
+    <div class="sc-num"><?= number_format($stats['active_dca']??0) ?></div>
+    <div class="sc-sub"><?= ($stats['total_dca_runs']??0) ?> total runs</div></div></div>
+
+  <div class="sc cp"><div class="sc-icon" style="color:var(--purple)">👁</div>
+    <div><div class="sc-lbl">Monitors</div>
+    <div class="sc-num"><?= number_format(($stats['wallet_watchers']??0)+($stats['price_reports']??0)) ?></div>
+    <div class="sc-sub"><?= ($stats['wallet_watchers']??0) ?> wallets · <?= ($stats['price_reports']??0) ?> reports</div></div></div>
 
   <?php if ($solPrice): ?>
   <div class="sc cg"><div class="sc-icon" style="color:var(--accent)">◉</div>
@@ -1111,8 +1134,13 @@ case 'strategies': ?>
   <span class="badge bg" style="margin-left:4px"><?= $stats['done_strategies']??0 ?> completed</span>
 </div>
 <p style="color:var(--tx3);font-size:13px;margin-bottom:20px">
-  Autonomous buy/sell strategies. The agent monitors price every minute, buys at target,
-  holds, then sells at profit or stops at the stop-loss automatically.
+  Autonomous buy/sell strategies. Price is checked every 5 seconds — the agent buys at target,
+  holds, then sells at profit or stop-loss automatically. 5 strategy types available, each tuned to different market conditions:
+  <span style="color:var(--accent)">🛡️ Conservative</span> ·
+  <span style="color:var(--orange)">🔥 Aggressive</span> ·
+  <span style="color:var(--yellow)">⚡ Scalp</span> ·
+  <span style="color:var(--purple)">🚀 Momentum</span> ·
+  <span style="color:var(--blue)">💎 Deep Value</span>
 </p>
 
 <?php
@@ -1154,19 +1182,27 @@ foreach ($allStrategies as $s) {
   <div class="card"><div class="cb">
     <p class="empty">No strategies yet.</p>
     <p style="text-align:center;font-size:13px;color:var(--tx3);margin-top:8px">
-      Agents start strategies by saying <em>"grow my SOL"</em> or <em>"set up auto trading for me"</em>.
+      Agents start strategies by saying <em>"grow my SOL"</em> or <em>"show another strategy"</em> to cycle through all 5 types.
     </p>
   </div></div>
 <?php else: ?>
 <div class="card"><div class="cb cb-np">
 <div class="tw"><table>
   <thead><tr>
-    <th>Agent</th><th>Label</th><th>Phase</th>
+    <th>Agent</th><th>Type</th><th>Label</th><th>Phase</th>
     <th>Buy at</th><th>Sell at</th><th>Stop</th>
     <th>Amount</th><th>Est P&L</th><th>Buy TX</th><th>Created</th>
   </tr></thead>
   <tbody>
-  <?php foreach ($allStrategies as $s):
+  <?php
+  $stratTypeMap = [
+    'CONSERVATIVE' => ['🛡️', 'Conservative', 'var(--accent)'],
+    'AGGRESSIVE'   => ['🔥', 'Aggressive',   'var(--orange)'],
+    'SCALP'        => ['⚡', 'Scalp',         'var(--yellow)'],
+    'MOMENTUM'     => ['🚀', 'Momentum',      'var(--purple)'],
+    'DEEP_VALUE'   => ['💎', 'Deep Value',    'var(--blue)'],
+  ];
+  foreach ($allStrategies as $s):
     $agent = $s['username'] ? '@'.$s['username'] : ($s['first_name'] ?? 'Agent');
     $phase = $s['phase'] ?? $s['status'];
     [$pClass,$pLabel] = match($phase) {
@@ -1177,6 +1213,8 @@ foreach ($allStrategies as $s) {
       'cancelled'   => ['bgr', '❌ Cancelled'],
       default       => ['bgr', $phase],
     };
+    $sType    = strtoupper($s['strategy_type'] ?? 'CONSERVATIVE');
+    $typeInfo = $stratTypeMap[$sType] ?? $stratTypeMap['CONSERVATIVE'];
     $pnl      = $s['est_profit_pct'] !== null ? '+'.number_format((float)$s['est_profit_pct'],1).'%' : '—';
     $buyPrice  = $s['buy_price']  !== null ? '$'.number_format((float)$s['buy_price'],2)  : '—';
     $sellPrice = $s['sell_price'] !== null ? '$'.number_format((float)$s['sell_price'],2) : '—';
@@ -1186,6 +1224,10 @@ foreach ($allStrategies as $s) {
   ?>
   <tr>
     <td><?= htmlspecialchars($agent) ?></td>
+    <td style="white-space:nowrap">
+      <span style="font-size:13px"><?= $typeInfo[0] ?></span>
+      <span style="font-size:11px;color:<?= $typeInfo[2] ?>;font-weight:600;margin-left:3px"><?= $typeInfo[1] ?></span>
+    </td>
     <td class="mono" style="font-size:11px"><?= htmlspecialchars($s['label'] ?? '#'.$s['id']) ?></td>
     <td><span class="badge <?= $pClass ?>"><?= $pLabel ?></span></td>
     <td class="mono" style="color:var(--accent)"><?= $buyPrice ?></td>
@@ -1210,6 +1252,227 @@ foreach ($allStrategies as $s) {
 <?php break;
 
 /* ═══════════════════════════════════════ SCHEDULER ══════════════════════════════════════════ */
+case 'dca': ?>
+<div class="ph">
+  <h2>DCA Tasks</h2>
+  <span class="badge bo"><?= $stats['active_dca']??0 ?> active</span>
+  <span class="badge bgr" style="margin-left:4px"><?= $stats['total_dca_runs']??0 ?> total runs</span>
+</div>
+<p style="color:var(--tx3);font-size:13px;margin-bottom:20px">
+  Dollar-cost averaging tasks automatically buy SOL with USDC on a recurring schedule.
+  Agents set these up by saying things like <em>"DCA $10 into SOL daily"</em> or <em>"buy SOL every week with 20 USDC"</em>.
+</p>
+
+<?php
+$dcaTasks = [];
+try {
+  $dcaTasks = $db ? $db->fetchAll(
+    'SELECT d.*,u.username,u.first_name FROM dca_tasks d
+     JOIN users u ON d.user_id=u.id ORDER BY d.status ASC, d.created_at DESC LIMIT 60') : [];
+} catch (\Throwable $e) {}
+?>
+<?php if(empty($dcaTasks)):?>
+  <div class="card"><div class="cb"><p class="empty">No DCA tasks yet.</p>
+    <p style="text-align:center;font-size:12px;color:var(--tx3);margin-top:8px">
+      Agents create DCA tasks by saying things like <em>"buy $10 SOL daily"</em> or <em>"DCA $50 weekly into SOL"</em></p>
+  </div></div>
+<?php else:?>
+<div class="card"><div class="cb cb-np">
+<div class="tw"><table>
+  <thead><tr>
+    <th>Agent</th><th>Amount</th><th>Interval</th><th>Next Run</th><th>Runs</th><th>Status</th><th>Label</th>
+  </tr></thead>
+  <tbody>
+  <?php foreach($dcaTasks as $d):
+    $agent = $d['username']?'@'.$d['username']:($d['first_name']??'#'.$d['user_id']);
+    $hrs   = (int)$d['interval_hours'];
+    $intLbl = match(true) {
+      $hrs === 1   => 'Hourly',
+      $hrs === 6   => 'Every 6h',
+      $hrs === 12  => 'Every 12h',
+      $hrs === 24  => 'Daily',
+      $hrs === 72  => 'Every 3 days',
+      $hrs === 168 => 'Weekly',
+      default      => "Every {$hrs}h",
+    };
+    $isActive = $d['status'] === 'active';
+    $nextRun  = strtotime($d['next_run']);
+    $overdue  = $isActive && $nextRun < time();
+  ?>
+  <tr>
+    <td><?=htmlspecialchars($agent)?></td>
+    <td class="mono" style="color:var(--accent)">$<?=number_format($d['amount_usd'],2)?></td>
+    <td><span class="badge bp"><?=$intLbl?></span></td>
+    <td class="muted <?=$overdue?'style="color:var(--red)"':''?>">
+      <?=date('M d, H:i', $nextRun)?><?=$overdue?' ⚡':'';?>
+    </td>
+    <td style="color:var(--tx2)"><?=$d['runs_count']?></td>
+    <td><span class="badge <?=$isActive?'bg':'bgr'?>"><?=$d['status']?></span></td>
+    <td class="muted" style="font-size:11px"><?=htmlspecialchars($d['label']??'—')?></td>
+  </tr>
+  <?php endforeach?>
+  </tbody>
+</table></div>
+</div></div>
+<?php endif?>
+
+<?php break;
+
+/* ═══════════════════════════════════════ MONITOR ════════════════════════════════════════════ */
+case 'monitor': ?>
+<div class="ph">
+  <h2>Monitor</h2>
+  <span class="badge bp"><?= ($stats['wallet_watchers']??0) + ($stats['price_reports']??0) ?> active</span>
+</div>
+<p style="color:var(--tx3);font-size:13px;margin-bottom:20px">
+  Wallet monitors alert agents when their SOL balance drops. Price reports send scheduled price updates.
+  Agents configure these with commands like <em>"watch my wallet"</em> or <em>"send me price every hour"</em>.
+</p>
+
+<?php
+$allWatchers = $allReports = $allCascades = $allTrailing = [];
+try {
+  $allWatchers = $db ? $db->fetchAll(
+    "SELECT s.*,u.username,u.first_name FROM settings s
+     JOIN users u ON CAST(REPLACE(s.key_name,'wallet_watcher_','') AS INTEGER)=u.id
+     WHERE s.key_name LIKE 'wallet_watcher_%' ORDER BY s.updated_at DESC") : [];
+} catch (\Throwable $e) {}
+try {
+  $allReports = $db ? $db->fetchAll(
+    "SELECT s.*,u.username,u.first_name FROM settings s
+     JOIN users u ON CAST(REPLACE(s.key_name,'price_report_','') AS INTEGER)=u.id
+     WHERE s.key_name LIKE 'price_report_%' ORDER BY s.updated_at DESC") : [];
+} catch (\Throwable $e) {}
+try {
+  $allTrailing = $db ? $db->fetchAll(
+    "SELECT s.*,u.username,u.first_name FROM settings s
+     JOIN users u ON CAST(SUBSTRING(s.key_name,10,INSTR(SUBSTR(s.key_name,10),'_')-1) AS INTEGER)=u.id
+     WHERE s.key_name LIKE 'trailing_%' ORDER BY s.updated_at DESC LIMIT 20") : [];
+} catch (\Throwable $e) {}
+try {
+  $allCascades = $db ? $db->fetchAll(
+    "SELECT s.*,u.username,u.first_name FROM settings s
+     JOIN users u ON CAST(REPLACE(s.key_name,'cascade_','') AS INTEGER)=u.id
+     WHERE s.key_name LIKE 'cascade_%' ORDER BY s.updated_at DESC") : [];
+} catch (\Throwable $e) {}
+?>
+
+<div class="g2">
+  <div class="card">
+    <div class="ch"><h3>👁 Wallet Watchers</h3>
+      <span class="ch-badge"><?=count($allWatchers)?> active</span></div>
+    <div class="cb">
+      <?php if(empty($allWatchers)):?><p class="empty">No wallet watchers set.</p>
+        <p style="font-size:12px;color:var(--tx3);margin-top:6px">Agents enable with: <em>"watch my wallet"</em></p>
+      <?php else:?>
+      <ul class="tlist">
+      <?php foreach($allWatchers as $w):
+        $data  = json_decode($w['value']??'{}',true)??[];
+        $agent = $w['username']?'@'.$w['username']:($w['first_name']??'?');
+        $base  = number_format($data['baseline_sol']??0, 4);
+      ?>
+        <li class="titem">
+          <span class="ttype">👁</span>
+          <span class="tdetail"><?=htmlspecialchars($agent)?></span>
+          <span class="muted" style="font-size:11px">baseline <?=$base?> SOL</span>
+          <span class="badge bg">watching</span>
+        </li>
+      <?php endforeach?>
+      </ul>
+      <?php endif?>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ch"><h3>📊 Price Reports</h3>
+      <span class="ch-badge"><?=count($allReports)?> scheduled</span></div>
+    <div class="cb">
+      <?php if(empty($allReports)):?><p class="empty">No price reports set.</p>
+        <p style="font-size:12px;color:var(--tx3);margin-top:6px">Agents enable with: <em>"send me price every hour"</em></p>
+      <?php else:?>
+      <ul class="tlist">
+      <?php foreach($allReports as $r):
+        $data      = json_decode($r['value']??'{}',true)??[];
+        $agent     = $r['username']?'@'.$r['username']:($r['first_name']??'?');
+        $intHrs    = (int)($data['interval_hours']??1);
+        $intLabel  = match(true){
+          $intHrs===1  => 'Hourly',
+          $intHrs===6  => 'Every 6h',
+          $intHrs===12 => 'Every 12h',
+          $intHrs===24 => 'Daily',
+          default      => "Every {$intHrs}h",
+        };
+      ?>
+        <li class="titem">
+          <span class="ttype">📊</span>
+          <span class="tdetail"><?=htmlspecialchars($agent)?></span>
+          <span class="badge bp"><?=$intLabel?></span>
+          <span class="badge bg">active</span>
+        </li>
+      <?php endforeach?>
+      </ul>
+      <?php endif?>
+    </div>
+  </div>
+</div>
+
+<div class="g2">
+  <div class="card">
+    <div class="ch"><h3>📈 Trailing Stops</h3>
+      <span class="ch-badge"><?=count($allTrailing)?> set</span></div>
+    <div class="cb">
+      <?php if(empty($allTrailing)):?><p class="empty">No trailing stops configured.</p>
+        <p style="font-size:12px;color:var(--tx3);margin-top:6px">Set via: <em>"set trailing stop 3%"</em></p>
+      <?php else:?>
+      <ul class="tlist">
+      <?php foreach($allTrailing as $t):
+        $data  = json_decode($t['value']??'{}',true)??[];
+        $agent = $t['username']?'@'.$t['username']:($t['first_name']??'?');
+        $pct   = number_format($data['trailing_pct']??0,1);
+        $stop  = number_format($data['current_stop']??0,2);
+      ?>
+        <li class="titem">
+          <span class="ttype">📈</span>
+          <span class="tdetail"><?=htmlspecialchars($agent)?> — <?=$pct?>% trail</span>
+          <span class="muted" style="font-size:11px">stop $<?=$stop?></span>
+          <span class="badge by">active</span>
+        </li>
+      <?php endforeach?>
+      </ul>
+      <?php endif?>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ch"><h3>💧 Price Cascades</h3>
+      <span class="ch-badge"><?=count($allCascades)?> set</span></div>
+    <div class="cb">
+      <?php if(empty($allCascades)):?><p class="empty">No price cascades set.</p>
+        <p style="font-size:12px;color:var(--tx3);margin-top:6px">Set via: <em>"sell 0.2 SOL at each: $170, $180, $200"</em></p>
+      <?php else:?>
+      <ul class="tlist">
+      <?php foreach($allCascades as $c):
+        $data    = json_decode($c['value']??'{}',true)??[];
+        $agent   = $c['username']?'@'.$c['username']:($c['first_name']??'?');
+        $targets = $data['targets']??[];
+        $done    = count(array_filter($targets, fn($t) => !empty($t['executed'])));
+        $total   = count($targets);
+      ?>
+        <li class="titem">
+          <span class="ttype">💧</span>
+          <span class="tdetail"><?=htmlspecialchars($agent)?></span>
+          <span class="muted" style="font-size:11px"><?=$done?>/<?=$total?> targets hit</span>
+          <span class="badge <?=$done===$total?'bgr':'bg'?>"><?=$done===$total?'complete':'active'?></span>
+        </li>
+      <?php endforeach?>
+      </ul>
+      <?php endif?>
+    </div>
+  </div>
+</div>
+
+<?php break;
+
 case 'tasks': ?>
 <div class="ph"><h2>Scheduler</h2></div>
 <div class="g2">
@@ -1231,6 +1494,42 @@ case 'tasks': ?>
           </span>
           <span class="ttime"><?=date('M d H:i',strtotime($t['execute_at']))?></span>
           <span class="badge <?=$t['executed']?'bgr':'by'?>"><?=$t['executed']?'done':'pending'?></span>
+        </li>
+      <?php endforeach?>
+      </ul>
+      <?php endif?>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ch"><h3>🔁 DCA Tasks</h3>
+      <span class="ch-badge"><?= $stats['active_dca']??0 ?> active</span></div>
+    <div class="cb">
+      <?php
+      $dcaList = [];
+      try { $dcaList = $db?$db->fetchAll(
+        "SELECT d.*,u.username,u.first_name FROM dca_tasks d
+         JOIN users u ON d.user_id=u.id WHERE d.status='active'
+         ORDER BY d.next_run ASC LIMIT 20"):[];
+      } catch (\Throwable $e) {}
+      ?>
+      <?php if(empty($dcaList)):?><p class="empty">No active DCA tasks.</p><?php else:?>
+      <ul class="tlist">
+      <?php foreach($dcaList as $d):
+        $agent = $d['username']?'@'.$d['username']:($d['first_name']??'');
+        $hrs = (int)$d['interval_hours'];
+        $intLbl = match(true){
+          $hrs===24  => 'Daily', $hrs===168 => 'Weekly',
+          $hrs===72  => '3-day',  default    => "{$hrs}h",
+        };
+      ?>
+        <li class="titem">
+          <span class="ttype">DCA</span>
+          <span class="tdetail">$<?=number_format($d['amount_usd'],2)?> → SOL
+            <span class="muted" style="margin-left:6px"><?=htmlspecialchars($agent)?></span>
+          </span>
+          <span class="ttime"><?=date('M d H:i',strtotime($d['next_run']))?></span>
+          <span class="badge bp"><?=$intLbl?></span>
         </li>
       <?php endforeach?>
       </ul>
@@ -1357,6 +1656,7 @@ case 'settings': ?>
     <div class="cb">
       <ul class="il">
         <li class="ii"><span class="ik">Network</span><span class="iv"><?=strtoupper($config['solana']['network']??'devnet')?></span></li>
+        <li class="ii"><span class="ik">Timezone</span><span class="iv"><?=htmlspecialchars($config['app']['timezone']??'Africa/Lagos')?></span></li>
         <li class="ii"><span class="ik">AI Primary</span><span class="iv"><?=ucfirst($config['ai']['primary']??'—')?></span></li>
         <li class="ii"><span class="ik">AI Fallback</span><span class="iv"><?=ucfirst($config['ai']['fallback']??'—')?></span></li>
         <li class="ii"><span class="ik">Groq Key</span><span class="iv"><?=!empty($config['ai']['groq']['api_key'])?'✅':'❌'?></span></li>

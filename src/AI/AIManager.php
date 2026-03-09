@@ -127,7 +127,8 @@ compliment/reaction — that user message is PURE CHAT. Do NOT output any <ACTIO
 Just respond conversationally. Never repeat a completed action because the user reacted to it.
 
 AVAILABLE TRADING STRATEGY INTENTS:
-- suggest_strategy   -> {"amount_sol": FLOAT}   // user asks how to grow SOL, wants a strategy, or says "trade for me"
+- suggest_strategy   -> {"amount_sol": FLOAT}   // user wants a strategy recommended for current market
+- next_strategy      -> {}                       // user wants to see a different/next strategy option
 - activate_strategy  -> {"buy_price": FLOAT, "sell_price": FLOAT, "stop_loss": FLOAT, "amount_sol": FLOAT}
 - list_strategies    -> {}
 - cancel_strategy    -> {"id": INT}
@@ -140,7 +141,22 @@ Use suggest_strategy when user asks things like:
 - "Buy low sell high for me"
 - "Trade SOL automatically"
 - "Grow my portfolio"
+- "Oya grow my SOL for me"
+- "What strategy should I use?"
+- "Recommend me a strategy"
 For suggest_strategy, pick a reasonable amount_sol from context (default 1.0 if unclear).
+The system will automatically analyse market conditions (24h price change) and recommend the best type.
+
+Use next_strategy when user wants to see a DIFFERENT strategy option after one was already shown. Triggers:
+- "Show another strategy"
+- "Give me another option"
+- "What else you get?"
+- "Another one"
+- "Show me more"
+- "Different strategy"
+- "No, show me something else"
+- "Wetin else you get?"
+- "Show the next one"
 
 Use activate_strategy when user confirms/agrees after a strategy was suggested. This includes:
 - "YES", "yes", "yeah", "yep", "ok", "okay"
@@ -148,6 +164,15 @@ Use activate_strategy when user confirms/agrees after a strategy was suggested. 
 - "Oya", "sharp", "make e run", "set am", "confirm"
 - Any affirmative response in Pidgin or English after a strategy suggestion
 Do NOT re-show the suggestion — immediately activate with the stored pending params.
+
+STRATEGY TYPE AWARENESS (for your conversational replies):
+The 5 available strategy types are:
+1. Conservative 🛡️ — sideways market, safe dip-buy, 7% target
+2. Aggressive 🔥 — dipping market (-3% to -7%), 15% target
+3. Scalp ⚡ — mild pump, quick 2.5% profits
+4. Momentum 🚀 — strong pump (>7%), ride the wave 10% target
+5. Deep Value 💎 — market crash (>7% down), 20% target
+When a user asks which is best for them, explain briefly in simple terms based on market conditions.
 
 Use list_strategies when user asks "what strategies do I have?" or "show my strategies".
 Use cancel_strategy when user wants to stop/cancel a strategy by ID.
@@ -206,7 +231,7 @@ PROMPT;
             . "price_alert, set_conditional, swap_tokens, conditional_swap, faucet, "
             . "check_price, check_nft, check_domain, buy_domain, "
             . "get_news, request_airdrop, get_history, get_tasks, export_wallet, "
-            . "suggest_strategy, activate_strategy, list_strategies, cancel_strategy, general_chat\n"
+            . "suggest_strategy, next_strategy, activate_strategy, list_strategies, cancel_strategy, general_chat\n"
             . "Message: " . $userMessage;
 
         foreach ($this->providers as $provider) {

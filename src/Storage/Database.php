@@ -173,6 +173,28 @@ class Database
             $this->pdo->exec("ALTER TABLE trading_strategies ADD COLUMN strategy_type TEXT DEFAULT 'CONSERVATIVE'");
         } catch (\Throwable $ignored) {}
 
+        // ── DCA tasks table ───────────────────────────────────────────────────
+        $this->pdo->exec("
+            CREATE TABLE IF NOT EXISTS dca_tasks (
+                id             INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id        INTEGER NOT NULL,
+                telegram_id    TEXT NOT NULL,
+                amount_usd     REAL NOT NULL,
+                interval_hours INTEGER NOT NULL DEFAULT 24,
+                next_run       DATETIME NOT NULL,
+                runs_count     INTEGER DEFAULT 0,
+                status         TEXT DEFAULT 'active',
+                label          TEXT,
+                created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY(user_id) REFERENCES users(id)
+            );
+        ");
+
+        // ── Add trailing_pct column to trading_strategies ─────────────────────
+        try {
+            $this->pdo->exec("ALTER TABLE trading_strategies ADD COLUMN trailing_pct REAL DEFAULT 0");
+        } catch (\Throwable $ignored) {}
+
         // ── Data repair: ensure each user has exactly ONE active wallet ─────────
         // If a user somehow has multiple is_active=1 wallets (e.g. from old versions),
         // keep only the most recently created one as active.

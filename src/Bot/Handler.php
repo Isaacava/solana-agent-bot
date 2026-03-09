@@ -338,6 +338,70 @@ class Handler
             case 'get_news':
                 return News::formatNewsMessage(News::getLatestNews(5));
 
+            // ── Portfolio & Multi-token ────────────────────────────────────
+            case 'get_portfolio':
+                return $this->cmdPortfolio($chatId, $userId);
+
+            case 'get_token_balance':
+                $sym = strtoupper($params['symbol'] ?? 'USDC');
+                return $this->cmdTokenBalance($userId, $sym);
+
+            // ── DCA ───────────────────────────────────────────────────────
+            case 'setup_dca':
+                return $this->agentSetupDCA($chatId, $userId, $update, $params);
+
+            case 'list_dca':
+                return $this->agentListDCA($userId);
+
+            case 'cancel_dca':
+                return $this->agentCancelDCA($userId, (int)($params['id'] ?? 0));
+
+            // ── Market Intelligence ───────────────────────────────────────
+            case 'fear_greed':
+                return \SolanaAgent\Features\MarketIntel::formatFearGreed(
+                    \SolanaAgent\Features\MarketIntel::getFearGreed()
+                );
+
+            case 'whale_alert':
+                $hKey    = $this->config['apis']['helius_key'] ?? '';
+                $network = $this->config['solana']['network'] ?? 'devnet';
+                return \SolanaAgent\Features\MarketIntel::formatWhales(
+                    \SolanaAgent\Features\MarketIntel::getRecentWhales($hKey, 10000, $network)
+                );
+
+            case 'network_status':
+                $network = $this->config['solana']['network'] ?? 'devnet';
+                $rpc     = $network === 'mainnet'
+                    ? ($this->config['solana']['rpc_mainnet'] ?? 'https://api.mainnet-beta.solana.com')
+                    : ($this->config['solana']['rpc_devnet']  ?? 'https://api.devnet.solana.com');
+                return \SolanaAgent\Features\MarketIntel::formatNetworkStatus(
+                    \SolanaAgent\Features\MarketIntel::getNetworkStatus($rpc, $network)
+                );
+
+            case 'staking_apy':
+                return \SolanaAgent\Features\MarketIntel::formatStakingApy(
+                    \SolanaAgent\Features\MarketIntel::getStakingApy()
+                );
+
+            // ── Notifications & Alerts ────────────────────────────────────
+            case 'watch_wallet':
+                return $this->agentWatchWallet($userId, $update);
+
+            case 'unwatch_wallet':
+                return $this->agentUnwatchWallet($userId);
+
+            case 'set_price_report':
+                return $this->agentSetPriceReport($userId, $update, $params);
+
+            case 'cancel_price_report':
+                return $this->agentCancelPriceReport($userId);
+
+            case 'trailing_stop':
+                return $this->agentSetTrailingStop($userId, $params);
+
+            case 'price_cascade':
+                return $this->agentSetCascade($userId, $update, $params);
+
             case 'request_airdrop':
                 return $this->agentDecideAirdrop($userId);
 
@@ -434,21 +498,28 @@ class Handler
         if (!Base58::isValidAddress($to))
             return "🤖 <code>" . htmlspecialchars($to) . "</code> — not a valid address. Please check.";
 
-        try { $executeAt = Scheduler::parseTime($timeStr); }
+        $tz = $this->config['app']['timezone'] ?? 'Africa/Lagos';
+        try { $executeAt = Scheduler::parseTime($timeStr, $tz); }
         catch (\InvalidArgumentException $e) {
-            return "🤖 Couldn't understand the time \"<i>{$timeStr}</i>\".\nTry: \"in 5 minutes\", \"in 2 hours\", \"in 3 days\"";
+            return "🤖 Couldn't understand \"<i>{$timeStr}</i>\"\n\n"
+                . "Try things like:\n"
+                . "• <b>tomorrow morning</b>\n"
+                . "• <b>tonight</b>\n"
+                . "• <b>next Monday evening</b>\n"
+                . "• <b>in 2 hours</b>\n"
+                . "• <b>Friday at 3pm</b>";
         }
 
-        $taskId = $this->scheduler->scheduleTask($userId, (string)$update['telegram_id'], 'send_sol',
+        $taskId  = $this->scheduler->scheduleTask($userId, (string)$update['telegram_id'], 'send_sol',
             ['to' => $to, 'amount' => $amount], $executeAt);
 
-        $short = substr($to, 0, 8) . '...' . substr($to, -6);
-        return "🤖 Wallet verified, address valid, time confirmed.\n\n"
-            . "⏰ <b>Scheduled</b>\n"
+        $short   = substr($to, 0, 8) . '...' . substr($to, -6);
+        $friendly = Scheduler::describeScheduledTime($executeAt, $tz);
+        return "✅ <b>Scheduled!</b>\n\n"
             . "💸 <b>{$amount} SOL</b> → <code>{$short}</code>\n"
-            . "🕐 At: <b>{$executeAt}</b>\n"
+            . "⏰ <b>{$friendly}</b>\n"
             . "🆔 Task #{$taskId}\n\n"
-            . "I'll execute automatically and notify you when done.";
+            . "I'll send it automatically and ping you when done. 🤖";
     }
 
     private function agentSetConditional(int $chatId, int $userId, array $update, array $params): string
@@ -1615,7 +1686,173 @@ class Handler
         return "Could not find strategy #{$strategyId}. Use /strategies to see your active ones.";
     }
 
-        private function doPrice(): string
+        private function cmdPortfolio(int $chatId, int $userId): string
+    {
+        $portfolio = new \SolanaAgent\Features\Portfolio($this->db, $this->walletManager, $this->config);
+        $snap      = $portfolio->getSnapshot($userId);
+        $msg       = \SolanaAgent\Features\Portfolio::formatMessage($snap);
+
+        if (!isset($snap['error'])) {
+            $pnl = $portfolio->getPnl($userId, $snap['total_usd']);
+            if ($pnl['has_baseline'] && abs($pnl['diff_usd']) > 0.01) {
+                $arrow  = $pnl['diff_usd'] >= 0 ? '📈' : '📉';
+                $sign   = $pnl['diff_usd'] >= 0 ? '+' : '';
+                $msg   .= "\n\n{$arrow} Since last check: <b>{$sign}" . number_format($pnl['diff_usd'], 2) . " USD ({$sign}{$pnl['diff_pct']}%)</b>";
+            }
+        }
+        return $msg;
+    }
+
+    private function cmdTokenBalance(int $userId, string $symbol): string
+    {
+        $wallet = $this->db->getActiveWallet($userId);
+        if (!$wallet) return "Create a wallet first!";
+
+        $network = $this->config['solana']['network'] ?? 'devnet';
+        $spl     = new \SolanaAgent\Features\SPLToken($this->walletManager->getRpc(), $network, $this->config);
+
+        try {
+            if ($symbol === 'SOL') {
+                $bal = $this->walletManager->getBalance($wallet['public_key']);
+                return "💰 SOL balance: <b>" . number_format((float)$bal['sol'], 4) . " SOL</b>";
+            }
+            if ($symbol === 'USDC') {
+                $bal = $spl->getUsdcBalance($wallet['public_key']);
+                return "💵 USDC balance: <b>" . number_format($bal, 2) . " USDC</b>";
+            }
+            return "Token balance for {$symbol} is available on mainnet. You're on devnet.";
+        } catch (\Throwable $e) {
+            return "❌ Could not fetch {$symbol} balance: " . htmlspecialchars($e->getMessage());
+        }
+    }
+
+    private function agentSetupDCA(int $chatId, int $userId, array $update, array $params): string
+    {
+        $wallet = $this->db->getActiveWallet($userId);
+        if (!$wallet) return "You need a wallet first! Say create a wallet.";
+
+        $amountUsd     = (float)($params['amount_usd'] ?? $params['amount'] ?? 0);
+        $intervalHours = (int)($params['interval_hours'] ?? 24);
+
+        // Fallback: parse interval from raw text if AI didn't extract it
+        if ($intervalHours <= 0) $intervalHours = 24;
+
+        if ($amountUsd <= 0) return "How much USDC do you want to DCA? E.g. \"DCA \$10 into SOL daily\"";
+
+        $dca = new \SolanaAgent\Features\DCA($this->db, $this->walletManager, $this->telegram, $this->config);
+        $id  = $dca->create($userId, (string)$update['telegram_id'], $amountUsd, 'custom', $intervalHours);
+
+        $nextTime = date('M d, H:i', time() + ($intervalHours * 3600));
+        $label    = $intervalHours === 24 ? 'daily' : ($intervalHours === 168 ? 'weekly' : "every {$intervalHours}h");
+
+        return "✅ <b>DCA #{$id} activated!</b>\n\n"
+            . "💸 Buying <b>\${$amountUsd} worth of SOL</b> {$label}\n"
+            . "⏭️ First run: <b>{$nextTime}</b>\n"
+            . "🔁 I'll keep buying automatically — say <b>\"cancel DCA #{$id}\"</b> to stop.";
+    }
+
+    private function agentListDCA(int $userId): string
+    {
+        $dca   = new \SolanaAgent\Features\DCA($this->db, $this->walletManager, $this->telegram, $this->config);
+        $tasks = $dca->list($userId);
+        return \SolanaAgent\Features\DCA::formatList($tasks);
+    }
+
+    private function agentCancelDCA(int $userId, int $id): string
+    {
+        if ($id <= 0) return "Which DCA task? Say cancel DCA #1 (or whichever number).";
+        $dca = new \SolanaAgent\Features\DCA($this->db, $this->walletManager, $this->telegram, $this->config);
+        return $dca->cancel($id, $userId)
+            ? "✅ DCA #{$id} cancelled — no more automatic buys."
+            : "Could not find DCA #{$id}. Say <b>\"my DCA tasks\"</b> to see active ones.";
+    }
+
+    private function agentWatchWallet(int $userId, array $update): string
+    {
+        $monitor = new \SolanaAgent\Features\WalletMonitor($this->db, $this->walletManager, $this->telegram, $this->config);
+        $ok      = $monitor->enableWatcher($userId, (string)$update['telegram_id']);
+        if (!$ok) return "You need a wallet first! Say create a wallet.";
+        return "🛡️ <b>Wallet monitor enabled!</b>\n\nI'll alert you immediately if any SOL leaves your wallet unexpectedly.\n\nSay <b>\"stop watching wallet\"</b> to disable.";
+    }
+
+    private function agentUnwatchWallet(int $userId): string
+    {
+        $monitor = new \SolanaAgent\Features\WalletMonitor($this->db, $this->walletManager, $this->telegram, $this->config);
+        $monitor->disableWatcher($userId);
+        return "✅ Wallet monitor disabled. I'll no longer alert you on balance changes.";
+    }
+
+    private function agentSetPriceReport(int $userId, array $update, array $params): string
+    {
+        $hours   = max(1, (int)($params['interval_hours'] ?? 24));
+        $monitor = new \SolanaAgent\Features\WalletMonitor($this->db, $this->walletManager, $this->telegram, $this->config);
+        $monitor->setRecurringReport($userId, (string)$update['telegram_id'], (string)$hours);
+
+        $label = match($hours) {
+            1  => 'every hour',
+            6  => 'every 6 hours',
+            12 => 'every 12 hours',
+            24 => 'daily',
+            default => "every {$hours} hours",
+        };
+
+        return "⏰ <b>Price report set!</b>\n\nI'll send you SOL price <b>{$label}</b> automatically.\nSay <b>\"cancel price report\"</b> to stop.";
+    }
+
+    private function agentCancelPriceReport(int $userId): string
+    {
+        $monitor = new \SolanaAgent\Features\WalletMonitor($this->db, $this->walletManager, $this->telegram, $this->config);
+        $monitor->cancelRecurringReport($userId);
+        return "✅ Price reports cancelled.";
+    }
+
+    private function agentSetTrailingStop(int $userId, array $params): string
+    {
+        $strategyId  = (int)($params['strategy_id'] ?? 0);
+        $trailingPct = (float)($params['trailing_pct'] ?? 2.0);
+
+        if ($strategyId <= 0) return "Which strategy? Say \"set trailing stop on strategy #1\" with the number.";
+
+        // Verify strategy belongs to user and is holding
+        $s = $this->db->fetch(
+            "SELECT * FROM trading_strategies WHERE id=? AND user_id=? AND phase='holding'",
+            [$strategyId, $userId]
+        );
+        if (!$s) return "Strategy #{$strategyId} not found or not in holding phase. Trailing stop only works on active holdings.";
+
+        try {
+            $price = (float)(Price::getSolPrice()['usd'] ?? 0);
+            \SolanaAgent\Features\TrailingStop::enable($this->db, $strategyId, $trailingPct, $price);
+        } catch (\Throwable $e) {
+            return "❌ Could not set trailing stop: " . htmlspecialchars($e->getMessage());
+        }
+
+        return "🛡️ <b>Trailing stop set!</b>\n\n"
+            . "Strategy #{$strategyId} — stop loss will now move up automatically as SOL price rises.\n"
+            . "Trail: <b>{$trailingPct}%</b> below peak price\n\n"
+            . "Your gains are protected automatically 📈";
+    }
+
+    private function agentSetCascade(int $userId, array $update, array $params): string
+    {
+        $targets = $params['targets'] ?? [];
+        if (empty($targets) || !is_array($targets)) {
+            return "Please specify your targets. E.g. <b>\"sell 30% at \$120, 30% at \$140, 40% at \$160\"</b>";
+        }
+
+        // Validate totals = 100%
+        $total = array_sum(array_column($targets, 'pct'));
+        if ($total > 100) return "Total percentage can't exceed 100%. You specified {$total}%.";
+
+        \SolanaAgent\Features\PriceCascade::create($this->db, $userId, (string)$update['telegram_id'], $targets);
+
+        $msg = "🎯 <b>Price Cascade set!</b>\n\n";
+        $msg .= \SolanaAgent\Features\PriceCascade::format($targets, 0);
+        $msg .= "\nI'll execute each sell automatically when price hits the target. 🤖";
+        return $msg;
+    }
+
+    private function doPrice(): string
     {
         try { return Price::formatPriceMessage(Price::getSolPrice()); }
         catch (\Throwable $e) { return "❌ Could not fetch price: " . $e->getMessage(); }

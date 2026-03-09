@@ -204,6 +204,7 @@ class Handler
                 'check_nft'         => '✓ NFT checked',
                 'check_domain'      => '✓ domain checked',
                 'suggest_strategy'  => '✓ strategy suggested — waiting for user confirmation',
+                'next_strategy'     => '✓ next strategy shown',
                 'activate_strategy' => '✓ strategy activated',
                 'cancel_strategy'   => '✓ strategy cancelled',
                 default             => '✓ action done',
@@ -292,6 +293,9 @@ class Handler
 
             case 'suggest_strategy':
                 return $this->agentSuggestStrategy($chatId, $userId, $params);
+
+            case 'next_strategy':
+                return $this->agentNextStrategy($chatId, $userId);
 
             case 'activate_strategy':
                 return $this->agentActivateStrategy($chatId, $userId, $update, $params);
@@ -1385,35 +1389,108 @@ class Handler
         }
 
         try {
-            $price    = Price::getSolPrice();
-            $current  = (float)$price['usd'];
+            $priceData = Price::getSolPrice();
+            $current   = (float)$priceData['usd'];
+            $change24h = (float)($priceData['change_24h'] ?? 0.0);
         } catch (\Throwable $e) {
             return "Could not fetch SOL price right now. Try again in a moment.";
         }
 
         $amountSol = max(0.1, (float)($params['amount_sol'] ?? 1.0));
-        $s         = Strategy::generateSuggestion($current);
 
-        // Store pending strategy params in chat context via a pending_ pattern
-        // We embed the params in a callback-style message the user confirms
-        $msg = Strategy::formatSuggestion($s, $amountSol);
+        // Recommend the best strategy type for current market conditions
+        $recommended = Strategy::recommendType($change24h);
 
-        // Store pending strategy details so activate_strategy can pick them up
-        // We pass them via a special message that the AI will decode as activate_strategy
+        // Start rotation at the recommended type (index 0 of shown list)
+        $this->savePendingStrategy($userId, $recommended, $amountSol, $current, $change24h, [$recommended]);
+
+        $s   = Strategy::generateByType($current, $recommended);
+        $msg = Strategy::formatSuggestion($s, $amountSol, $change24h, 1, true);
+
+        return $msg;
+    }
+
+    private function agentNextStrategy(int $chatId, int $userId): string
+    {
+        $row = $this->db->fetch(
+            "SELECT value FROM settings WHERE key_name=?",
+            ["pending_strategy_{$userId}"]
+        );
+        if (!$row) {
+            return "No strategy session found. Say <b>grow my SOL</b> and I'll start fresh.";
+        }
+
+        $pending   = json_decode($row['value'], true) ?? [];
+        $shown     = $pending['shown_types'] ?? [];
+        $amountSol = (float)($pending['amount_sol'] ?? 1.0);
+        $current   = (float)($pending['current_price'] ?? 0);
+        $change24h = (float)($pending['change_24h'] ?? 0);
+        $recommended = $pending['recommended'] ?? 'CONSERVATIVE';
+
+        if ($current <= 0) {
+            try {
+                $priceData = Price::getSolPrice();
+                $current   = (float)$priceData['usd'];
+                $change24h = (float)($priceData['change_24h'] ?? 0.0);
+            } catch (\Throwable $e) {
+                return "Could not fetch SOL price right now. Try again in a moment.";
+            }
+        }
+
+        // Find next type not yet shown
+        $next = null;
+        foreach (Strategy::ROTATION_ORDER as $type) {
+            if (!in_array($type, $shown, true)) {
+                $next = $type;
+                break;
+            }
+        }
+
+        // All shown — wrap around
+        if ($next === null) {
+            $shown = [];
+            $next  = Strategy::ROTATION_ORDER[0];
+        }
+
+        $shown[] = $next;
+        $index   = count($shown);
+        $isRec   = ($next === $recommended);
+
+        $this->savePendingStrategy($userId, $recommended, $amountSol, $current, $change24h, $shown);
+
+        $s   = Strategy::generateByType($current, $next);
+        return Strategy::formatSuggestion($s, $amountSol, $change24h, $index, $isRec);
+    }
+
+    private function savePendingStrategy(
+        int    $userId,
+        string $recommended,
+        float  $amountSol,
+        float  $currentPrice,
+        float  $change24h,
+        array  $shownTypes
+    ): void {
+        // Get the current (last shown) type's params to store for activation
+        $lastType = end($shownTypes) ?: $recommended;
+        $s        = Strategy::generateByType($currentPrice, $lastType);
+
         $this->db->query(
             "INSERT OR REPLACE INTO settings (key_name, value, updated_at) VALUES (?, ?, CURRENT_TIMESTAMP)",
             [
                 "pending_strategy_{$userId}",
                 json_encode([
-                    'buy_price'  => $s['buy_price'],
-                    'sell_price' => $s['sell_price'],
-                    'stop_loss'  => $s['stop_loss'],
-                    'amount_sol' => $amountSol,
+                    'buy_price'     => $s['buy_price'],
+                    'sell_price'    => $s['sell_price'],
+                    'stop_loss'     => $s['stop_loss'],
+                    'amount_sol'    => $amountSol,
+                    'strategy_type' => $lastType,
+                    'current_price' => $currentPrice,
+                    'change_24h'    => $change24h,
+                    'recommended'   => $recommended,
+                    'shown_types'   => $shownTypes,
                 ])
             ]
         );
-
-        return $msg;
     }
 
     private function agentActivateStrategy(int $chatId, int $userId, array $update, array $params): string
@@ -1425,6 +1502,8 @@ class Handler
         $stopLoss  = (float)($params['stop_loss']  ?? 0);
         $amountSol = (float)($params['amount_sol'] ?? 0);
 
+        $strategyType = $params['strategy_type'] ?? '';
+
         if ($buyPrice <= 0 || $sellPrice <= 0) {
             // Load from pending
             $row = $this->db->fetch(
@@ -1434,11 +1513,12 @@ class Handler
             if (!$row) {
                 return "No pending strategy found. Say grow my SOL and I will generate one for you first.";
             }
-            $pending   = json_decode($row['value'], true) ?? [];
-            $buyPrice  = $buyPrice  ?: (float)($pending['buy_price']  ?? 0);
-            $sellPrice = $sellPrice ?: (float)($pending['sell_price'] ?? 0);
-            $stopLoss  = $stopLoss  ?: (float)($pending['stop_loss']  ?? 0);
-            $amountSol = $amountSol ?: (float)($pending['amount_sol'] ?? 1.0);
+            $pending      = json_decode($row['value'], true) ?? [];
+            $buyPrice     = $buyPrice     ?: (float)($pending['buy_price']    ?? 0);
+            $sellPrice    = $sellPrice    ?: (float)($pending['sell_price']   ?? 0);
+            $stopLoss     = $stopLoss     ?: (float)($pending['stop_loss']    ?? 0);
+            $amountSol    = $amountSol    ?: (float)($pending['amount_sol']   ?? 1.0);
+            $strategyType = $strategyType ?: ($pending['strategy_type'] ?? 'CONSERVATIVE');
         }
 
         if ($buyPrice <= 0 || $sellPrice <= $buyPrice) {
@@ -1463,7 +1543,9 @@ class Handler
             $buyPrice,
             $sellPrice,
             $stopLoss,
-            $amountSol
+            $amountSol,
+            '',
+            $strategyType ?: 'CONSERVATIVE'
         );
 
         // Clear pending

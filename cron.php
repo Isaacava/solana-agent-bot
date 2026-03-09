@@ -1,14 +1,30 @@
 <?php
 /**
- * Cron Job Handler
+ * ============================================================
+ * CRON.PHP — Agent Task Runner
+ * ============================================================
  *
- * Run every minute via system cron:
- *   * * * * * php /path/to/solana-agent/cron.php >> /path/to/logs/cron.log 2>&1
+ * Add to crontab (runs every minute):
  *
- * Or for hosting without shell cron, call this endpoint from an external cron service
- * like cron-job.org every minute.
+ *   * * * * * php /path/to/cron.php >> /path/to/logs/cron.log 2>&1
  *
- * Web endpoint: GET /cron.php?secret=YOUR_CRON_SECRET
+ * Or via HTTP with a secret (useful for shared hosting):
+ *
+ *   https://yourdomain.com/cron.php?secret=YOUR_CRON_SECRET
+ *
+ * What it runs each tick (once per minute):
+ *   ✓ Price alerts        — notify users when SOL hits their target
+ *   ✓ Conditional tasks   — execute pending send/swap goals
+ *   ✓ Trading strategies  — buy/sell at targets across all 5 strategy types
+ *   ✓ Trailing stops      — move stop loss up as price rises
+ *   ✓ Price cascades      — multi-target partial sell execution
+ *   ✓ Scheduled sends     — time-based SOL/USDC sends
+ *   ✓ DCA tasks           — recurring dollar-cost-average buys
+ *   ✓ Wallet monitor      — alert on unexpected SOL outflows
+ *   ✓ Balance guard       — warn on underfunded upcoming tasks
+ *   ✓ Recurring reports   — scheduled SOL price updates to users
+ *   ✓ Daily P&L digest    — end-of-day strategy performance summary
+ * ============================================================
  */
 
 declare(strict_types=1);
@@ -24,45 +40,37 @@ use SolanaAgent\Features\Scheduler;
 $config = require __DIR__ . '/config/config.php';
 date_default_timezone_set($config['app']['timezone'] ?? 'Africa/Lagos');
 
-// ─── Auth (web mode only) ─────────────────────────────────────────────────────
-$isCli = (php_sapi_name() === 'cli');
-
-if (!$isCli) {
+// ─── Auth (HTTP mode only) ────────────────────────────────────────────────────
+if (php_sapi_name() !== 'cli') {
     $cronSecret = $config['security']['cron_secret'] ?? '';
     $provided   = $_GET['secret'] ?? '';
     if ($cronSecret && !hash_equals($cronSecret, $provided)) {
-        http_response_code(403);
-        exit('Forbidden');
+        http_response_code(403); exit('Forbidden');
     }
     header('Content-Type: text/plain');
 }
 
-// ─── Prevent parallel runs (file lock) ───────────────────────────────────────
-$lockFile = sys_get_temp_dir() . '/solana_agent_cron.lock';
-$lock     = fopen($lockFile, 'w');
-if (!flock($lock, LOCK_EX | LOCK_NB)) {
-    Logger::warn('Cron: another instance is running, skipping.');
-    exit;
-}
-
+// ─── Bootstrap ───────────────────────────────────────────────────────────────
 try {
-    Logger::info('Cron: starting run at ' . date('Y-m-d H:i:s'));
-
     $db            = Database::getInstance($config['database']['file']);
     $crypto        = new Crypto($config['security']['encryption_key']);
     $telegram      = new Telegram($config['telegram']);
     $walletManager = new WalletManager($db, $crypto, $config['solana'] + ['features' => $config['features']]);
     $scheduler     = new Scheduler($db, $walletManager, $telegram, $config);
-
-    $scheduler->run();
-
-    Logger::info('Cron: completed successfully');
-    echo "OK\n";
-
 } catch (\Throwable $e) {
-    Logger::error('Cron error: ' . $e->getMessage());
+    Logger::error('Cron bootstrap failed: ' . $e->getMessage());
+    exit(1);
+}
+
+// ─── Run all tasks ────────────────────────────────────────────────────────────
+Logger::info('Cron started at ' . date('Y-m-d H:i:s'));
+
+try {
+    $scheduler->run();
+    Logger::info('Cron finished OK at ' . date('Y-m-d H:i:s'));
+    echo "OK\n";
+} catch (\Throwable $e) {
+    Logger::error('Cron run() failed: ' . $e->getMessage());
     echo "ERROR: " . $e->getMessage() . "\n";
-} finally {
-    flock($lock, LOCK_UN);
-    fclose($lock);
+    exit(1);
 }

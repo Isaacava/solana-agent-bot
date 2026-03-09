@@ -30,29 +30,133 @@ class Scheduler
         $this->config        = $config;
     }
 
+    /**
+     * Legacy single-pass run (kept for backward compatibility).
+     * The advanced loop scheduler in cron.php calls the individual
+     * public methods below at different intervals instead.
+     */
     public function run(): void
     {
-        $currentPrice = null;
+        $priceData = $this->fetchPriceData();
+        $price     = $priceData ? (float)$priceData['usd'] : null;
+
+        if ($price !== null) {
+            $this->runPriceAlerts($price);
+            $this->runConditionalTasks($price);
+            $this->runTradingStrategies($price);
+            $this->runTrailingStops($price);
+            $this->runCascade($price);
+            $this->runWalletMonitor($price);
+            $this->runBalanceGuard($price);
+        }
+
+        $this->runScheduledSends();
+        $this->runDCA();
+
+        if ($priceData !== null) {
+            $this->runRecurringReports(
+                (float)$priceData['usd'],
+                (float)($priceData['ngn']       ?? 0),
+                (float)($priceData['change_24h'] ?? 0)
+            );
+            $this->runDailyDigest((float)$priceData['usd']);
+        }
+    }
+
+    // ─── Public task methods — called by cron loop at different intervals ─────
+
+    /** Fetch live SOL/USD price. Returns null on failure. */
+    public function fetchPrice(): ?float
+    {
         try {
-            $price        = Price::getSolPrice();
-            $currentPrice = (float)$price['usd'];
+            $price = Price::getSolPrice();
+            return (float)$price['usd'];
         } catch (\Throwable $e) {
-            Logger::warn('Price fetch failed in scheduler: ' . $e->getMessage());
+            Logger::warn('Price fetch failed: ' . $e->getMessage());
+            return null;
         }
+    }
 
-        if ($currentPrice !== null) {
-            $this->checkPriceAlerts($currentPrice);
-            $this->checkConditionalTasks($currentPrice);
-            $this->checkTradingStrategies($currentPrice);
+    /** Fetch full price data (usd + ngn + change_24h). Returns null on failure. */
+    public function fetchPriceData(): ?array
+    {
+        try {
+            return Price::getSolPrice();
+        } catch (\Throwable $e) {
+            Logger::warn('Price data fetch failed: ' . $e->getMessage());
+            return null;
         }
+    }
 
+    /** Fire any price alerts whose threshold has been crossed. */
+    public function runPriceAlerts(float $currentPrice): void
+    {
+        $this->checkPriceAlerts($currentPrice);
+    }
+
+    /** Execute any conditional goals (send/swap) whose price condition is now met. */
+    public function runConditionalTasks(float $currentPrice): void
+    {
+        $this->checkConditionalTasks($currentPrice);
+    }
+
+    /** Advance trading strategies whose buy/sell/stop-loss price has been hit. */
+    public function runTradingStrategies(float $currentPrice): void
+    {
+        $this->checkTradingStrategies($currentPrice);
+    }
+
+    /** Execute any scheduled sends whose execute_at time has passed. */
+    public function runScheduledSends(): void
+    {
         $this->executeScheduledTasks();
+    }
 
-        // Proactive: warn users about upcoming tasks they may lack funds for
-        if ($currentPrice !== null) {
-            $guard = new BalanceGuard($this->db, $this->walletManager, $this->telegram, $this->config);
-            $guard->runProactiveChecks($currentPrice);
-        }
+    /** Warn users about underfunded tasks due in the next 10 minutes. */
+    public function runBalanceGuard(float $currentPrice): void
+    {
+        $guard = new BalanceGuard($this->db, $this->walletManager, $this->telegram, $this->config);
+        $guard->runProactiveChecks($currentPrice);
+    }
+
+    /** Run DCA tasks that are due. */
+    public function runDCA(): void
+    {
+        $dca = new \SolanaAgent\Features\DCA($this->db, $this->walletManager, $this->telegram, $this->config);
+        $dca->runDueTasks();
+    }
+
+    /** Check wallet monitors for unexpected balance changes. */
+    public function runWalletMonitor(float $currentPrice): void
+    {
+        $monitor = new \SolanaAgent\Features\WalletMonitor($this->db, $this->walletManager, $this->telegram, $this->config);
+        $monitor->checkWallets($currentPrice);
+    }
+
+    /** Send recurring scheduled price reports. */
+    public function runRecurringReports(float $price, float $ngn, float $change24h): void
+    {
+        $monitor = new \SolanaAgent\Features\WalletMonitor($this->db, $this->walletManager, $this->telegram, $this->config);
+        $monitor->runRecurringReports($price, $ngn, $change24h);
+    }
+
+    /** Send P&L daily digest (runs near midnight only). */
+    public function runDailyDigest(float $currentPrice): void
+    {
+        $monitor = new \SolanaAgent\Features\WalletMonitor($this->db, $this->walletManager, $this->telegram, $this->config);
+        $monitor->runDailyDigest($currentPrice);
+    }
+
+    /** Update trailing stop losses for holding strategies. */
+    public function runTrailingStops(float $currentPrice): void
+    {
+        \SolanaAgent\Features\TrailingStop::update($this->db, $this->walletManager, $this->telegram, $currentPrice);
+    }
+
+    /** Check price cascade sell targets. */
+    public function runCascade(float $currentPrice): void
+    {
+        \SolanaAgent\Features\PriceCascade::check($this->db, $this->walletManager, $this->telegram, $this->config, $currentPrice);
     }
 
     // ─── Price Alerts ─────────────────────────────────────────────────────────
@@ -413,24 +517,130 @@ class Scheduler
 
     // ─── Time parser ──────────────────────────────────────────────────────────
 
-    public static function parseTime(string $timeStr): string
+    /**
+     * Parse natural language time strings into Y-m-d H:i:s.
+     *
+     * Understands:
+     *   Relative  : "in 5 minutes", "in 2 hours", "in 3 days"
+     *   Day parts : "tomorrow morning", "tonight", "this afternoon"
+     *               "next Monday evening", "Friday night"
+     *   Slots     : morning=07:00, afternoon=14:00, evening=18:00, night=21:00
+     *   Explicit  : "tomorrow at 3pm", "today at 6pm", "2025-12-25 09:00"
+     *   Pidgin    : "tomorrow morning", "next week"
+     */
+    public static function parseTime(string $timeStr, string $timezone = 'Africa/Lagos'): string
     {
-        $timeStr = trim($timeStr);
-        if (preg_match('/^\d{4}-\d{2}-\d{2}/', $timeStr)) {
-            $ts = strtotime($timeStr);
-            if ($ts) return date('Y-m-d H:i:s', $ts);
+        $tz  = new \DateTimeZone($timezone);
+        $now = new \DateTime('now', $tz);
+        $raw = strtolower(trim($timeStr));
+
+        // Named time-of-day → clock hour
+        $slots = [
+            'midnight'  => [0,  0],
+            'dawn'      => [5,  0],
+            'morning'   => [7,  0],
+            'noon'      => [12, 0],
+            'afternoon' => [14, 0],
+            'evening'   => [18, 0],
+            'night'     => [21, 0],
+            'tonight'   => [21, 0],
+        ];
+
+        $dayNames = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday'];
+
+        // Already a datetime string
+        if (preg_match('/^\d{4}-\d{2}-\d{2}/', $raw)) {
+            $ts = strtotime($raw);
+            if ($ts && $ts > time()) return date('Y-m-d H:i:s', $ts);
             throw new \InvalidArgumentException("Invalid date: {$timeStr}");
         }
-        $normalized = preg_replace('/^in\s+/i', '+', $timeStr);
-        if (preg_match('/^(\d+)\s+(second|minute|hour|day|week|month)s?$/i', $normalized, $m))
-            $normalized = "+{$m[1]} {$m[2]}s";
-        $candidates = array_unique([$normalized, $timeStr, '+' . $timeStr]);
-        foreach ($candidates as $candidate) {
-            $ts = strtotime($candidate);
+
+        // Resolve base date
+        $baseDate = clone $now;
+
+        if (str_contains($raw, 'tomorrow')) {
+            $baseDate->modify('+1 day');
+        } elseif (preg_match('/next\s+week/', $raw)) {
+            $baseDate->modify('+7 days');
+        } elseif (preg_match('/next\s+(' . implode('|', $dayNames) . ')/', $raw, $m)) {
+            $baseDate = new \DateTime('next ' . $m[1], $tz);
+        } elseif (preg_match('/\b(' . implode('|', $dayNames) . ')\b/', $raw, $m)) {
+            $candidate = new \DateTime('next ' . $m[1], $tz);
+            if ($candidate->format('N') === $now->format('N') && $candidate <= $now) {
+                $candidate->modify('+7 days');
+            }
+            $baseDate = $candidate;
+        }
+        // "today" — keep baseDate as now
+
+        // Resolve time-of-day slot
+        foreach ($slots as $word => [$h, $i]) {
+            if (str_contains($raw, $word)) {
+                $baseDate->setTime($h, $i, 0);
+                if ($baseDate <= $now) {
+                    $baseDate->modify('+1 day');
+                }
+                return date('Y-m-d H:i:s', $baseDate->getTimestamp());
+            }
+        }
+
+        // "at HH:mm" or "at Xpm/Xam"
+        if (preg_match('/at\s+(\d{1,2})(?::(\d{2}))?\s*(am|pm)?/i', $raw, $m)) {
+            $hour   = (int)$m[1];
+            $minute = isset($m[2]) ? (int)$m[2] : 0;
+            $ampm   = strtolower($m[3] ?? '');
+            if ($ampm === 'pm' && $hour < 12) $hour += 12;
+            if ($ampm === 'am' && $hour === 12) $hour = 0;
+            $baseDate->setTime($hour, $minute, 0);
+            if ($baseDate <= $now) $baseDate->modify('+1 day');
+            return date('Y-m-d H:i:s', $baseDate->getTimestamp());
+        }
+
+        // Relative: "in X minutes/hours/days/weeks"
+        $relative = preg_replace('/^in\s+/i', '+', $raw);
+        if (preg_match('/^(\d+)\s+(second|minute|hour|day|week|month)s?$/i', $relative, $m)) {
+            $relative = "+{$m[1]} {$m[2]}s";
+        }
+        foreach (array_unique([$relative, $raw, '+' . $raw]) as $c) {
+            $ts = strtotime($c);
             if ($ts && $ts > time()) return date('Y-m-d H:i:s', $ts);
         }
+
         throw new \InvalidArgumentException(
-            "Could not parse time: \"{$timeStr}\".\nTry: \"in 5 minutes\", \"in 2 hours\", \"in 3 days\"");
+            "Could not understand time: \"{$timeStr}\"\n"
+            . "Try: \"tomorrow morning\", \"tonight\", \"in 2 hours\", \"next Monday evening\", \"Friday at 3pm\"");
+    }
+
+    /**
+     * Describe a scheduled datetime in friendly human terms.
+     * e.g. "2025-12-25 07:00:00" → "tomorrow morning (Dec 25, 7:00am)"
+     */
+    public static function describeScheduledTime(string $datetime, string $timezone = 'Africa/Lagos'): string
+    {
+        $tz  = new \DateTimeZone($timezone);
+        $dt  = new \DateTime($datetime, $tz);
+        $now = new \DateTime('now', $tz);
+
+        $diffDays = (int)$now->diff($dt)->days;
+        $h        = (int)$dt->format('H');
+        $timeStr  = $dt->format('g:ia');
+
+        $slot = match(true) {
+            $h >= 5  && $h < 12 => 'morning',
+            $h >= 12 && $h < 17 => 'afternoon',
+            $h >= 17 && $h < 20 => 'evening',
+            $h >= 20 || $h < 5  => 'night',
+            default             => '',
+        };
+
+        $dayLabel = match(true) {
+            $diffDays === 0 => 'today',
+            $diffDays === 1 => 'tomorrow',
+            $diffDays <= 6  => $dt->format('l'),
+            default         => $dt->format('M j'),
+        };
+
+        return "{$dayLabel} {$slot} ({$dt->format('M j')}, {$timeStr})";
     }
 
     // ─── Trading Strategies ───────────────────────────────────────────────────
